@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main_relative_layout"
+<com.mxn.soul.flowingdrawer_core.LeftDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leftCoreDrawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
-    android:background="#ffffff">
+    android:clipChildren="false"
+    android:fitsSystemWindows="true">
 
-    <include layout="@layout/toolbar_layout_main_activity" />
+    <!--the main activity-->
 
-</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff">
+
+        <include
+            android:id="@+id/toolbar_layout"
+            layout="@layout/toolbar_layout_main_activity" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_layout" />
+
+    </RelativeLayout>
+
+    <!--the layout within the navigation drawer-->
+
+    <RelativeLayout
+        android:id="@+id/core_layout_navigation_drawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clipChildren="false">
+
+        <com.mxn.soul.flowingdrawer_core.FlowingView
+            android:id="@+id/flowing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/id_container_layout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp" />
+
+    </RelativeLayout>
+
+</com.mxn.soul.flowingdrawer_core.LeftDrawerLayout>
 
 
 
