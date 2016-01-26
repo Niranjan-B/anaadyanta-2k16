@@ -1,4 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group android:checkableBehavior="single" />
+
+    <group android:id="@+id/appSpecificGroup">
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:title="Home"
+            android:icon="@mipmap/ic_home_navigation_drawer"/>
+
+        <item
+            android:id="@+id/news_feed"
+            android:checked="false"
+            android:title="What's Happening"
+            android:icon="@mipmap/ic_news_feed_navigation_drawer"/>
+
+        <item
+            android:id="@+id/registration"
+            android:checked="false"
+            android:title="Register Here"
+            android:icon="@mipmap/ic_register_navigation_drawer"/>
+
+        <item
+            android:id="@+id/map"
+            android:checked="false"
+            android:title="Find NMIT"
+            android:icon="@mipmap/ic_map_navigation_drawer"/>
+
+    </group>
+
+    <group android:id="@+id/miscellaneousGroup">
+
+        <item
+            android:id="@+id/rules"
+            android:checked="false"
+            android:title="Follow These"
+            android:icon="@mipmap/ic_rules_navigation_drawer"/>
+
+        <item
+            android:id="@+id/sponsors"
+            android:checked="false"
+            android:title="Sponsors"
+            android:icon="@mipmap/ic_sponsors_navigation_drawer"/>
+
+        <item
+            android:id="@+id/devs"
+            android:checked="false"
+            android:title="The Team"
+            android:icon="@mipmap/ic_devs_navigation_drawer"/>
+
+    </group>
+
 </menu>
