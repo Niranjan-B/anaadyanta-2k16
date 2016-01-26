@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_relative_layout"
     android:layout_width="match_parent"
-    android:layout_height="350dp"
+    android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:id="@+id/r1"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:background="#ffffff">
 
+    <include layout="@layout/toolbar_layout_main_activity" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button3"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="93dp" />
-        </RelativeLayout>
+</RelativeLayout>
 
 
 
