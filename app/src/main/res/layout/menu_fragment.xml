@@ -7,7 +7,7 @@
     <android.support.design.widget.NavigationView
         android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:id="@+id/fragment_mrnu_navigation_view_container"
+        android:id="@+id/fragment_menu_navigation_view_container"
         android:layout_gravity="start"
         android:background="@android:color/transparent"
         app:headerLayout="@layout/header_navigation_drawer"
