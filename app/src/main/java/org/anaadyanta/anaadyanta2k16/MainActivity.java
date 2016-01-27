@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setupToolbar();
-
         navigationDrawerLayout = (LeftDrawerLayout) findViewById(R.id.leftCoreDrawerLayout);
+        StaticClassNavigationInstance.setLeftDrawerLayout(navigationDrawerLayout);
 
         FragmentManager fm = getSupportFragmentManager();
         NavigationDrawerMenuFragment myfragment = (NavigationDrawerMenuFragment) fm.findFragmentById(R.id.id_container_layout_menu);
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.drawable.navigation_drawer_icon);
+        toolbar.setNavigationIcon(R.drawable.ic_hamburger);
         toolbar.setTitle("Anaadyanta 2k16");
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
