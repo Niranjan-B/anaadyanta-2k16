@@ -9,6 +9,7 @@ import android.view.View;
 import com.mxn.soul.flowingdrawer_core.FlowingView;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
 
+import org.anaadyanta.anaadyanta2k16.fragments.HomeFragment;
 import org.anaadyanta.anaadyanta2k16.fragments.NavigationDrawerMenuFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         StaticClassNavigationInstance.setLeftDrawerLayout(navigationDrawerLayout);
 
         FragmentManager fm = getSupportFragmentManager();
+        fm.beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
         NavigationDrawerMenuFragment myfragment = (NavigationDrawerMenuFragment) fm.findFragmentById(R.id.id_container_layout_menu);
         FlowingView fv = (FlowingView) findViewById(R.id.flowing_view);
         if(myfragment == null){
