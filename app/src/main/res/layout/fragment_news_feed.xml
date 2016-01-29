@@ -4,9 +4,10 @@
     android:layout_height="match_parent"
     tools:context="org.anaadyanta.anaadyanta2k16.fragments.NewsFeedFragment">
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="News Feed Fragment" />
+        android:id="@+id/news_feed_container">
+    </android.support.v7.widget.RecyclerView>
 
 </FrameLayout>
