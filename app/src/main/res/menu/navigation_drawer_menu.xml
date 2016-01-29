@@ -14,7 +14,7 @@
                 android:id="@+id/news_feed"
                 android:checked="false"
                 android:icon="@mipmap/ic_news_feed_navigation_drawer"
-                android:title="What's Happening" />
+                android:title="What's Happening ?" />
 
             <item
                 android:id="@+id/registration"
@@ -26,7 +26,7 @@
                 android:id="@+id/map"
                 android:checked="false"
                 android:icon="@mipmap/ic_map_navigation_drawer"
-                android:title="Find NMIT" />
+                android:title="Find NMIT !" />
 
         </group>
 
