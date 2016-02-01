@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Anaadyanta 2k16</string>
+    <string name="news_feed_end_point">http://ninja-root.site40.net/anaadyanta_scripts/fetch_latest_feed.php</string>
 </resources>
