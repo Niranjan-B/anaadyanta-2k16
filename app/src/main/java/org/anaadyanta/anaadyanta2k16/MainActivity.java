@@ -10,7 +10,6 @@ import com.mxn.soul.flowingdrawer_core.FlowingView;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
 import com.onesignal.OneSignal;
 
-import org.anaadyanta.anaadyanta2k16.Utils.NotificationOneSignalHandler;
 import org.anaadyanta.anaadyanta2k16.fragments.HomeFragment;
 import org.anaadyanta.anaadyanta2k16.fragments.NavigationDrawerMenuFragment;
 
