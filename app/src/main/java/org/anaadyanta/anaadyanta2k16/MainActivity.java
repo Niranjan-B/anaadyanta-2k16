@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.mxn.soul.flowingdrawer_core.FlowingView;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
+import com.onesignal.OneSignal;
 
 import org.anaadyanta.anaadyanta2k16.fragments.HomeFragment;
 import org.anaadyanta.anaadyanta2k16.fragments.NavigationDrawerMenuFragment;
@@ -24,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
         setupToolbar();
         navigationDrawerLayout = (LeftDrawerLayout) findViewById(R.id.leftCoreDrawerLayout);
         StaticClassNavigationInstance.setLeftDrawerLayout(navigationDrawerLayout);
+
+        // One signal implementation
+        OneSignal.startInit(this).init();
+        OneSignal.enableNotificationsWhenActive(true);
+        //OneSignal.setLogLevel(OneSignal.LOG_LEVEL.DEBUG, OneSignal.LOG_LEVEL.DEBUG);
+        // ------------------------------------------------ends----------------------------
+
 
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
