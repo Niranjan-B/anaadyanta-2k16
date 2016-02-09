@@ -8,12 +8,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import org.anaadyanta.anaadyanta2k16.R;
+import org.anaadyanta.anaadyanta2k16.adapters.AutoScrollAdapter;
+
+import cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager;
+import me.relex.circleindicator.CircleIndicator;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
 
+    AutoScrollViewPager autoScrollViewPager;
+    AutoScrollAdapter autoScrollAdapter;
+    CircleIndicator circleIndicator;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -23,8 +30,19 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        autoScrollAdapter = new AutoScrollAdapter(getChildFragmentManager());
+        autoScrollViewPager = (AutoScrollViewPager) view.findViewById(R.id.autoScrollViewPager);
+        circleIndicator = (CircleIndicator) view.findViewById(R.id.circleIndicator);
+
+        autoScrollViewPager.setClipToPadding(false);
+        autoScrollViewPager.setAdapter(autoScrollAdapter);
+        autoScrollViewPager.setInterval(3750);
+        autoScrollViewPager.startAutoScroll();
+        circleIndicator.setViewPager(autoScrollViewPager);
+
+        return view;
     }
 
 }

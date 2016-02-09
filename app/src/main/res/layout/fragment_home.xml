@@ -1,12 +1,31 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
     tools:context="org.anaadyanta.anaadyanta2k16.fragments.HomeFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home Fragment" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:id="@+id/autoScrollViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/circleIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            app:ci_height="8dp"
+            app:ci_margin="6dp"
+            app:ci_width="8dp"
+            android:layout_gravity="bottom|center_horizontal"/>
+    </FrameLayout>
+
+</LinearLayout>
