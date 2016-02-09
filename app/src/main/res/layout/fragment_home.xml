@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,24 +9,235 @@
     android:paddingRight="5dp"
     tools:context="org.anaadyanta.anaadyanta2k16.fragments.HomeFragment">
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:parallax_factor="1.9"
+        android:scrollbars="none">
 
-        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
-            android:id="@+id/autoScrollViewPager"
+        <LinearLayout
+            android:id="@+id/coreLinearLayoutContanier"
             android:layout_width="match_parent"
-            android:layout_height="180dp" />
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
 
 
-        <me.relex.circleindicator.CircleIndicator
-            android:id="@+id/circleIndicator"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            app:ci_height="8dp"
-            app:ci_margin="6dp"
-            app:ci_width="8dp"
-            android:layout_gravity="bottom|center_horizontal"/>
-    </FrameLayout>
+            <FrameLayout
+                android:id="@+id/autoScrollContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                    android:id="@+id/autoScrollViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp" />
+
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/circleIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    app:ci_height="8dp"
+                    app:ci_margin="6dp"
+                    app:ci_width="8dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/cardContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
+
+                        <TextView
+                            android:id="@+id/kisjore1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="description"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/kisjore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="description"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/kisjore2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="description"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/kisjore3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="description"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/kisjore4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="description"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/kisjore5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="description"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.nirhart.parallaxscroll.views.ParallaxScrollView>
 
 </LinearLayout>
