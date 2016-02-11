@@ -2,12 +2,16 @@ package org.anaadyanta.anaadyanta2k16.fragments;
 
 
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import org.anaadyanta.anaadyanta2k16.R;
+import org.anaadyanta.anaadyanta2k16.Utils.Utility;
 import org.anaadyanta.anaadyanta2k16.adapters.AutoScrollAdapter;
 
 import cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager;
@@ -21,6 +25,7 @@ public class HomeFragment extends Fragment {
     AutoScrollViewPager autoScrollViewPager;
     AutoScrollAdapter autoScrollAdapter;
     CircleIndicator circleIndicator;
+    CoordinatorLayout coordinatorLayout;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -35,12 +40,18 @@ public class HomeFragment extends Fragment {
         autoScrollAdapter = new AutoScrollAdapter(getChildFragmentManager());
         autoScrollViewPager = (AutoScrollViewPager) view.findViewById(R.id.autoScrollViewPager);
         circleIndicator = (CircleIndicator) view.findViewById(R.id.circleIndicator);
+        coordinatorLayout = (CoordinatorLayout) view.findViewById(R.id.coreContainer);
 
         autoScrollViewPager.setClipToPadding(false);
         autoScrollViewPager.setAdapter(autoScrollAdapter);
         autoScrollViewPager.setInterval(3250);
         autoScrollViewPager.startAutoScroll();
         circleIndicator.setViewPager(autoScrollViewPager);
+
+        if(!Utility.isInternetAvailable(getActivity())) {
+            Snackbar.make(coordinatorLayout, "Intenet Down!, Bad UX in progress!", Snackbar.LENGTH_LONG).show();
+            // TODO make the text something more humorous i.e. flintstones era :-)
+        }
 
         return view;
     }

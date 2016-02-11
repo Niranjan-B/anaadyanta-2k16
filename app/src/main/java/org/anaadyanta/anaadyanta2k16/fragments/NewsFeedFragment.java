@@ -3,6 +3,8 @@ package org.anaadyanta.anaadyanta2k16.fragments;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +17,7 @@ import android.widget.ProgressBar;
 
 import org.anaadyanta.anaadyanta2k16.Model.NewsFeedModel;
 import org.anaadyanta.anaadyanta2k16.R;
+import org.anaadyanta.anaadyanta2k16.Utils.Utility;
 import org.anaadyanta.anaadyanta2k16.adapters.RecyclerViewAdapter;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,6 +41,7 @@ public class NewsFeedFragment extends Fragment {
     RecyclerViewAdapter newsFeedRecyclerAdapter;
     List<NewsFeedModel> feed;
     ProgressBar progressBar;
+    CoordinatorLayout coordinatorLayout;
 
     public NewsFeedFragment() {
     }
@@ -51,6 +55,8 @@ public class NewsFeedFragment extends Fragment {
         newsFeedRecyclerAdapter = new RecyclerViewAdapter(getActivity());
         progressBar = (ProgressBar) view.findViewById(R.id.news_feed_progress_bar);
         newsFeedRecyclerContainer = (RecyclerView) view.findViewById(R.id.news_feed_container);
+        coordinatorLayout = (CoordinatorLayout) view.findViewById(R.id.newzFragmentCoordinatorLayout);
+
         newsFeedRecyclerContainer.setLayoutManager(new LinearLayoutManager(getActivity()));
         newsFeedRecyclerContainer.setAdapter(newsFeedRecyclerAdapter); // empty adapter at this point
         return view;
@@ -60,7 +66,17 @@ public class NewsFeedFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        new newsFeedNetworkCall().execute();
+
+        if(!Utility.isInternetAvailable(getActivity())) {
+            Snackbar.make(coordinatorLayout, "Intenet Down!, Bad UX in progress!", Snackbar.LENGTH_LONG).show();
+            if (progressBar.getVisibility() == View.VISIBLE) {
+                progressBar.setVisibility(View.GONE);
+            }
+            // TODO make the text something more humorous i.e. flintstones era :-)
+        } else {
+            new newsFeedNetworkCall().execute();
+        }
+
     }
 
     class newsFeedNetworkCall extends AsyncTask <Void,List<NewsFeedModel>,List<NewsFeedModel>> {
@@ -69,7 +85,7 @@ public class NewsFeedFragment extends Fragment {
 
         @Override
         protected void onPreExecute() {
-            if (progressBar.getVisibility() == View.INVISIBLE) {
+            if (progressBar.getVisibility() == View.GONE) {
                 progressBar.setVisibility(View.VISIBLE);
             }
         }
@@ -118,8 +134,6 @@ public class NewsFeedFragment extends Fragment {
 
         @Override
         protected void onPostExecute(List<NewsFeedModel> modelNewsFeed) {
-
-            // TODO - add snackbars here in case of error!
 
             if (progressBar.getVisibility() == View.VISIBLE) {
                 progressBar.setVisibility(View.INVISIBLE);
