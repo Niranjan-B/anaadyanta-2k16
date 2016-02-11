@@ -52,13 +52,11 @@ public class NavigationDrawerMenuFragment extends MenuFragment{
                         NewsFeedFragment newsFeedFragment = new NewsFeedFragment();
                         FragmentManager fragmentManager = getFragmentManager();
                         fragmentManager.beginTransaction().replace(R.id.fragment_container, newsFeedFragment).commit();
-                        Toast.makeText(getActivity(), "Clicked on News Feed!", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.home_fragment:
                         HomeFragment homeFragment = new HomeFragment();
                         FragmentManager homeFragmentManager = getFragmentManager();
                         homeFragmentManager.beginTransaction().replace(R.id.fragment_container, homeFragment).commit();
-                        Toast.makeText(getActivity(), "Clicked on home fragment!", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.registration:
                         RegistrationFragment registrationFragment = new RegistrationFragment();

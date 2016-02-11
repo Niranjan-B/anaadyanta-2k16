@@ -1,15 +1,20 @@
 package org.anaadyanta.anaadyanta2k16;
 
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
+import com.github.florent37.materialviewpager.Utils;
 import com.mxn.soul.flowingdrawer_core.FlowingView;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
 import com.onesignal.OneSignal;
 
+import org.anaadyanta.anaadyanta2k16.Utils.Utility;
 import org.anaadyanta.anaadyanta2k16.fragments.HomeFragment;
 import org.anaadyanta.anaadyanta2k16.fragments.NavigationDrawerMenuFragment;
 
@@ -29,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         // One signal implementation
         OneSignal.startInit(this).init();
         OneSignal.enableNotificationsWhenActive(true);
-        //OneSignal.setLogLevel(OneSignal.LOG_LEVEL.DEBUG, OneSignal.LOG_LEVEL.DEBUG);
         // ------------------------------------------------ends----------------------------
 
 
@@ -42,13 +46,6 @@ public class MainActivity extends AppCompatActivity {
         }
         navigationDrawerLayout.setFluidView(fv);
         navigationDrawerLayout.setMenuFragment(myfragment);
-        navigationDrawerLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
     }
 
     private void setupToolbar() {
@@ -70,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         if(navigationDrawerLayout.isShownMenu()){
             navigationDrawerLayout.closeDrawer();
         }else {
+            // TODO : have to implement a dialog which asks for exit confirmation
             super.onBackPressed();
         }
     }
