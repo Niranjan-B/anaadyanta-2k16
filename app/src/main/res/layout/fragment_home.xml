@@ -1,12 +1,11 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:cardView="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
+    android:id="@+id/coreContainer"
     tools:context="org.anaadyanta.anaadyanta2k16.fragments.HomeFragment">
 
     <com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,8 +13,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:parallax_factor="1.9"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        app:parallax_factor="1.9">
 
         <LinearLayout
             android:id="@+id/coreLinearLayoutContanier"
@@ -28,7 +27,9 @@
             <FrameLayout
                 android:id="@+id/autoScrollContainer"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
 
                 <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
                     android:id="@+id/autoScrollViewPager"
@@ -53,7 +54,7 @@
                 android:orientation="vertical">
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/card_view"
+                    android:id="@+id/fashionShowCardView"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
@@ -67,7 +68,7 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:id="@+id/thumbnail"
+                            android:id="@+id/fashionShowImage"
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
@@ -75,14 +76,14 @@
 
 
                         <TextView
-                            android:id="@+id/kisjore1"
+                            android:id="@+id/fashionShowTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:maxLines="3"
                             android:padding="8dp"
-                            android:text="description"
+                            android:text="Fashion Show"
                             android:textColor="#ffffff"
                             android:textSize="30sp" />
 
@@ -90,7 +91,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/card_view1"
+                    android:id="@+id/treasureHuntCardView"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
@@ -103,15 +104,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <ImageView
+                            android:id="@+id/treasureHuntImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
                         <TextView
-                            android:id="@+id/kisjore"
+                            android:id="@+id/treasureHuntTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:maxLines="3"
                             android:padding="8dp"
-                            android:text="description"
+                            android:text="Treasure Hunt"
                             android:textColor="#ffffff"
                             android:textSize="30sp" />
 
@@ -119,7 +127,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/card_view2"
+                    android:id="@+id/danceCardView"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
@@ -132,15 +140,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <ImageView
+                            android:id="@+id/danceImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
                         <TextView
-                            android:id="@+id/kisjore2"
+                            android:id="@+id/danceTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:maxLines="3"
                             android:padding="8dp"
-                            android:text="description"
+                            android:text="Dance"
                             android:textColor="#ffffff"
                             android:textSize="30sp" />
 
@@ -148,7 +163,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/card_view3"
+                    android:id="@+id/musicCardView"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
@@ -161,15 +176,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <ImageView
+                            android:id="@+id/musicImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
                         <TextView
-                            android:id="@+id/kisjore3"
+                            android:id="@+id/musicTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:maxLines="3"
                             android:padding="8dp"
-                            android:text="description"
+                            android:text="Music"
                             android:textColor="#ffffff"
                             android:textSize="30sp" />
 
@@ -177,7 +199,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/card_view4"
+                    android:id="@+id/sportsCardView"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
@@ -190,15 +212,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <ImageView
+                            android:id="@+id/sportsImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
                         <TextView
-                            android:id="@+id/kisjore4"
+                            android:id="@+id/sportsTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:maxLines="3"
                             android:padding="8dp"
-                            android:text="description"
+                            android:text="Sports"
                             android:textColor="#ffffff"
                             android:textSize="30sp" />
 
@@ -206,7 +235,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/card_view5"
+                    android:id="@+id/theatreCardView"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
@@ -219,15 +248,167 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <ImageView
+                            android:id="@+id/theatreImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
                         <TextView
-                            android:id="@+id/kisjore5"
+                            android:id="@+id/theatreTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:maxLines="3"
                             android:padding="8dp"
-                            android:text="description"
+                            android:text="Theatre"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/gamingCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/gamingImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/gamingTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="Gaming"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/photographyCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/photographyImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/photographyTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="Photography"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/artCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/artImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/artTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="Art Events"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/literaryCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/literaryImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/literaryTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="Literary Events"
                             android:textColor="#ffffff"
                             android:textSize="30sp" />
 
@@ -240,4 +421,4 @@
         </LinearLayout>
     </com.nirhart.parallaxscroll.views.ParallaxScrollView>
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
