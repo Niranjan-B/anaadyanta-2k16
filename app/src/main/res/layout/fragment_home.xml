@@ -2,10 +2,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:cardView="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coreContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/coreContainer"
     tools:context="org.anaadyanta.anaadyanta2k16.fragments.HomeFragment">
 
     <com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -59,9 +59,7 @@
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
                     android:clickable="true"
-                    android:focusable="true"
-                    cardView:cardBackgroundColor="#6666ff"
-                    cardView:cardCornerRadius="6dp">
+                    android:background="@android:drawable/dialog_holo_dark_frame">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -72,7 +70,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop" />
+                            android:scaleType="centerCrop"
+                            android:src="@color/accent_color" />
 
 
                         <TextView
@@ -97,8 +96,8 @@
                     android:layout_margin="8dp"
                     android:clickable="true"
                     android:focusable="true"
-                    cardView:cardBackgroundColor="#6666ff"
-                    cardView:cardCornerRadius="6dp">
+                    cardView:cardCornerRadius="6dp"
+                    android:background="@android:drawable/dialog_holo_dark_frame">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -109,7 +108,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop" />
+                            android:scaleType="centerCrop"
+                            android:src="@color/cyan" />
 
                         <TextView
                             android:id="@+id/treasureHuntTextView"
@@ -372,7 +372,7 @@
                             android:layout_centerHorizontal="true"
                             android:maxLines="3"
                             android:padding="8dp"
-                            android:text="Art Events"
+                            android:text="Art"
                             android:textColor="#ffffff"
                             android:textSize="30sp" />
 
@@ -408,7 +408,43 @@
                             android:layout_centerHorizontal="true"
                             android:maxLines="3"
                             android:padding="8dp"
-                            android:text="Literary Events"
+                            android:text="Literary"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/techCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    cardView:cardBackgroundColor="#6666ff"
+                    cardView:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/techImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/techTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="Tech"
                             android:textColor="#ffffff"
                             android:textSize="30sp" />
 
