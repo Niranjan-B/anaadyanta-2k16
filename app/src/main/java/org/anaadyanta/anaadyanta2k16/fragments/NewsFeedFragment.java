@@ -68,7 +68,7 @@ public class NewsFeedFragment extends Fragment {
         super.onResume();
 
         if(!Utility.isInternetAvailable(getActivity())) {
-            Snackbar.make(coordinatorLayout, "Intenet Down!, Bad UX in progress!", Snackbar.LENGTH_LONG).show();
+            Snackbar.make(coordinatorLayout, "Intenet Down!, Bad UX in progress!", Snackbar.LENGTH_SHORT).show();
             if (progressBar.getVisibility() == View.VISIBLE) {
                 progressBar.setVisibility(View.GONE);
             }
