@@ -18,7 +18,7 @@ public class FashionShow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fashion_show);
 
-        mViewPagerFashionShow = (MaterialViewPager) findViewById(R.id.materialViewPagerMusic);
+        mViewPagerFashionShow = (MaterialViewPager) findViewById(R.id.materialViewPagerFashionShow);
         fashionShowAdapter= new FashionShowAdapter(getSupportFragmentManager());
         mViewPagerFashionShow.getViewPager().setAdapter(fashionShowAdapter);
         mViewPagerFashionShow.setMaterialViewPagerListener(new MaterialViewPager.Listener() {
@@ -27,7 +27,7 @@ public class FashionShow extends AppCompatActivity {
                 switch (page) {
                     case 0:
                         //TODO : change the image url for fashion show accordingly!
-                        return HeaderDesign.fromColorResAndUrl(R.color.lime, "http://ninja-root.site40.net/anaadyanta_images/fashion-show.jpg");
+                        return HeaderDesign.fromColorResAndUrl(R.color.lime, "http://ninja-root.site40.net/anaadyanta_images/fashion_show.jpg");
                 }
                 return null;
             }
