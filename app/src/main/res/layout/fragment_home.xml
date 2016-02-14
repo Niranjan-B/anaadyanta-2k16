@@ -27,14 +27,12 @@
             <FrameLayout
                 android:id="@+id/autoScrollContainer"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp">
+                android:layout_height="wrap_content">
 
                 <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
                     android:id="@+id/autoScrollViewPager"
                     android:layout_width="match_parent"
-                    android:layout_height="180dp" />
+                    android:layout_height="180dp"/>
 
 
                 <me.relex.circleindicator.CircleIndicator
@@ -44,7 +42,8 @@
                     android:layout_gravity="bottom|center_horizontal"
                     app:ci_height="8dp"
                     app:ci_margin="6dp"
-                    app:ci_width="8dp" />
+                    app:ci_width="8dp"
+                    app:ci_animator="@animator/scale_with_alpha"/>
             </FrameLayout>
 
             <LinearLayout
