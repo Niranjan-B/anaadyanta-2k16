@@ -69,6 +69,8 @@ public class HomeFragment extends Fragment {
 
         autoScrollViewPager.setClipToPadding(false);
         autoScrollViewPager.setAdapter(autoScrollAdapter);
+        autoScrollViewPager.setCycle(true);
+        autoScrollViewPager.setDirection(1);
         autoScrollViewPager.setInterval(3250);
         autoScrollViewPager.startAutoScroll();
         circleIndicator.setViewPager(autoScrollViewPager);

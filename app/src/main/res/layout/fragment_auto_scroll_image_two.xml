@@ -3,15 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="org.anaadyanta.anaadyanta2k16.fragments.AutoScrollImageTwo"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/common_action_bar_splitter">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_weight="1"
-        android:src="@android:drawable/ic_popup_disk_full"
-        android:background="@color/cardview_dark_background"/>
+        android:src="@android:drawable/ic_popup_disk_full" />
 
 
 </LinearLayout>
