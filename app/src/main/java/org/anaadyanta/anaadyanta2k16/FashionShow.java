@@ -18,7 +18,7 @@ public class FashionShow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fashion_show);
 
-        mViewPagerFashionShow = (MaterialViewPager) findViewById(R.id.materialViewPagerMusic);
+        mViewPagerFashionShow = (MaterialViewPager) findViewById(R.id.materialViewPagerTreasureHunt);
         fashionShowAdapter= new FashionShowAdapter(getSupportFragmentManager());
         mViewPagerFashionShow.getViewPager().setAdapter(fashionShowAdapter);
         mViewPagerFashionShow.setMaterialViewPagerListener(new MaterialViewPager.Listener() {
