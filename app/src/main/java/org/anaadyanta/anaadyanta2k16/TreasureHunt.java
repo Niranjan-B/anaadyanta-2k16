@@ -16,7 +16,7 @@ public class TreasureHunt extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treasure_hunt);
-        mViewPagerTreasureHunt = (MaterialViewPager) findViewById(R.id.materialViewPagerMusic);
+        mViewPagerTreasureHunt = (MaterialViewPager) findViewById(R.id.materialViewPagerTreasureHunt);
         treasureHuntAdapter= new TreasureHuntAdapter(getSupportFragmentManager());
         mViewPagerTreasureHunt.getViewPager().setAdapter(treasureHuntAdapter);
         mViewPagerTreasureHunt.setMaterialViewPagerListener(new MaterialViewPager.Listener() {
