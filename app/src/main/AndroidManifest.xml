@@ -27,10 +27,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FashionShow"/>
-        <activity android:name=".TreasureHunt"/>
-
-
+        <activity android:name=".FashionShow" />
+        <activity android:name=".TreasureHunt" />
+        <activity android:name=".Dance" />
+        <activity android:name=".Music" />
+        <activity android:name=".Sports" />
+        <activity android:name=".Theatre" />
+        <activity android:name=".Gaming" />
+        <activity android:name=".Photography" />
+        <activity android:name=".Art" />
+        <activity android:name=".Literary" />
+        <activity android:name=".Tech"></activity>
     </application>
 
 </manifest>
