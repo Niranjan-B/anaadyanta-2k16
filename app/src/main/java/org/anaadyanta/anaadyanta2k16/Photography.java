@@ -27,11 +27,10 @@ public class Photography extends AppCompatActivity {
             public HeaderDesign getHeaderDesign(int page) {
 
                 switch (page) {
-                    // TODO : mobile photography link remove the url and send
                     case 0:
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.lime), "http://ninja-root.site40.net/anaadyanta_pics/cultural/dslr.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.blue), "http://ninja-root.site40.net/anaadyanta_images/Lighthouse.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.blue), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mobile_photography.jpg");
                 }
 
                 return null;

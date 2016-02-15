@@ -112,7 +112,7 @@ public class TechAdapter extends FragmentPagerAdapter{
             case 13 : return "Debugging";
             case 14 : return "Jahaaz";
             case 15 : return "Logical Box";
-            case 16 : return "Watch The Junk";
+            case 16 : return "Watch Me Junk";
             case 17 : return "What Does The Technical Fox Say?";
             case 18 : return "MechWiz";
             case 19 : return "Automotive Quiz";
@@ -125,7 +125,7 @@ public class TechAdapter extends FragmentPagerAdapter{
             case 26 : return "SETU";
             case 27 : return "1 BHK House";
             case 28 : return "Poster Presentation";
-            case 29 : return "Quiz";
+            case 29 : return "Quiz / Draft It Out";
             case 30 : return "Draft It Out";
         }
         return "";
