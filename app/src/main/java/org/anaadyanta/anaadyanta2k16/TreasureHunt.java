@@ -24,7 +24,7 @@ public class TreasureHunt extends AppCompatActivity {
             public HeaderDesign getHeaderDesign(int page) {
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorResAndUrl(R.color.lime, "http://ninja-root.site40.net/anaadyanta_images/Tulips.jpg");
+                        return HeaderDesign.fromColorResAndUrl(R.color.lime, "http://ninja-root.site40.net/anaadyanta_pics/cultural/treasure_hunt.jpg");
                 }
                 return null;
             }
