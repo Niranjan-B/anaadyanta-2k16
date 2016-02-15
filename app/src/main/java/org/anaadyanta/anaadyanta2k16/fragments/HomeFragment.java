@@ -51,6 +51,8 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        // TODO : add the remaining pics to the home fragment
+
         autoScrollAdapter = new AutoScrollAdapter(getChildFragmentManager());
         autoScrollViewPager = (AutoScrollViewPager) view.findViewById(R.id.autoScrollViewPager);
         circleIndicator = (CircleIndicator) view.findViewById(R.id.circleIndicator);
