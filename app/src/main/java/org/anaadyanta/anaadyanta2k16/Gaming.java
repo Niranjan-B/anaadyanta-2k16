@@ -28,15 +28,15 @@ public class Gaming extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.lime), "http://ninja-root.site40.net/anaadyanta_images/Lighthouse.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.lime), "http://ninja-root.site40.net/anaadyanta_pics/cultural/FIFA_14.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.blue), "http://ninja-root.site40.net/anaadyanta_images/Lighthouse.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.blue), "http://ninja-root.site40.net/anaadyanta_pics/cultural/counter_strike_1.6.jpg");
                     case 2:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.colorPrimary), "http://ninja-root.site40.net/anaadyanta_images/Lighthouse.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.colorPrimary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/dota.jpg");
                     case 3:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.green_teal), "http://ninja-root.site40.net/anaadyanta_images/Lighthouse.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.green_teal), "http://ninja-root.site40.net/anaadyanta_pics/cultural/nfs_most_wanted.jpg");
                     case 4:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.statusBarColor), "http://ninja-root.site40.net/anaadyanta_images/Lighthouse.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.statusBarColor), "http://ninja-root.site40.net/anaadyanta_pics/cultural/call_of_duty.jpg");
                 }
 
                 return null;
