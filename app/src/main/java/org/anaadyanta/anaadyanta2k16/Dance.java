@@ -27,12 +27,11 @@ public class Dance extends AppCompatActivity {
             public HeaderDesign getHeaderDesign(int page) {
 
                 switch (page) {
-                    // TODO : Choreo night, Solo Dance pics to be updated
-                    case 0 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.lime), "http://ninja-root.site40.net/anaadyanta_images/Lighthouse.jpg");
+                    case 0 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.lime), "http://ninja-root.site40.net/anaadyanta_pics/cultural/choreo_night.jpg");
                     case 1 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.blue), "http://ninja-root.site40.net/anaadyanta_pics/cultural/street_dance.jpg");
                     case 2 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.colorPrimary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/7_to_smoke.jpg");
                     case 3 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.purple), "http://ninja-root.site40.net/anaadyanta_pics/cultural/theme_dance.jpg");
-                    case 4 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.red), "http://ninja-root.site40.net/anaadyanta_images/Lighthouse.jpg");
+                    case 4 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.red), "http://ninja-root.site40.net/anaadyanta_pics/cultural/solo_dance.jpg");
                 }
 
                 return null;

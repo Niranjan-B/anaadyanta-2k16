@@ -111,7 +111,6 @@
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
                             android:scaleType="centerCrop"
-                            android:src="@color/cyan"
                             android:layout_margin="1dp"/>
 
                         <TextView
