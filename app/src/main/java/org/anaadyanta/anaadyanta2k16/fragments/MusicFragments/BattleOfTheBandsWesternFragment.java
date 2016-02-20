@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -33,7 +34,24 @@ public class BattleOfTheBandsWesternFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_battle_of_the_bands_western, container, false);
+        View view=inflater.inflate(R.layout.fragment_battle_of_the_bands_western, container, false);
+        TextView rules_wbattle= (TextView) view.findViewById(R.id.rules_wbattle);
+        rules_wbattle.setText("1. This is a WESTERN rock band competition open to any college or semi\u00ADpro band with three or more members. \n" +
+                "2. It’s a 2 round competition, Eliminations and Finals \n" +
+                "3. All songs performed by the band must be in ENGLISH only. \n" +
+                "4. The time given per band (10+2) mins (15+5) mins for the Finals. This includes the time taken for sound\u00ADcheck and the performance. Strictly no extra time would be given on stage. \n" +
+                "5. Tuning of instruments should be done beforehand. \n" +
+                "6. Bands will be disqualified with immediate effect for misconduct, obscenity or intentional use of foul language. \n" +
+                "7. Bands have to bring their own equipment (apart from the ones mentioned below) and special effects. However, programmed music isn’t allowed. \n" +
+                "8. Equipment provided will be:  \n" +
+                "I. One bass amplifier speaker \n" +
+                "II. One lead amplifier speaker \n" +
+                "III. Adequate microphones \n" +
+                "IV.Drum set with double base setup (you can bring your own cymbals and chokes/high hats) \n" +
+                "9.The judge’s decision will be final and binding. \n" +
+                "10.The event coordinators and the Anaadyanta committee reserves the right to make any last minute changes in the rules. \n");
+
+        return view;
     }
 
     @Override
