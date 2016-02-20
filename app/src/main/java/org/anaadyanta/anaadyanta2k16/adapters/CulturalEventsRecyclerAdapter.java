@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 
 import org.anaadyanta.anaadyanta2k16.R;
+import org.anaadyanta.anaadyanta2k16.StaticClassCheckedValues;
 import org.anaadyanta.anaadyanta2k16.StaticClassNavigationInstance;
 
 import java.util.ArrayList;
@@ -40,8 +42,21 @@ public class CulturalEventsRecyclerAdapter extends RecyclerView.Adapter <Cultura
     }
 
     @Override
-    public void onBindViewHolder(CustomViewHolder holder, int position) {
+    public void onBindViewHolder(CustomViewHolder holder, final int position) {
         holder.eventCheckBox.setText(mEvents.get(position));
+        holder.eventCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                // actually if - else ain't required !
+                if (isChecked) {
+                    Log.d("anaadyanta","checked at position = " + position );
+                    StaticClassCheckedValues.setCulturalEventsChecked(position, true);
+                } else {
+                    Log.d("anaadyanta","unchecked at position = " + position );
+                    StaticClassCheckedValues.setCulturalEventsChecked(position, false);
+                }
+            }
+        });
     }
 
     @Override

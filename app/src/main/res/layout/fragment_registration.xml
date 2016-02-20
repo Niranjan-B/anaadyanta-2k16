@@ -52,7 +52,7 @@
                     </com.rengwuxian.materialedittext.MaterialEditText>
 
                     <com.rengwuxian.materialedittext.MaterialEditText
-                        android:id="@+id/registrationNumOfPartcipants"
+                        android:id="@+id/registrationNumOfParticipants"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/registrationTeam"
@@ -68,7 +68,7 @@
                         android:id="@+id/registrationCollege"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/registrationNumOfPartcipants"
+                        android:layout_below="@+id/registrationNumOfParticipants"
                         android:hint="Your College *"
                         app:met_floatingLabel="highlight"
                         app:met_iconLeft="@drawable/ic_school_24dp"
