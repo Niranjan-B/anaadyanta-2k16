@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -31,7 +32,26 @@ public class FashionShowFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_fashion_show, container, false);
+        View view = inflater.inflate(R.layout.fragment_fashion_show, container, false);
+        TextView rules_fashionshow= (TextView) view.findViewById(R.id.rules_fashionshow);
+        rules_fashionshow.setText("1. Fashion Show is open to college students only. \n" +
+                "\n"+
+                "2. Theme:  This is an Open Theme Event \n" +
+                "\n"+
+                "3. All the members of a team must have a valid college ID card. \n" +
+                "\n"+
+                "4. Vulgarity of any kind would lead to disqualification of the team. It is strongly advised that the team consult the organizers if the team feels that any stunt or costume design can be deemed as vulgar. The decision of the organizers would be final in any kind of resulting dispute. \n" +
+                "\n"+
+                "5. Team Size: Maximum 20 members. \n" +
+                "\n"+
+                "6. Stage time: (8+2) mins for prep and performance. Each team is responsible for clearing the stage once their performance is over. \n" +
+                "\n"+
+                "7. Teams are to inform the organizers of any kind of props they plan to use during the event. Use of water, fire, pets, animal skin or any hazardous materials are not allowed. Teams are instructed to consult with the organizers before using any such material. \n" +
+                "\n"+
+                "8. Teams are instructed to submit their audio tracks 30 minutes prior to the event. \n" +
+                "\n"+
+                "9. The decision of the judges will be final and cannot be questioned.");
+        return view;
     }
 
     @Override

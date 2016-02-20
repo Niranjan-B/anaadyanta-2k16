@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,15 @@ public class MiniSoccerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mini_soccer, container, false);
+        View view=inflater.inflate(R.layout.fragment_mini_soccer, container, false);
+        TextView rules_minisoccer= (TextView) view.findViewById(R.id.rules_minisoccer);
+        rules_minisoccer.setText("1. Team of 6+2 members.\n" +
+                "2. Knockout Rounds.\n" +
+                "3. 7 mins a half.\n" +
+                "4. Tie will be settled by a penalty shootout.\n" +
+                "5. Kick in if the ball is out of play.\n");
+
+        return view;
     }
 
     @Override

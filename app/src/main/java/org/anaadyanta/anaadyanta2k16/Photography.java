@@ -1,8 +1,11 @@
 package org.anaadyanta.anaadyanta2k16;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
+import com.astuetz.PagerSlidingTabStrip;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.header.HeaderDesign;
 
@@ -28,9 +31,9 @@ public class Photography extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.lime), "http://ninja-root.site40.net/anaadyanta_pics/cultural/dslr.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_gaming), "http://ninja-root.site40.net/anaadyanta_pics/cultural/dslr.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.blue), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mobile_photography.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_gaming), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mobile_photography.jpg");
                 }
 
                 return null;
@@ -39,6 +42,18 @@ public class Photography extends AppCompatActivity {
 
         mViewPagerPhotography.getViewPager().setOffscreenPageLimit(mViewPagerPhotography.getViewPager().getAdapter().getCount());
         mViewPagerPhotography.getPagerTitleStrip().setViewPager(mViewPagerPhotography.getViewPager());
+        // for back pressed
+        android.support.v7.widget.Toolbar toolbar=mViewPagerPhotography.getToolbar();
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        // for text of pagerstrip
+        PagerSlidingTabStrip pagerSlidingTabStrip=mViewPagerPhotography.getPagerTitleStrip();
+        pagerSlidingTabStrip.setTextColor(Color.WHITE);
+
 
 
     }

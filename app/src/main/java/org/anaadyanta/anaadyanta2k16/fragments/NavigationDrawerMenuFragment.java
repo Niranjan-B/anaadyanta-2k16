@@ -1,6 +1,8 @@
 package org.anaadyanta.anaadyanta2k16.fragments;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -21,6 +23,7 @@ import org.anaadyanta.anaadyanta2k16.StaticClassNavigationInstance;
  * Created by NIRANJAN on 26-01-2016.
  */
 public class NavigationDrawerMenuFragment extends MenuFragment{
+    String geoUri = "http://maps.google.com/maps?q=loc:" + 13.128771 + "," + 77.587276;
 
     LeftDrawerLayout navigationMenuDrawerLayout;
 
@@ -62,31 +65,27 @@ public class NavigationDrawerMenuFragment extends MenuFragment{
                         RegistrationFragment registrationFragment = new RegistrationFragment();
                         FragmentManager regFragmentManager = getFragmentManager();
                         regFragmentManager.beginTransaction().replace(R.id.fragment_container, registrationFragment).commit();
-                        Toast.makeText(getActivity(), "Clicked on registration fragment!", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.map:
-                        MapFragment mapFragment = new MapFragment();
-                        FragmentManager mapFragmentManager = getFragmentManager();
-                        mapFragmentManager.beginTransaction().replace(R.id.fragment_container, mapFragment).commit();
-                        Toast.makeText(getActivity(), "Clicked on map fragment!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(geoUri));
+                        startActivity(intent);
                         return true;
                     case R.id.rules:
                         RuleFragment ruleFragment = new RuleFragment();
                         FragmentManager ruleFragmentManager = getFragmentManager();
                         ruleFragmentManager.beginTransaction().replace(R.id.fragment_container, ruleFragment).commit();
-                        Toast.makeText(getActivity(), "Clicked on rules fragment!", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.sponsors:
                         SponsorsFragment sponsorsFragment = new SponsorsFragment();
                         FragmentManager sponsorsFragmentManager = getFragmentManager();
                         sponsorsFragmentManager.beginTransaction().replace(R.id.fragment_container, sponsorsFragment).commit();
-                        Toast.makeText(getActivity(), "Clicked on sponsors fragment!", Toast.LENGTH_SHORT).show();
+
                         return true;
                     case R.id.devs:
                         DevsFragment devsFragment = new DevsFragment();
                         FragmentManager devsFragmentManager = getFragmentManager();
                         devsFragmentManager.beginTransaction().replace(R.id.fragment_container, devsFragment).commit();
-                        Toast.makeText(getActivity(), "Clicked on devs fragment!", Toast.LENGTH_SHORT).show();
                         return true;
                     default:
                         Toast.makeText(getActivity(), "OOPS! That page ain't designed", Toast.LENGTH_SHORT).show();

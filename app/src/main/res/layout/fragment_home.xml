@@ -32,7 +32,7 @@
                 <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
                     android:id="@+id/autoScrollViewPager"
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"/>
+                    android:layout_height="180dp" />
 
 
                 <me.relex.circleindicator.CircleIndicator
@@ -40,10 +40,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="36dp"
                     android:layout_gravity="bottom|center_horizontal"
+                    app:ci_animator="@animator/scale_with_alpha"
                     app:ci_height="8dp"
                     app:ci_margin="6dp"
-                    app:ci_width="8dp"
-                    app:ci_animator="@animator/scale_with_alpha"/>
+                    app:ci_width="8dp" />
             </FrameLayout>
 
             <LinearLayout
@@ -71,9 +71,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
+                            android:layout_margin="1dp"
                             android:scaleType="centerCrop"
-                            android:src="@color/accent_color"
-                            android:layout_margin="1dp"/>
+                            android:src="@mipmap/fashion_show_mod" />
 
 
                         <TextView
@@ -110,8 +110,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
+                            android:layout_margin="1dp"
                             android:scaleType="centerCrop"
-                            android:layout_margin="1dp"/>
+                            android:src="@mipmap/treasure" />
 
                         <TextView
                             android:id="@+id/treasureHuntTextView"
@@ -147,9 +148,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
+                            android:layout_margin="1dp"
                             android:scaleType="centerCrop"
-                            android:src="@color/statusBarColor"
-                            android:layout_margin="1dp"/>
+                            android:src="@mipmap/dance" />
 
                         <TextView
                             android:id="@+id/danceTextView"
@@ -185,9 +186,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop"
                             android:layout_margin="1dp"
-                            android:src="@color/red"/>
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/music" />
 
                         <TextView
                             android:id="@+id/musicTextView"
@@ -223,9 +224,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop"
                             android:layout_margin="1dp"
-                            android:src="@color/lime"/>
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/sport" />
 
                         <TextView
                             android:id="@+id/sportsTextView"
@@ -261,9 +262,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop"
                             android:layout_margin="1dp"
-                            android:src="@color/colorAccent"/>
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/theater" />
 
                         <TextView
                             android:id="@+id/theatreTextView"
@@ -299,9 +300,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop"
                             android:layout_margin="1dp"
-                            android:src="@color/green_teal"/>
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/gaming" />
 
                         <TextView
                             android:id="@+id/gamingTextView"
@@ -338,9 +339,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop"
                             android:layout_margin="1dp"
-                            android:src="@color/statusBarColor"/>
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/photography" />
 
                         <TextView
                             android:id="@+id/photographyTextView"
@@ -376,9 +377,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop"
                             android:layout_margin="1dp"
-                            android:src="@color/common_plus_signin_btn_text_dark_disabled"/>
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/art" />
 
                         <TextView
                             android:id="@+id/artTextView"
@@ -414,9 +415,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop"
                             android:layout_margin="1dp"
-                            android:src="@color/colorPrimaryDark"/>
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/literary" />
 
                         <TextView
                             android:id="@+id/literaryTextView"
@@ -452,9 +453,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_alignParentTop="true"
-                            android:scaleType="centerCrop"
                             android:layout_margin="1dp"
-                            android:src="@color/common_action_bar_splitter"/>
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/tech" />
 
                         <TextView
                             android:id="@+id/techTextView"

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,14 @@ public class VolleyBallFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_volley_ball, container, false);
+        View view=inflater.inflate(R.layout.fragment_volley_ball, container, false);
+        TextView rules_volleyBall= (TextView) view.findViewById(R.id.rules_volleyBall);
+        rules_volleyBall.setText("1. 3 sets(first 2 sets of 25 points and decider 15 points)\n" +
+                "2. Conducted as per IVF Rules\n" +
+                "3. Participants from engineering colleges only.\n");
+
+
+        return view;
     }
 
     @Override

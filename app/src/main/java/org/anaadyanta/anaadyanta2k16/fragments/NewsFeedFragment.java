@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -50,13 +51,18 @@ public class NewsFeedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        try {
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Newz Feed");
+        } catch (NullPointerException exception) {
+            Log.d("anaadyanta", "" + exception.getMessage());
+        }
+
         View view  = inflater.inflate(R.layout.fragment_news_feed,container, false);
         feed = new ArrayList<NewsFeedModel>();
         newsFeedRecyclerAdapter = new RecyclerViewAdapter(getActivity());
         progressBar = (ProgressBar) view.findViewById(R.id.news_feed_progress_bar);
         newsFeedRecyclerContainer = (RecyclerView) view.findViewById(R.id.news_feed_container);
         coordinatorLayout = (CoordinatorLayout) view.findViewById(R.id.newzFragmentCoordinatorLayout);
-
         newsFeedRecyclerContainer.setLayoutManager(new LinearLayoutManager(getActivity()));
         newsFeedRecyclerContainer.setAdapter(newsFeedRecyclerAdapter); // empty adapter at this point
         return view;
