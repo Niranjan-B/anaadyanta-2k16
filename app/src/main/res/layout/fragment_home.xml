@@ -73,7 +73,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_margin="1dp"
                             android:scaleType="centerCrop"
-                            android:src="@color/blue" />
+                            android:src="@mipmap/fashion_show_mod" />
 
 
                         <TextView

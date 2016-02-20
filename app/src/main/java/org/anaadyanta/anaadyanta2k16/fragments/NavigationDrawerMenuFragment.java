@@ -62,7 +62,6 @@ public class NavigationDrawerMenuFragment extends MenuFragment{
                         RegistrationFragment registrationFragment = new RegistrationFragment();
                         FragmentManager regFragmentManager = getFragmentManager();
                         regFragmentManager.beginTransaction().replace(R.id.fragment_container, registrationFragment).commit();
-                        Toast.makeText(getActivity(), "Clicked on registration fragment!", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.map:
                         MapFragment mapFragment = new MapFragment();

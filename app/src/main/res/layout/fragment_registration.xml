@@ -1,12 +1,161 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="org.anaadyanta.anaadyanta2k16.fragments.RegistrationFragment">
+    android:layout_height="match_parent">
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/scrollViewContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Registration Fragment" />
+        android:layout_above="@+id/registrationSubmit">
 
-</FrameLayout>
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:paddingRight="10dp"
+            android:scrollbarStyle="outsideOverlay">
+
+            <LinearLayout
+                android:id="@+id/coreRegistrationContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/registrationContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/registrationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Name *"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_person_name"
+                        app:met_iconPadding="0dp">
+
+                    </com.rengwuxian.materialedittext.MaterialEditText>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/registrationTeam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/registrationName"
+                        android:hint="Team Name (Only if team based event)"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_team_name"
+                        app:met_iconPadding="0dp">
+
+                    </com.rengwuxian.materialedittext.MaterialEditText>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/registrationNumOfPartcipants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/registrationTeam"
+                        android:hint="Number Of Participants *"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_num_of_participants"
+                        app:met_iconPadding="0dp">
+
+                    </com.rengwuxian.materialedittext.MaterialEditText>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/registrationCollege"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/registrationNumOfPartcipants"
+                        android:hint="Your College *"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_school_24dp"
+                        app:met_iconPadding="0dp">
+
+                    </com.rengwuxian.materialedittext.MaterialEditText>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/registrationCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/registrationCollege"
+                        android:hint="Your City *"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_city"
+                        app:met_iconPadding="0dp">
+
+                    </com.rengwuxian.materialedittext.MaterialEditText>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/registrationPhoneNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/registrationCity"
+                        android:hint="Your Phone Number *"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_call"
+                        app:met_iconPadding="0dp"
+                        android:inputType="number">
+
+                    </com.rengwuxian.materialedittext.MaterialEditText>
+
+                    <TextView
+                        android:id="@+id/culturalEventsPlaceHolder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/registrationPhoneNum"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Cultural Events -- "
+                        android:textSize="20sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/culturalEventsContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/culturalEventsPlaceHolder"
+                        android:layout_margin="10dp">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/techEventsPlaceHolder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/culturalEventsContainer"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Tech Events -- "
+                        android:textSize="20sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/techEventsContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/techEventsPlaceHolder"
+                        android:layout_margin="10dp">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registrationSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#795548"
+        android:text="Submit"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
