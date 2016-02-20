@@ -226,7 +226,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_margin="1dp"
                             android:scaleType="centerCrop"
-                            android:src="@color/lime" />
+                            android:src="@mipmap/sport" />
 
                         <TextView
                             android:id="@+id/sportsTextView"

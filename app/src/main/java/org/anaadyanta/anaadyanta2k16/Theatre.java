@@ -1,8 +1,11 @@
 package org.anaadyanta.anaadyanta2k16;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
+import com.astuetz.PagerSlidingTabStrip;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.header.HeaderDesign;
 
@@ -29,11 +32,11 @@ public class Theatre extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.lime), "http://ninja-root.site40.net/anaadyanta_pics/cultural/street_play.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://ninja-root.site40.net/anaadyanta_pics/cultural/street_play.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.blue), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mad_ads.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mad_ads.jpg");
                     case 2:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.colorPrimary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/skime.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://ninja-root.site40.net/anaadyanta_pics/cultural/skime.jpg");
                 }
 
                 return null;
@@ -42,6 +45,18 @@ public class Theatre extends AppCompatActivity {
 
         mViewPagerTheatre.getViewPager().setOffscreenPageLimit(mViewPagerTheatre.getViewPager().getAdapter().getCount());
         mViewPagerTheatre.getPagerTitleStrip().setViewPager(mViewPagerTheatre.getViewPager());
+        // for back pressed
+        android.support.v7.widget.Toolbar toolbar=mViewPagerTheatre.getToolbar();
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        // for text of pagerstrip
+        PagerSlidingTabStrip pagerSlidingTabStrip=mViewPagerTheatre.getPagerTitleStrip();
+        pagerSlidingTabStrip.setTextColor(Color.WHITE);
+
 
     }
 }
