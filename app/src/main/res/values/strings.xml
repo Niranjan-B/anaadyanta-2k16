@@ -35,4 +35,37 @@
         <item>Fictionary(Creative Writing)</item>
         <item>The Contention(Debate)</item>
     </string-array>
+    <string-array name="tech_events">
+        <item>What does the Technical Fox Say?!</item>
+        <item>Figure it Out!</item>
+        <item>Machine It</item>
+        <item>Quad Speed</item>
+        <item>Watch Me Junk!</item>
+        <item>Pay the Piper</item>
+        <item>Robowars</item>
+        <item>Let it Rip!</item>
+        <item>Automotive Quiz</item>
+        <item>Paper Presentation</item>
+        <item>What the Physics!</item>
+        <item>Mechwiz</item>
+        <item>Logical Box</item>
+        <item>Jahaaz</item>
+        <item>Mini Hackathon</item>
+        <item>On Spot Programming</item>
+        <item>Debugging</item>
+        <item>Techquila</item>
+        <item>E-Khoj</item>
+        <item>Full Throttle (RC Car Racing)</item>
+        <item>Line Follower</item>
+        <item>Tech Charades</item>
+        <item>Circuitrix</item>
+        <item>R.A.M(Resistors and Memory)</item>
+        <item>L.C.U(Logic Designing)</item>
+        <item>SETU(Bridge Design Challange)</item>
+        <item>1 BHK</item>
+        <item>Poster Presentation</item>
+        <item>Draft it Out</item>
+    </string-array>
+
+
 </resources>
