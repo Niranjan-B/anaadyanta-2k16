@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,17 @@ public class DSLRFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dslr, container, false);
+
+        View view=inflater.inflate(R.layout.fragment_dslr, container, false);
+        TextView rules_dslr= (TextView) view.findViewById(R.id.rules_dslr);
+        rules_dslr.setText("1. All participants should register offline at the Registration desk.\n" +
+                "2. The photograph must be shot on the days of the event based on the given theme.\n" +
+                "3. The participant can submit a maximum of 3 photos in a day.\n" +
+                "4. The photos can be taken using a DSLR.\n" +
+                "5. No editing the photograph.\n" +
+                "6. Photos must be submitted to the respective coordinator before the given deadline.\n" +
+                "7. The decision of the judge will be final and binding.\n");
+        return view;
     }
 
     @Override

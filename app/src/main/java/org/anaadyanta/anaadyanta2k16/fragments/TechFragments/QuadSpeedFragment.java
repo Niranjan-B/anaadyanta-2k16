@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,18 @@ public class QuadSpeedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quad_speed, container, false);
+        View view=inflater.inflate(R.layout.fragment_quad_speed, container, false);
+        TextView rules_quadspeed= (TextView) view.findViewById(R.id.rules_quadspeed);
+        rules_quadspeed.setText("● The bought copters is limited with specifications\n" +
+                "● Two participants per team.\n" +
+                "● No modifications to a default bought copter .\n" +
+                "● Five rounds of increasing difficulty with filtering in each round .\n" +
+                "JUDGEMENT CRITERIA :\n" +
+                "● Completion of each round .\n" +
+                "● Time taken .\n" +
+                "● Non Failure of the model mid flight which leads to direct\n" +
+                "disqualification . ");
+        return view;
     }
 
     @Override

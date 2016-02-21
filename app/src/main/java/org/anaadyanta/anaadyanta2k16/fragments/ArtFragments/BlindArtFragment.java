@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -30,7 +31,11 @@ public class BlindArtFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blind_art, container, false);
+        View view= inflater.inflate(R.layout.fragment_blind_art, container, false);
+        TextView rules_blind_art= (TextView) view.findViewById(R.id.rules_blind_art);
+        rules_blind_art.setText("1. In this event, one person will be blindfolded and another person handcuffed. The handcuffed participant shall describe the picture and the blindfolded participant shall draw it.");
+
+        return view;
     }
 
     @Override

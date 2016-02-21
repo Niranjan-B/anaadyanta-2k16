@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,17 @@ public class WatchMeJunkFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_watch_me_junk, container, false);
+        View view=inflater.inflate(R.layout.fragment_watch_me_junk, container, false);
+        TextView rules_treasurehunt= (TextView) view.findViewById(R.id.rules_junk);
+        rules_treasurehunt.setText("● The maximum duration of the event is 3 hours.\n" +
+                "● Two participants per team .\n" +
+                "● Each and every part must be present .\n" +
+                "● Negative points for missing parts\n" +
+                "JUDGEMENT CRITERIA :\n" +
+                "● Time taken to complete .\n" +
+                "● The efficiency . ");
+
+        return view;
     }
 
     @Override

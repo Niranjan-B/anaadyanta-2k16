@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,17 @@ public class OnSpotProgrammingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_on_spot_programming, container, false);
+        View view=inflater.inflate(R.layout.fragment_on_spot_programming, container, false);
+        TextView rules_programming= (TextView) view.findViewById(R.id.rules_programming);
+        rules_programming.setText("● Number of participants in a team = 2\n" +
+                "● The first round will be paperpen\n" +
+                "oriented. The second puts\n" +
+                "you on the computer.\n" +
+                "● Contestants cannot open multiple tabs on their browser.\n" +
+                "● Winners will be announced based on the time taken to code a\n" +
+                "particular assignment. THE PERFORMANCE IN FIRST\n" +
+                "ROUND WILL NOT BE CONSIDERED. ");
+        return view;
     }
 
     @Override

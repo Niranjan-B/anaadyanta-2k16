@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,12 @@ public class DoodleMarathonFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_doodle_marathon, container, false);
+        View view = inflater.inflate(R.layout.fragment_doodle_marathon, container, false);
+        TextView rules_doodle_Marathan= (TextView) view.findViewById(R.id.rules_doodle_Marathan);
+        rules_doodle_Marathan.setText("1. Doodle away your thoughts as creatively as possible.\n" +
+                "\n"+
+                "2. The participants aren’t allowed to refer the internet or any pictures from their phones. This would lead to immediate disqualification.\n");
+        return view;
     }
 
     @Override

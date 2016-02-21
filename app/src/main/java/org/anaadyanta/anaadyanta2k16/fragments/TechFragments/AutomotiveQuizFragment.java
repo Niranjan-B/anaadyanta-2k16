@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,17 @@ public class AutomotiveQuizFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_automotive_quiz, container, false);
+        View view=inflater.inflate(R.layout.fragment_automotive_quiz, container, false);
+        TextView rules_automotive= (TextView) view.findViewById(R.id.rules_automotive);
+        rules_automotive.setText("● 4 rounds of various challenges .\n" +
+                "● Two participants per team .\n" +
+                "● Interaction and communication based tasks .\n" +
+                "JUDGEMENT CRITERIA :\n" +
+                "● Number of correct answers .\n" +
+                "● The performance .\n" +
+                "● Judges’ final decision . ");
+
+        return view;
     }
 
     @Override

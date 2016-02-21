@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,14 @@ public class MadAdsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mad_ads, container, false);
+        View view=inflater.inflate(R.layout.fragment_mad_ads, container, false);
+        TextView rules_madAds= (TextView) view.findViewById(R.id.rules_madAds);
+        rules_madAds.setText("1. Team can contain a maximum of 10 members.\n" +
+                "2. Time on stage: 6+1 mins. After 6 mins, a buzzer/bell will be rung.\n" +
+                "3. Teams must bring their own costumes/props (if any).\n" +
+                "4. Participants must be students of a college and must carry a valid ID card.\n" +
+                "5. The pieces can be in any language.");
+        return view;
     }
 
     @Override
