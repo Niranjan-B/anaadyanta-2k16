@@ -12,40 +12,576 @@
 
         <include layout="@layout/material_view_pager_placeholder"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="testing"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"/>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="testing"
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="testing"
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/back"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/relativeLayout">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#0d47a1"
+                    android:id="@+id/relativeLayout2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="testing"
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Eligibility Criteria :"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:id="@+id/textView2"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="testing"
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● The team can have maximum of four members."
+                    android:id="@+id/textView"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:textSize="15sp"
+                    android:id="@+id/tv"
+                    android:textColor="#000000"
+                    android:padding="6dp"
+                    android:text="● All team members must be currently enrolled as students in colleges."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:padding="6dp"
+                    android:text="● There can only be one car per team."/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_below="@+id/relativeLayout"
+                android:background="@drawable/back"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/relativeLayoutv">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#0d47a1"
+                    android:id="@+id/relativeLayout2d"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="The RC Car Specifications: "
+                        android:layout_marginTop="6dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:id="@+id/textView2222"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:padding="4dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● The cars are to be fabricated by the team. Cars bought from the market or built from a DIY kit available for purchase will be disqualified."
+                    android:id="@+id/textView19"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/relativeLayout2d"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="4dp"
+                    android:padding="1dp"
+                    android:text="● The teams are allowed to use a single battery of maximum 15 volts on the car."
+                    android:layout_below="@+id/textView19"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv01"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="4dp"
+                    android:padding="1dp"
+                    android:text="● The car must fit into a box of 30cm x 25cm x 25cm at any point in the race."
+                    android:layout_below="@+id/tv0"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/back"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/relativeLayoutv"
+                android:id="@+id/relativeLayoutf">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#0d47a1"
+                    android:id="@+id/relativeLayout223"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Gameplay:"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:id="@+id/textView8"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● There will be two rounds."
+                    android:id="@+id/textView17"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_below="@+id/relativeLayout223"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● The cars must be remote controlled. Any wired cars will be disqualified."
+                    android:id="@+id/textView173"
+                    android:layout_marginLeft="6dp"
+                    android:layout_below="@id/textView17"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● The remote control can be purchased."
+                    android:id="@+id/textView1731"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_below="@+id/textView173"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● The teams are responsible to use proper encoders to avoid radio interference."
+                    android:id="@+id/textView17312"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_below="@+id/textView1731"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● Readymade wheels are allowed."
+                    android:id="@+id/textView173123"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_below="@+id/textView17312"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● The cars should be electric powered preferably."
+                    android:id="@+id/textView1731234"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_below="@+id/textView173123"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="● Weight of the car should not exceed 1.5 kg."
+                    android:id="@+id/textView17312345"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_below="@+id/textView1731234"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:id="@+id/textView173123456"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/textView17312345"
+                    android:text="● In the first round or the preliminary round, each team will be given a chance to complete the entire track and the RC Car must complete one lap in the given time."
+                    android:layout_marginLeft="4dp"
+                    android:padding="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:id="@+id/textView1731234567"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/textView173123456"
+                    android:text="● In the second round, the teams are given two chances each to complete the entire track. The better of these two attempts will be considered. The team that does it in the shortest amount of time, wins."
+                    android:layout_marginLeft="4dp"
+                    android:padding="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:id="@+id/textView17312345678"
+                    android:layout_below="@+id/textView1731234567"
+                    android:textSize="16sp"
+                    android:text="NOTE : Track details will be mailed to the leader of the team two weeks prior to the event day."
+                    android:layout_marginLeft="4dp"
+                    android:padding="1dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/back"
+                android:id="@+id/relativeLayout3"
+                android:layout_marginTop="14dp"
+                android:layout_alignRight="@+id/relativeLayoutf"
+                android:layout_alignEnd="@+id/relativeLayoutf"
+                android:layout_alignLeft="@+id/relativeLayoutf"
+                android:layout_alignStart="@+id/relativeLayoutf"
+                android:layout_below="@+id/relativeLayoutf">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/regis"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_above="@+id/imageView2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Registration fee      :"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/textView4"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Rs.300"
+                    android:id="@+id/textView5"
+                    android:textColor="#000000"
+                    android:layout_marginRight="51dp"
+                    android:layout_marginEnd="51dp"
+                    android:layout_alignTop="@+id/textView4"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/second"
+                    android:layout_above="@+id/imageView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/second"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="First Prize                :"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:id="@+id/textView6"
+                    android:layout_below="@+id/imageView"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Second Prize           :"
+                    android:textStyle="normal"
+                    android:id="@+id/textView7"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_alignLeft="@+id/textView6"
+                    android:layout_alignStart="@+id/textView6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView9"
+                    android:text="Rs.6000"
+                    android:textColor="#000000"
+                    android:layout_alignTop="@+id/textView7"
+                    android:layout_alignLeft="@+id/textView18"
+                    android:layout_alignStart="@+id/textView18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Rs.10000"
+                    android:textColor="#000000"
+                    android:id="@+id/textView18"
+                    android:layout_alignTop="@+id/textView6"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_alignStart="@+id/textView5" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:id="@+id/relativeLayout6"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_alignLeft="@+id/relativeLayout3"
+                android:layout_alignStart="@+id/relativeLayout3"
+                android:layout_marginTop="24dp"
+                android:layout_alignRight="@+id/relativeLayout3"
+                android:layout_alignEnd="@+id/relativeLayout3">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#0d47a1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/relativeLayout4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Coordinators :"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/textView16" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/contact"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/textView10"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView11"
+                    android:layout_below="@+id/textView10"
+                    android:layout_alignLeft="@+id/textView13"
+                    android:layout_alignStart="@+id/textView13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/textView12"
+                    android:layout_below="@+id/textView11"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/contact"
+                    android:layout_alignTop="@+id/textView13"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000000"
+
+                    android:id="@+id/relativeLayout5"
+                    android:layout_below="@+id/textView12"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"></RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView14"
+                    android:layout_below="@+id/textView13"
+                    android:layout_alignLeft="@+id/textView13"
+                    android:layout_alignStart="@+id/textView13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView15"
+                    android:layout_below="@+id/imageView5"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:layout_toEndOf="@+id/imageView5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Kiran B E "
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/textView62"
+                    android:layout_above="@+id/textView63"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="9535629339 "
+                    android:textColor="#008000"
+                    android:textSize="16sp"
+                    android:id="@+id/textView63"
+                    android:layout_above="@+id/textView12"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Chirag B "
+                    android:id="@+id/textView64"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_above="@+id/textView14"
+                    android:layout_alignLeft="@+id/textView62"
+                    android:layout_alignStart="@+id/textView62" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="9632396991 "
+                    android:textColor="#008000"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"
+                    android:id="@+id/textView65"
+                    android:layout_alignBottom="@+id/textView14"
+                    android:layout_alignLeft="@+id/textView63"
+                    android:layout_alignStart="@+id/textView63" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
 
     </LinearLayout>
 

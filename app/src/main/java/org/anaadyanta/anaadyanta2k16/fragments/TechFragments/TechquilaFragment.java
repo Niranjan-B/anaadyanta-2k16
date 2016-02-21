@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,16 @@ public class TechquilaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_techquila, container, false);
+        View view=inflater.inflate(R.layout.fragment_techquila, container, false);
+        TextView rules_techquilla= (TextView) view.findViewById(R.id.rules_techquilla);
+        rules_techquilla.setText("● It is a team event with 2 members in a team.\n" +
+                "● The members of the team can be from different institutions\n" +
+                "or colleges.\n" +
+                "● The decision of the quiz master is final.\n" +
+                "● The quiz contains:\n" +
+                "> Preliminary round which is a qualifier.\n" +
+                "> Final round. ");
+        return view;
     }
 
     @Override

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,16 @@ public class PayThePiperFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pay_the_piper, container, false);
+        View view=inflater.inflate(R.layout.fragment_pay_the_piper, container, false);
+        TextView rules_pay= (TextView) view.findViewById(R.id.rules_pay);
+        rules_pay.setText("● The maximum duration of the event is 2.5 hours.\n" +
+                "● Max of three participants per team .\n" +
+                "● Judges’ decision final .\n" +
+                "JUDGEMENT CRITERIA :\n" +
+                "● Business analytics and approach\n" +
+                "● Technical backing .\n" +
+                "● Creative ideas . ");
+        return view;
     }
 
     @Override

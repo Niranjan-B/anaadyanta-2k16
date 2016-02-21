@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,19 @@ public class SETUFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_setu, container, false);
+        View view=inflater.inflate(R.layout.fragment_setu, container, false);
+        TextView rules_poster= (TextView) view.findViewById(R.id.setu);
+        rules_poster.setText("● No. of participants in a team can be maximum 2.\n" +
+                "● The model built by each team will be tested till failure (yielding)\n" +
+                "by applying an incremental static load.\n" +
+                "● Use popsicle sticks for modelling.\n" +
+                "● Sticks can be altered physically by cutting or notching at any\n" +
+                "angle.\n" +
+                "● Only Fevicol can be used as adhesive, use of other adhesives will\n" +
+                "lead to disqualifications.\n" +
+                "● Threads can be used during construction, however should not be\n" +
+                "present in the final structure.");
+        return view;
     }
 
     @Override
