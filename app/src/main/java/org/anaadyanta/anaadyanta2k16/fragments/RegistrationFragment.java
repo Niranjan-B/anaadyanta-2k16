@@ -2,28 +2,28 @@ package org.anaadyanta.anaadyanta2k16.fragments;
 
 
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import org.anaadyanta.anaadyanta2k16.R;
 import org.anaadyanta.anaadyanta2k16.StaticClassCheckedValues;
-import org.anaadyanta.anaadyanta2k16.StaticClassNavigationInstance;
-import org.anaadyanta.anaadyanta2k16.adapters.CulturalEventsRecyclerAdapter;
-import org.anaadyanta.anaadyanta2k16.adapters.TechnicalEventsRecyclerAdapter;
+import org.anaadyanta.anaadyanta2k16.Utils.Utility;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,20 +33,14 @@ import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class RegistrationFragment extends Fragment {
 
-    RecyclerView culturalEventsContainer, technicalEventsContainer;
-    CulturalEventsRecyclerAdapter culturalEventsRecyclerAdapter;
-    TechnicalEventsRecyclerAdapter technicalEventsRecyclerAdapter;
-    List<String> culturalEvents, technicalEvents;
     Button submitRegistration;
-    String[] tempCulturalEventList;
+    String[] tempCulturalEventList, tempTechnicalEventsList;
     EditText registrationName, registrationTeam, registrationNumOfParticipants, registrationCollege,
              registrationCity, registrationPhoneNum;
 
@@ -61,6 +55,7 @@ public class RegistrationFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         tempCulturalEventList = getResources().getStringArray(R.array.cultural_events);
+        tempTechnicalEventsList = getResources().getStringArray(R.array.tech_events);
 
         try {
             ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Register Yourself");
@@ -68,7 +63,7 @@ public class RegistrationFragment extends Fragment {
             Log.d("anaadyanta", "" + exception.getMessage());
         }
 
-        View view = inflater.inflate(R.layout.fragment_registration, container, false);
+        final View view = inflater.inflate(R.layout.fragment_registration, container, false);
 
         submitRegistration = (Button) view.findViewById(R.id.registrationSubmit);
         registrationCity = (EditText) view.findViewById(R.id.registrationCity);
@@ -78,99 +73,111 @@ public class RegistrationFragment extends Fragment {
         registrationPhoneNum = (EditText) view.findViewById(R.id.registrationPhoneNum);
         registrationTeam = (EditText) view.findViewById(R.id.registrationTeam);
 
-        culturalEvents = new ArrayList<>();
-        technicalEvents = new ArrayList<>();
-
-        culturalEventsContainer = (RecyclerView) view.findViewById(R.id.culturalEventsContainer);
-        technicalEventsContainer = (RecyclerView) view.findViewById(R.id.techEventsContainer);
-
-        culturalEventsRecyclerAdapter = new CulturalEventsRecyclerAdapter(getActivity());
-        technicalEventsRecyclerAdapter = new TechnicalEventsRecyclerAdapter(getActivity());
-
-        culturalEventsContainer.setHasFixedSize(true);
-        technicalEventsContainer.setHasFixedSize(true);
-
-        culturalEventsContainer.setLayoutManager(new LinearLayoutManager(getActivity()));
-        technicalEventsContainer.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-        culturalEventsContainer.setAdapter(culturalEventsRecyclerAdapter);
-        technicalEventsContainer.setAdapter(technicalEventsRecyclerAdapter);
+        initializeRecyclerViews(view);
 
         submitRegistration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new SubmitForm().execute();
+               if (checkForValidCredentials()) {
+                   if (Utility.isInternetAvailable(getActivity())) {
+                       int numberOfCheckedEventsCul = getCheckedCulturalEvents();
+                       int numberOfCheckedEventsTech = getCheckedTechEvents();
+                       if ((numberOfCheckedEventsCul <= 0) && (numberOfCheckedEventsTech <= 0)) {
+                           Toast.makeText(getActivity(), "Looks like you haven't selected any events?", Toast.LENGTH_LONG).show();
+                       } else {
+                           new SubmitForm().execute();
+                           Log.d("anaadyanta", "passed tests");
+                       }
+                   } else {
+                       Toast.makeText(getActivity(), "Something's wrong with your network connection :-(", Toast.LENGTH_LONG).show();
+                   }
+               } else {
+                   Toast.makeText(getActivity(), "OOPS! Starred fields are important!", Toast.LENGTH_LONG).show();
+               }
             }
         });
 
         return view;
     }
 
+    private int getCheckedTechEvents() {
+        int i = 0;
+        boolean[] tempTech = StaticClassCheckedValues.getTechEventsChecked();
+        for (int j = 0; j < tempTech.length; j++) {
+            if (tempTech[j]) {
+                i++;
+            }
+        }
+        return i;
+    }
+
+    private int getCheckedCulturalEvents() {
+        int j = 0;
+        boolean[] temp = StaticClassCheckedValues.getCulturalEventsChecked();
+        for (int i = 0; i < temp.length ; i++) {
+            if (temp[i]) {
+                j++;
+            }
+        }
+        return j;
+    }
+
+    private boolean checkForValidCredentials() {
+
+        boolean temp;
+
+        if ((registrationName.getText().toString().isEmpty()) && (registrationNumOfParticipants.getText().toString().isEmpty()) && (registrationCollege.getText().toString().isEmpty())
+                && (registrationCity.getText().toString().isEmpty()) && (registrationPhoneNum.getText().toString().isEmpty())) {
+            temp = false;
+        } else {
+            temp = true;
+        }
+
+        return temp;
+    }
+
+    private void initializeRecyclerViews(View view) {
+
+        LinearLayout checkBoxLayout = (LinearLayout) view.findViewById(R.id.checkBoxContainerCultural);
+        LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        for (int i = 0; i < tempCulturalEventList.length ; i++) {
+            final int temp = i;
+            inflater.inflate(R.layout.custom_row_events, checkBoxLayout, true);
+            RelativeLayout coreRelativeTemp = (RelativeLayout) checkBoxLayout.getChildAt(i);
+            final CheckBox checkbox = (CheckBox) coreRelativeTemp.findViewById(R.id.eventCheckBox);
+            checkbox.setText(tempCulturalEventList[i]);
+            checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    Log.d("anaadyanta", "" + isChecked + " " + temp + " " + checkbox.getText());
+                    StaticClassCheckedValues.setCulturalEventsChecked(temp, isChecked);
+                }
+            });
+        }
+
+        LinearLayout checkBoxTechLayout = (LinearLayout) view.findViewById(R.id.checkBoxContainerTech);
+        LayoutInflater tempInflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        for (int i = 0; i<tempTechnicalEventsList.length; i++) {
+            final int temp = i;
+            tempInflater.inflate(R.layout.custom_row_events, checkBoxTechLayout, true);
+            RelativeLayout coreRelativeTemp = (RelativeLayout) checkBoxTechLayout.getChildAt(i);
+            final CheckBox checkbox = (CheckBox) coreRelativeTemp.findViewById(R.id.eventCheckBox);
+            checkbox.setText(tempTechnicalEventsList[i]);
+            checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    Log.d("anaadyanta", "" + isChecked + " " + temp + " " + checkbox.getText());
+                    StaticClassCheckedValues.setTechEventsChecked(temp, isChecked);
+                }
+            });
+        }
+
+    }
+
     @Override
     public void onResume() {
         super.onResume();
 
-        for (String temp : tempCulturalEventList) {
-            culturalEvents.add(temp);
-        }
-
-        technicalEvents.add("Full Throttle");
-        technicalEvents.add("Line Follower");
-        technicalEvents.add("Robo Wars");
-        technicalEvents.add("Qaud Speed");
-        technicalEvents.add("Model Making");
-        technicalEvents.add("Tech Charades");
-        technicalEvents.add("Circuitrix");
-        technicalEvents.add("R.A.M");
-        technicalEvents.add("I.C.U");
-        technicalEvents.add("Mini Hackathon");
-        technicalEvents.add("Techquilla");
-        technicalEvents.add("E Khoj");
-        technicalEvents.add("On Spot Programming");
-        technicalEvents.add("Debugging");
-        technicalEvents.add("Jahaaz");
-        technicalEvents.add("Logical Box");
-        technicalEvents.add("Watch Me Junk");
-        technicalEvents.add("Fox Hunt");
-        technicalEvents.add("Mechwiz");
-        technicalEvents.add("Automotive Quiz");
-        technicalEvents.add("Paper Presentation");
-        technicalEvents.add("What The Physics");
-        technicalEvents.add("Pay The Piper");
-        technicalEvents.add("Figure It Out");
-        technicalEvents.add("Machine It");
-        technicalEvents.add("Let It Rip");
-        technicalEvents.add("Setu");
-        technicalEvents.add("1 BHK House");
-        technicalEvents.add("Poster Presentation");
-        technicalEvents.add("Quiz");
-        technicalEvents.add("Draft It Out");
-
-
-        culturalEventsRecyclerAdapter.addEvents(culturalEvents);
-
-        int desnity = getResources().getDisplayMetrics().densityDpi;
-        int mulfactor;
-
-        switch (desnity) {
-            case DisplayMetrics.DENSITY_LOW : mulfactor = 45;
-                                              break;
-            case DisplayMetrics.DENSITY_MEDIUM : mulfactor = 60;
-                                                 break;
-            case DisplayMetrics.DENSITY_HIGH : mulfactor = 90;
-                                               break;
-            case DisplayMetrics.DENSITY_XHIGH : mulfactor = 120;
-                                                break;
-            default : mulfactor = 0;
-                      break;
-        }
-
-          int viewSize = mulfactor * culturalEvents.size();
-          culturalEventsContainer.getLayoutParams().height = viewSize;
-
-        technicalEventsRecyclerAdapter.addEvents(technicalEvents);
-        int viewSizeTech = mulfactor * technicalEvents.size();
-        technicalEventsContainer.getLayoutParams().height = viewSizeTech;
     }
 
     public class SubmitForm extends AsyncTask<String, String, String> {
@@ -178,10 +185,27 @@ public class RegistrationFragment extends Fragment {
         ProgressDialog dialog;
         String text = "";
         BufferedReader reader = null;
+        AlertDialog.Builder alertDialog;
+        AlertDialog alertD;
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+
+            alertDialog = new AlertDialog.Builder(getActivity());
+            alertDialog.setMessage("Thank You for registering. We will get back to you as early as posible.");
+            alertDialog.setNeutralButton("Okay", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    registrationName.setText("");
+                    registrationTeam.setText("");
+                    registrationNumOfParticipants.setText("");
+                    registrationCollege.setText("");
+                    registrationCity.setText("");
+                    registrationPhoneNum.setText("");
+                }
+            });
+            alertD = alertDialog.create();
 
             dialog = new ProgressDialog(getActivity());
             dialog.setMessage("Submitting your response");
@@ -233,6 +257,7 @@ public class RegistrationFragment extends Fragment {
             if (dialog.isShowing()) {
                 dialog.cancel();
                 Log.d("anaadyanta", s);
+                alertD.show();
             }
 
         }
@@ -254,7 +279,14 @@ public class RegistrationFragment extends Fragment {
                         data += "&" + URLEncoder.encode("entry.1676696390", "UTF-8") + "=" + URLEncoder.encode(tempCulturalEventList[i], "UTF-8");
                     }
                 }
-            
+            boolean[] tempTech = StaticClassCheckedValues.getTechEventsChecked();
+                for (int j = 0; j < tempTech.length; j++) {
+                    if (tempTech[j]) {
+                        data += "&" + URLEncoder.encode("entry.808051161", "UTF-8") + "=" + URLEncoder.encode(tempTechnicalEventsList[j], "UTF-8");
+                    }
+                }
+
+
             return data;
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
