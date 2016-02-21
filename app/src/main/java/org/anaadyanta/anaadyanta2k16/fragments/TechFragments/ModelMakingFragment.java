@@ -35,13 +35,15 @@ public class ModelMakingFragment extends Fragment {
         // Inflate the layout for this fragment
       View view=inflater.inflate(R.layout.fragment_model_making, container, false);
         TextView rules_1bhk= (TextView) view.findViewById(R.id.model);
-        rules_1bhk.setText("● The duration of the event is 2 hours.\n" +
-                "● 4 participant per team.\n" +
+        rules_1bhk.setText("1. The duration of the event is 2 hours.\n" +
+                "\n"+
+                "2. 4 participant per team.\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● The right dimensions of the part.\n" +
-                "● Shape Detailing.\n" +
-                "● Demonstration of the model.\n" +
-                "● The steps used sequentially ");
+                "➢ The right dimensions of the part.\n" +
+                "➢ Shape Detailing.\n" +
+                "➢ Demonstration of the model.\n" +
+                "➢ The steps used sequentially ");
         return view;
     }
 

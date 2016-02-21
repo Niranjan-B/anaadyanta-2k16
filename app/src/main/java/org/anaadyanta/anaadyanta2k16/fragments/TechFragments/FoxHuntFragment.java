@@ -35,16 +35,14 @@ public class FoxHuntFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_fox_hunt, container, false);
         TextView rules_automotive= (TextView) view.findViewById(R.id.rules_whatdoes);
-        rules_automotive.setText("● Members Per Team24\n" +
-                "● Time Limit3045\n" +
-                "mins per round\n" +
-                "● At the end of finding each clue, the participants has to take a pic of clue\n" +
-                "with the transmitter.\n" +
-                "● Those participants who’ll find the exact location of final transmitter and\n" +
-                "hand over all the clues to the event coordinator will be the winners of the\n" +
-                "event.\n" +
-                "● The team which is finding two or more clues at a time may lead to penalty\n" +
-                "or chances to disqualify the team.");
+        rules_automotive.setText("1. Members Per Team24\n" +
+                "\n"+
+                "2. Time Limit3045 mins per round\n" +
+                "\n"+
+                "3. At the end of finding each clue, the participants has to take a pic of clue with the transmitter.\n" +
+                "\n"+
+                "4. Those participants who’ll find the exact location of final transmitter and hand over all the clues to the event coordinator will be the winners of the event.\n" +
+                "5. The team which is finding two or more clues at a time may lead to penalty or chances to disqualify the team.");
 
         return view;
     }

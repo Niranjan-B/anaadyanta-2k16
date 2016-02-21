@@ -35,14 +35,19 @@ public class MiniHackathonFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_mini_hackathon, container, false);
         TextView rules_hackathon= (TextView) view.findViewById(R.id.rules_hackathon);
-        rules_hackathon.setText("● The duration of the event is 3 hours.\n" +
-                "● The team should consist of not more than 3 members.\n" +
-                "● The application can be developed on any platform.\n" +
-                "● Laptops are allowed.\n" +
+        rules_hackathon.setText("1. The duration of the event is 3 hours.\n" +
+                "\n"+
+                "2. The team should consist of not more than 3 members.\n" +
+                "\n"+
+                "3. The application can be developed on any platform.\n" +
+                "\n"+
+                "4. Laptops are allowed.\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● Creativity involved in the application developed.\n" +
-                "● Relevance to the theme given.\n" +
-                "● Effectiveness of the demonstration given at the end.");
+                "\n"+
+                "➢ Creativity involved in the application developed.\n" +
+                "➢ Relevance to the theme given.\n" +
+                "➢ Effectiveness of the demonstration given at the end.");
         return view;
     }
 

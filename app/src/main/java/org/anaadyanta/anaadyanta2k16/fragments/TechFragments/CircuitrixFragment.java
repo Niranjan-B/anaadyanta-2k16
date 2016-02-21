@@ -35,11 +35,12 @@ public class CircuitrixFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_circuitrix, container, false);
         TextView rules_figure= (TextView) view.findViewById(R.id.circutrix);
-        rules_figure.setText("● Participants are not allowed to have cell phones with them\n" +
+        rules_figure.setText("1. Participants are not allowed to have cell phones with them\n" +
                 "during the event.\n" +
+                "\n"+
                 "● The decision of the judges is final.\n" +
-                "● Participants should not spoil any components or devices\n" +
-                "provided to them. ");
+                "\n"+
+                "● Participants should not spoil any components or devices provided to them. \n");
         return view;
     }
 

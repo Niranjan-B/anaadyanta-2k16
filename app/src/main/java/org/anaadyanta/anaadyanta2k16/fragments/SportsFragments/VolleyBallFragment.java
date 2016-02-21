@@ -36,7 +36,9 @@ public class VolleyBallFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_volley_ball, container, false);
         TextView rules_volleyBall= (TextView) view.findViewById(R.id.rules_volleyBall);
         rules_volleyBall.setText("1. 3 sets(first 2 sets of 25 points and decider 15 points)\n" +
+                "\n"+
                 "2. Conducted as per IVF Rules\n" +
+                "\n"+
                 "3. Participants from engineering colleges only.\n");
 
 

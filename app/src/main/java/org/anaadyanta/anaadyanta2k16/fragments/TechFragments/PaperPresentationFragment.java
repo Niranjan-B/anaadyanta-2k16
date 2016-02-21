@@ -35,14 +35,16 @@ public class PaperPresentationFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_paper_presentation, container, false);
         TextView rules_paper_presentation= (TextView) view.findViewById(R.id.rules_paper_presentation);
-        rules_paper_presentation.setText("● The maximum duration of the presentation is 20 minutes.\n" +
-                "● Max of two participants per team .\n" +
-                "● The questionnaire will follow presentation for 10 minutes by\n" +
-                "assigned judges .\n" +
+        rules_paper_presentation.setText("1. The maximum duration of the presentation is 20 minutes.\n" +
+                "\n"+
+                "2. Max of two participants per team .\n" +
+                "\n"+
+                "3. The questionnaire will follow presentation for 10 minutes by assigned judges .\n" +
                 "JUDGEMENT CRITERIA :\n" +
-                "● Authenticity and originality.\n" +
-                "● Technical data interpretation\n" +
-                "● Real world application");
+                "\n"+
+                "➢ Authenticity and originality.\n" +
+                "➢ Technical data interpretation\n" +
+                "➢ Real world application");
         return view;
     }
 

@@ -37,9 +37,13 @@ public class FictionaryFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_fictionary, container, false);
         TextView rules_fictionary= (TextView) view.findViewById(R.id.rules_fictionary);
         rules_fictionary.setText("1. Solo Event, On the spot topic.\n" +
+                "\n"+
                 "2. Time limit: Two hours.\n" +
+                "\n"+
                 "3. Word limit: 2 pages.\n" +
+                "\n"+
                 "4. No obscene content permitted.\n" +
+                "\n"+
                 "5. Theme will be given on spot.\n");
         return view;
     }

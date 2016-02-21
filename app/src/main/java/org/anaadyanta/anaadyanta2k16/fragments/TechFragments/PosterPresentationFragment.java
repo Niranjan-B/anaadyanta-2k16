@@ -35,13 +35,17 @@ public class PosterPresentationFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_poster_presentation, container, false);
         TextView rules_poster= (TextView) view.findViewById(R.id.rules_poster);
-        rules_poster.setText("● The bought poster is limited with specifications\n" +
-                "● Two participants per team.\n" +
-                "● No modifications to a default bought poster.\n" +
-                "● Two rounds of increasing difficulty with filtering in each round.\n" +
+        rules_poster.setText("1. The bought poster is limited with specifications\n" +
+                        "\n"+
+                "2. Two participants per team.\n" +
+                        "\n"+
+                "3. No modifications to a default bought poster.\n" +
+                        "\n"+
+                "4. Two rounds of increasing difficulty with filtering in each round.\n" +
+                        "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● Completion of each round.\n" +
-                "● Description of the poster for the given specifications and the topic"
+                "➢ Completion of each round.\n" +
+                "➢ Description of the poster for the given specifications and the topic"
                 );
         return view;
     }

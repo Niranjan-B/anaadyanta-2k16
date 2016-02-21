@@ -35,12 +35,15 @@ public class LetItRipFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_let_it_rip, container, false);
         TextView rules_let_it_rip= (TextView) view.findViewById(R.id.rules_let_it_rip);
-        rules_let_it_rip.setText("● Three rounds per bout .\n" +
-                "● One participant per team .\n" +
-                "● Winner decided on who stays within the playing arena .\n" +
+        rules_let_it_rip.setText("1. Three rounds per bout .\n" +
+                "\n"+
+                "2. One participant per team .\n" +
+                "\n"+
+                "3. Winner decided on who stays within the playing arena .\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● Damage .\n" +
-                "● Best of 3. ");
+                "➢ Damage .\n" +
+                "➢ Best of 3. ");
         return view;
     }
 

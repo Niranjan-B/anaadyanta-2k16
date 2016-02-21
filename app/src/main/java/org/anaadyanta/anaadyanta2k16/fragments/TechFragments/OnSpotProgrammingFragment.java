@@ -35,14 +35,13 @@ public class OnSpotProgrammingFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_on_spot_programming, container, false);
         TextView rules_programming= (TextView) view.findViewById(R.id.rules_programming);
-        rules_programming.setText("● Number of participants in a team = 2\n" +
-                "● The first round will be paperpen\n" +
-                "oriented. The second puts\n" +
-                "you on the computer.\n" +
-                "● Contestants cannot open multiple tabs on their browser.\n" +
-                "● Winners will be announced based on the time taken to code a\n" +
-                "particular assignment. THE PERFORMANCE IN FIRST\n" +
-                "ROUND WILL NOT BE CONSIDERED. ");
+        rules_programming.setText("1. Number of participants in a team = 2\n" +
+                "\n"+
+                "2. The first round will be paperpen oriented. The second puts you on the computer.\n" +
+                "\n"+
+                "3. Contestants cannot open multiple tabs on their browser.\n" +
+                "\n"+
+                "4.  Winners will be announced based on the time taken to code a particular assignment. THE PERFORMANCE IN FIRST ROUND WILL NOT BE CONSIDERED. ");
         return view;
     }
 

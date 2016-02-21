@@ -35,16 +35,17 @@ public class SETUFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_setu, container, false);
         TextView rules_poster= (TextView) view.findViewById(R.id.setu);
-        rules_poster.setText("● No. of participants in a team can be maximum 2.\n" +
-                "● The model built by each team will be tested till failure (yielding)\n" +
-                "by applying an incremental static load.\n" +
-                "● Use popsicle sticks for modelling.\n" +
-                "● Sticks can be altered physically by cutting or notching at any\n" +
-                "angle.\n" +
-                "● Only Fevicol can be used as adhesive, use of other adhesives will\n" +
-                "lead to disqualifications.\n" +
-                "● Threads can be used during construction, however should not be\n" +
-                "present in the final structure.");
+        rules_poster.setText("1. No. of participants in a team can be maximum 2.\n" +
+                "\n"+
+                "2. The model built by each team will be tested till failure (yielding) by applying an incremental static load.\n" +
+                "\n"+
+                "3. Use popsicle sticks for modelling.\n" +
+                "\n"+
+                "4. Sticks can be altered physically by cutting or notching at any angle.\n" +
+                "\n"+
+                "5. Only Fevicol can be used as adhesive, use of other adhesives will lead to disqualifications.\n" +
+                "\n"+
+                "6. Threads can be used during construction, however should not be present in the final structure.");
         return view;
     }
 
