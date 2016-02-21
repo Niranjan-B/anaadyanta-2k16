@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,16 @@ public class DotaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dota, container, false);
+        View view=inflater.inflate(R.layout.fragment_dota, container, false);
+        TextView rules_dota= (TextView) view.findViewById(R.id.rules_dota);
+        rules_dota.setText("1. A team must comprise of 5 members.\n" +
+                "\n"+
+                "2. It’s a knockout event.\n" +
+                "\n"+
+                "3. Stable 6.86C MAP.\n" +
+                "\n"+
+                "4. WCG rules apply.\n");
+        return view;
     }
 
     @Override

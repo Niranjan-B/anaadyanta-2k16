@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,17 @@ public class CODMWFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_codmw, container, false);
+        View view=inflater.inflate(R.layout.fragment_codmw, container, false);
+        TextView rules_call_of_duty= (TextView) view.findViewById(R.id.rules_call_of_duty);
+        rules_call_of_duty.setText("1. Top 2 from each round advance to finals.\n" +
+                "\n"+
+                "2. No use of martyrdom and last stand (perks).\n" +
+                "\n"+
+                "3. Maps-Killhouse, Showdown and Bag Backlot.\n" +
+                "\n"+
+                "4. K/D ratio will be considered.\n" );
+
+        return view;
     }
 
     @Override

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,14 @@ public class PotPourriFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pot_pourri, container, false);
+        View view=inflater.inflate(R.layout.fragment_pot_pourri, container, false);
+        TextView rules_potpourri= (TextView) view.findViewById(R.id.rules_potpourri);
+        rules_potpourri.setText("1. The event involves a series of rounds with trivia questions, games, and little fun puzzles, the child in you would easily be able to answer. The questions would include all of the most popular pop-cultured themes that were famous during the 90’s and early 2000’s.\n" +
+                "2. So brush up on your 90’s GK!\n" +
+                "3. Teams of 2 or 3 \n");
+
+
+        return view;
     }
 
     @Override
