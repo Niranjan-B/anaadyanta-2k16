@@ -14,6 +14,7 @@
     <color name="color_theater">#00695C</color>
     <color name="color_literary">#3e2723</color>
     <color name="color_sports">#283593</color>
-
+    <color name="submit_button_default_state">#039BE5</color>
+    <color name="submit_button_clicked_state">#0277BD</color>
 
 </resources>
