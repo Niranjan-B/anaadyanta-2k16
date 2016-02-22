@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,16 @@ public class HungerGamesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hunger_games, container, false);
+        View view=inflater.inflate(R.layout.fragment_hunger_games, container, false);
+        TextView rules_hungerGames= (TextView) view.findViewById(R.id.rules_hungerGames);
+        rules_hungerGames.setText("1. This is a team based event with 2 members per team.\n" +
+                "\n"+
+                "2. This will be a 3 obstacle event and at the end of each one there will be a food item which has to be finished in order to move on to the next obstacle.\n" +
+                "\n"+
+                "3. At the end of each obstacle,the team which finishes last will be eliminated.\n" +
+                "\n"+
+                "4. A big prize awaits you at the end of the three obstacles.\n");
+        return view;
     }
 
     @Override

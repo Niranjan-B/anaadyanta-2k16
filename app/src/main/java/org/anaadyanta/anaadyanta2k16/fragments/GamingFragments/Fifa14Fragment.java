@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,20 @@ public class Fifa14Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fifa14, container, false);
+        View view= inflater.inflate(R.layout.fragment_fifa14, container, false);
+        TextView rules_fifa= (TextView) view.findViewById(R.id.rules_fifa);
+        rules_fifa.setText("1. Individual Event.\n" +
+                "\n"+
+                "2. It’s a knockout event.\n" +
+                "\n"+
+                "3. In case of a draw, extra time is given which is followed by a penalty shootout.\n" +
+                "\n"+
+                "4. 4 minutes a half.\n" +
+                "\n"+
+                "5. Joysticks are allowed. Participants are allowed to bring their own joysticks/gamepads/headphones but the Anaadyanta committee isn’t responsible for the loss of personal property.\n" +
+                "\n"+
+                "6. Players can pause for substitution if the ball is in their possession.\n");
+        return view;
     }
 
     @Override

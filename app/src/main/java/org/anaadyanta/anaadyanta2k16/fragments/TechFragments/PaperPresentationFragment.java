@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,19 @@ public class PaperPresentationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_paper_presentation, container, false);
+        View view=inflater.inflate(R.layout.fragment_paper_presentation, container, false);
+        TextView rules_paper_presentation= (TextView) view.findViewById(R.id.rules_paper_presentation);
+        rules_paper_presentation.setText("1. The maximum duration of the presentation is 20 minutes.\n" +
+                "\n"+
+                "2. Max of two participants per team .\n" +
+                "\n"+
+                "3. The questionnaire will follow presentation for 10 minutes by assigned judges .\n" +
+                "JUDGEMENT CRITERIA :\n" +
+                "\n"+
+                "➢ Authenticity and originality.\n" +
+                "➢ Technical data interpretation\n" +
+                "➢ Real world application");
+        return view;
     }
 
     @Override

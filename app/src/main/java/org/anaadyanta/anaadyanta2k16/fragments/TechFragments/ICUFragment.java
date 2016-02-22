@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,16 @@ public class ICUFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_icu, container, false);
+        View view=inflater.inflate(R.layout.fragment_icu, container, false);
+        TextView rules_1bhk= (TextView) view.findViewById(R.id.icu);
+        rules_1bhk.setText("1. Any sort of malpractice during any of the rounds will lead to disqualification.\n" +
+                "\n"+
+                "2. First round will be judged based on the correctness of simplification.\n" +
+                "\n"+
+                "3. Second round will be judged by taking into consideration both the correctness of implementation and the time taken to do it.\n" +
+                "\n"+
+                "4. The decision of the judges is final. ");
+        return view;
     }
 
     @Override

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,16 @@ public class WhatThePhysicsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_what_the_physics, container, false);
+        inflater.inflate(R.layout.fragment_what_the_physics, container, false);
+        View view=inflater.inflate(R.layout.fragment_what_the_physics, container, false);
+        TextView rules_physics= (TextView) view.findViewById(R.id.rules_what_the_physics);
+        rules_physics.setText("1. 4 rounds of mixture of tasks .\n" +
+                "\n"+
+                "2. Two participants per team .\n" +
+                "\n"+
+                "JUDGEMENT CRITERIA :\n" +
+                "➢ All that is needed is high school physics and common sense . ");
+        return view;
     }
 
     @Override

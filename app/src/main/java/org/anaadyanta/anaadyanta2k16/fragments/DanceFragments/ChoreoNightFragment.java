@@ -37,14 +37,23 @@ public class ChoreoNightFragment extends Fragment {
         TextView rules= (TextView) view.findViewById(R.id.rules);
         rules.setText(
                 "1. A team of 8 to 25 member can participate..\n" +
+                        "\n"+
                         "2. Time limit is 8+2 including stage setup\n" +
+                        "\n"+
                         "3. Any dance form is allowed..\n" +
+                        "\n"+
                         "4. A video of the past/present performance should be uploaded on YouTube and a link is to be sent to the anaadyanta committee(shashankmishra15@gmail.com) for the preliminary round..\n" +
+                        "\n"+
                         "5. Video must be sent by 20th Feb and the results will be announced within a week\n" +
+                        "\n"+
                         "6. Costumes are not necessary for the preliminary video\n" +
+                        "\n"+
                         "7. No vulgarity is allowed\n" +
+                        "\n"+
                         "8. Usage of props is allowed\n" +
+                        "\n"+
                         "9. No water, powder, fire, gas or any other inflammable and hazardous things are allowed to be used\n" +
+                        "\n"+
                         "10. Marks will be distributed based on choreography, innovation/creativity, coordination, stage/space usage, costumes, music and audience response\n");
         return view;
     }

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,15 @@ public class GeneralQuizFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_general_quiz, container, false);
+        View view=inflater.inflate(R.layout.fragment_general_quiz, container, false);
+        TextView rules_general_Quiz= (TextView) view.findViewById(R.id.rules_general_Quiz);
+        rules_general_Quiz.setText("1. Teams of 3 or less.\n" +
+                "\n"+
+                "2. Consists of a written prelims round. And the finals which would contain multiple rounds.\n" +
+                "\n"+
+                "3. Quiz master's decision is final.\n");
+
+        return view;
     }
 
     @Override

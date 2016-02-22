@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,21 @@ public class PosterPresentationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_poster_presentation, container, false);
+        View view=inflater.inflate(R.layout.fragment_poster_presentation, container, false);
+        TextView rules_poster= (TextView) view.findViewById(R.id.rules_poster);
+        rules_poster.setText("1. The bought poster is limited with specifications\n" +
+                        "\n"+
+                "2. Two participants per team.\n" +
+                        "\n"+
+                "3. No modifications to a default bought poster.\n" +
+                        "\n"+
+                "4. Two rounds of increasing difficulty with filtering in each round.\n" +
+                        "\n"+
+                "JUDGEMENT CRITERIA :\n" +
+                "➢ Completion of each round.\n" +
+                "➢ Description of the poster for the given specifications and the topic"
+                );
+        return view;
     }
 
     @Override

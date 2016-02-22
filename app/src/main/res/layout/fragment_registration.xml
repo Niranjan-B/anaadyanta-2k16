@@ -1,6 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/coreLayoutContainer">
 
     <RelativeLayout
         android:id="@+id/scrollViewContainer"
@@ -52,7 +54,7 @@
                     </com.rengwuxian.materialedittext.MaterialEditText>
 
                     <com.rengwuxian.materialedittext.MaterialEditText
-                        android:id="@+id/registrationNumOfPartcipants"
+                        android:id="@+id/registrationNumOfParticipants"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/registrationTeam"
@@ -68,7 +70,7 @@
                         android:id="@+id/registrationCollege"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/registrationNumOfPartcipants"
+                        android:layout_below="@+id/registrationNumOfParticipants"
                         android:hint="Your College *"
                         app:met_floatingLabel="highlight"
                         app:met_iconLeft="@drawable/ic_school_24dp"
@@ -94,10 +96,10 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/registrationCity"
                         android:hint="Your Phone Number *"
+                        android:inputType="number"
                         app:met_floatingLabel="highlight"
                         app:met_iconLeft="@drawable/ic_call"
-                        app:met_iconPadding="0dp"
-                        android:inputType="number">
+                        app:met_iconPadding="0dp">
 
                     </com.rengwuxian.materialedittext.MaterialEditText>
 
@@ -111,33 +113,40 @@
                         android:text="Cultural Events -- "
                         android:textSize="20sp" />
 
-                    <android.support.v7.widget.RecyclerView
-                        android:id="@+id/culturalEventsContainer"
+                    <LinearLayout
+                        android:id="@+id/checkBoxContainerCultural"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/culturalEventsPlaceHolder"
-                        android:layout_margin="10dp">
+                        android:layout_margin="10dp"
+                        android:background="@color/blue"
+                        android:orientation="vertical"
+                        tools:layout_height="60dp">
 
-                    </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/techEventsPlaceHolder"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/culturalEventsContainer"
+                        android:layout_below="@+id/checkBoxContainerCultural"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
                         android:text="Tech Events -- "
                         android:textSize="20sp" />
 
-                    <android.support.v7.widget.RecyclerView
-                        android:id="@+id/techEventsContainer"
+                    <LinearLayout
+                        android:id="@+id/checkBoxContainerTech"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/techEventsPlaceHolder"
-                        android:layout_margin="10dp">
+                        android:layout_margin="10dp"
+                        android:background="@color/blue"
+                        android:orientation="vertical"
+                        tools:layout_height="60dp">
 
-                    </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
 
                 </RelativeLayout>
 

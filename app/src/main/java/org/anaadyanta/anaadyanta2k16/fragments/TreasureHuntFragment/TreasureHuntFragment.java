@@ -31,10 +31,15 @@ public class TreasureHuntFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_treasure_hunt, container, false);
         TextView rules_treasurehunt= (TextView) view.findViewById(R.id.rules_treasurehunt);
         rules_treasurehunt.setText("1. Team must comprise of 5 members. \n" +
+                "\n"+
                 "2. No team from NMIT will take part in the event. \n" +
+                "\n"+
                 "3. Teams can comprise of students from any mix of colleges. \n" +
+                "\n"+
                 "4. Everybody starts with a puzzle. \n" +
+                "\n"+
                 "5. Each puzzle, when solved will indicate to a unique place inside the campus. \n" +
+                "\n"+
                 "6. The coordinator’s decision is final. \n");
 
         return view;

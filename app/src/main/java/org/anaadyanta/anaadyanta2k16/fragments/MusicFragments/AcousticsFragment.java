@@ -36,11 +36,17 @@ public class AcousticsFragment extends Fragment {
       View view =  inflater.inflate(R.layout.fragment_acoustics, container, false);
         TextView rules_accustics= (TextView) view.findViewById(R.id.rules_accustics);
         rules_accustics.setText("1. 2-8 Members are allowed to perform at this event. \n" +
+                "\n"+
                 "2. This is a single round competition. \n" +
+                "\n"+
                 "3. The performance can be only in English. \n" +
+                "\n"+
                 "4. Bands playing acoustic and acapella are allowed. \n" +
+                "\n"+
                 "5. Time limit: (8+1) for individual performance and (10+2) for a group performance. This time is inclusive of sound check. \n" +
+                "\n"+
                 "6. No electrical instruments would be allowed. However, one synthesizer is allowed per entry \n" +
+                "\n"+
                 "7. The decision of the judges will be final and binding.  \n");
 
 

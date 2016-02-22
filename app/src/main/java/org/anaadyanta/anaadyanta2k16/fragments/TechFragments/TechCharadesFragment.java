@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,16 @@ public class TechCharadesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tech_charades, container, false);
+        View view=inflater.inflate(R.layout.fragment_tech_charades, container, false);
+        TextView rules_figure= (TextView) view.findViewById(R.id.techcarades);
+        rules_figure.setText("1. Any sort of malpractice during any of the rounds will lead to negative points to the team.\n" +
+                "\n"+
+                "2. The decision of the judges is final.\n" +
+                "\n"+
+                "3. During the second round, the person describing the word is not supposed to give direct hints and also should use only English to describe.\n" +
+                "\n"+
+                "4. During the third round, the person drawing is not supposed to speak anything.");
+        return view;
     }
 
     @Override

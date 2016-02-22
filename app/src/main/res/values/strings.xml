@@ -1,4 +1,71 @@
 <resources>
     <string name="app_name">Anaadyanta 2k16</string>
     <string name="news_feed_end_point">http://ninja-root.site40.net/anaadyanta_scripts/fetch_latest_feed.php</string>
+    <string name="google_form_submission_end_point">https://docs.google.com/forms/d/1yfHfifcJlpdpWkA_ucm6w1M9tHggi53Ylk-8mk8QXH0/formResponse</string>
+    <string-array name="cultural_events">
+        <item>Boogie Woogie(Choreo Night)</item>
+        <item>Street X</item>
+        <item>7 to Smoke</item>
+        <item>Theme Dance</item>
+        <item>Solo Dance</item>
+        <item>Battle of Bands(Western)</item>
+        <item>Battle of Bands(Eastern)</item>
+        <item>Acoustics</item>
+        <item>Beatbox</item>
+        <item>Fashion Show</item>
+        <item>Street Play</item>
+        <item>Mad Ads</item>
+        <item>Skime(Mime)</item>
+        <item>Doodle Marathon</item>
+        <item>Whats Next(Comic Strip Making)</item>
+        <item>Blind Art</item>
+        <item>Collage</item>
+        <item>The Hunger Games(Hogathon)</item>
+        <item>Mini Soccer</item>
+        <item>3v3 Basketball</item>
+        <item>Counter Strike</item>
+        <item>DOTA 2</item>
+        <item>Need For Speed: Most Wanted</item>
+        <item>Call of Duty: Modern Warfare</item>
+        <item>FIFA 14</item>
+        <item>General Quiz</item>
+        <item>Vices Quiz</item>
+        <item>That 90s Show(Pot Pourri)</item>
+        <item>Set List(Improv/Elocution)</item>
+        <item>Fictionary(Creative Writing)</item>
+        <item>The Contention(Debate)</item>
+    </string-array>
+    <string-array name="tech_events">
+        <item>What does the Technical Fox Say?!</item>
+        <item>Figure it Out!</item>
+        <item>Machine It</item>
+        <item>Quad Speed</item>
+        <item>Watch Me Junk!</item>
+        <item>Pay the Piper</item>
+        <item>Robowars</item>
+        <item>Let it Rip!</item>
+        <item>Automotive Quiz</item>
+        <item>Paper Presentation</item>
+        <item>What the Physics!</item>
+        <item>Mechwiz</item>
+        <item>Logical Box</item>
+        <item>Jahaaz</item>
+        <item>Mini Hackathon</item>
+        <item>On Spot Programming</item>
+        <item>Debugging</item>
+        <item>Techquila</item>
+        <item>E-Khoj</item>
+        <item>Full Throttle (RC Car Racing)</item>
+        <item>Line Follower</item>
+        <item>Tech Charades</item>
+        <item>Circuitrix</item>
+        <item>R.A.M(Resistors and Memory)</item>
+        <item>L.C.U(Logic Designing)</item>
+        <item>SETU(Bridge Design Challange)</item>
+        <item>1 BHK</item>
+        <item>Poster Presentation</item>
+        <item>Draft it Out</item>
+    </string-array>
+
+
 </resources>

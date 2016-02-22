@@ -6,14 +6,13 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import org.anaadyanta.anaadyanta2k16.fragments.SportsFragments.MiniSoccerFragment;
 import org.anaadyanta.anaadyanta2k16.fragments.SportsFragments.ThreeXThreeBasketBallFragment;
-import org.anaadyanta.anaadyanta2k16.fragments.SportsFragments.VolleyBallFragment;
 
 /**
  * Created by NIRANJAN on 14-02-2016.
  */
 public class SportsAdapter extends FragmentPagerAdapter {
 
-    private static final int NUM_OF_SUB_EVENTS = 3;
+    private static final int NUM_OF_SUB_EVENTS = 2;
 
     public SportsAdapter(FragmentManager fm) {
         super(fm);
@@ -24,8 +23,8 @@ public class SportsAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0 : return MiniSoccerFragment.getInstance();
-            case 1 : return VolleyBallFragment.getInstance();
-            case 2 : return ThreeXThreeBasketBallFragment.getInstance();
+            case 1 : return ThreeXThreeBasketBallFragment.getInstance();
+            // removed volley ball from event list
         }
         return null;
     }
@@ -39,8 +38,8 @@ public class SportsAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0 : return "Mini Soccer";
-            case 1 : return "Volley Ball";
-            case 2 : return "3 X 3 Basketball";
+            case 1 : return "3 X 3 Basketball";
+            // removed v-ball
         }
         return "";
     }

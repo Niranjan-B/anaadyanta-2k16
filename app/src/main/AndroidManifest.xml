@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -27,17 +28,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FashionShow" />
-        <activity android:name=".TreasureHunt" />
-        <activity android:name=".Dance" />
-        <activity android:name=".Music" />
-        <activity android:name=".Sports" />
-        <activity android:name=".Theatre" />
-        <activity android:name=".Gaming" />
-        <activity android:name=".Photography" />
-        <activity android:name=".Art" />
-        <activity android:name=".Literary" />
-        <activity android:name=".Tech"></activity>
+        <activity
+            android:name=".FashionShow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TreasureHunt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Music"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Theatre"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Gaming"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Photography"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Art"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Literary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tech"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

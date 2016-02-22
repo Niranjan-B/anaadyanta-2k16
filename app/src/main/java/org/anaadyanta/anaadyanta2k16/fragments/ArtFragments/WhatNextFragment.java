@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,13 @@ public class WhatNextFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_what_next, container, false);
+        View view= inflater.inflate(R.layout.fragment_what_next, container, false);
+        TextView rules_whatsnext= (TextView) view.findViewById(R.id.rules_whatsnext);
+        rules_whatsnext.setText("1. You will be provided with an incomplete comic strip. All you need to do is to complete it.\n" +
+                "\n"+
+                "2. The participants aren’t allowed to refer the internet or any pictures from their phones. This would lead to immediate disqualification.\n");
+
+        return view;
     }
 
     @Override

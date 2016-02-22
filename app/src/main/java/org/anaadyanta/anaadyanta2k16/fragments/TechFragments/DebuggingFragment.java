@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,22 @@ public class DebuggingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_debugging, container, false);
+        View view=inflater.inflate(R.layout.fragment_debugging, container, false);
+        TextView rules_debugging= (TextView) view.findViewById(R.id.rules_debugging);
+
+        rules_debugging.setText("1. Number of participants per team = 2\n" +
+                "\n"+
+                "2. No online help is allowed.\n" +
+                "\n"+
+                "3. 10 teams will be qualified from round 1 to participate in round 2\n" +
+                "\n"+
+                "4. The output expected will be informed beforehand.\n" +
+                "\n"+
+                "5. Errors in the program can be any of the following :\n" +
+                "logical errors, syntactic errors, semantic errors, runtime errors\n" +
+                "\n"+
+                "6. The winner declaration will be solely based on performance in the second round.");
+        return view;
     }
 
     @Override

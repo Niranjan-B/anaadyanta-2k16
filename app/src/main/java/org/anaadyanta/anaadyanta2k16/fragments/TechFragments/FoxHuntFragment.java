@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -32,7 +33,18 @@ public class FoxHuntFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fox_hunt, container, false);
+        View view=inflater.inflate(R.layout.fragment_fox_hunt, container, false);
+        TextView rules_automotive= (TextView) view.findViewById(R.id.rules_whatdoes);
+        rules_automotive.setText("1. Members Per Team24\n" +
+                "\n"+
+                "2. Time Limit3045 mins per round\n" +
+                "\n"+
+                "3. At the end of finding each clue, the participants has to take a pic of clue with the transmitter.\n" +
+                "\n"+
+                "4. Those participants who’ll find the exact location of final transmitter and hand over all the clues to the event coordinator will be the winners of the event.\n" +
+                "5. The team which is finding two or more clues at a time may lead to penalty or chances to disqualify the team.");
+
+        return view;
     }
 
     @Override
