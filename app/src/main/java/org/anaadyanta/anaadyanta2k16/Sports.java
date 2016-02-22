@@ -22,6 +22,7 @@ public class Sports extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sports);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             getWindow().setStatusBarColor(getResources().getColor(R.color.color_sports));
@@ -39,9 +40,8 @@ public class Sports extends AppCompatActivity {
                     case 0:
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_sports), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mini_soccer.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_sports), "http://ninja-root.site40.net/anaadyanta_pics/cultural/volley_ball.jpg");
-                    case 2:
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_sports), "http://ninja-root.site40.net/anaadyanta_pics/cultural/3x3_basketbal.jpg");
+                    // removed volley ball
                 }
 
                 return null;
