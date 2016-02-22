@@ -36,11 +36,11 @@ public class Dance extends AppCompatActivity {
             public HeaderDesign getHeaderDesign(int page) {
 
                 switch (page) {
-                    case 0 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://ninja-root.site40.net/anaadyanta_pics/cultural/choreo_night.jpg");
-                    case 1 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://ninja-root.site40.net/anaadyanta_pics/cultural/street_dance.jpg");
-                    case 2 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://ninja-root.site40.net/anaadyanta_pics/cultural/7_to_smoke.jpg");
-                    case 3 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://ninja-root.site40.net/anaadyanta_pics/cultural/theme_dance.jpg");
-                    case 4 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://ninja-root.site40.net/anaadyanta_pics/cultural/solo_dance.jpg");
+                    case 0 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://anaadyanta.org/Cultural/choreo_night.jpg");
+                    case 1 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://anaadyanta.org/Cultural/street_dance.jpg");
+                    case 2 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://anaadyanta.org/Cultural/7_to_smoke.jpg");
+                    case 3 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://anaadyanta.org/Cultural/theme_dance.jpg");
+                    case 4 : return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_dance), "http://anaadyanta.org/Cultural/solo_dance.jpg");
                 }
 
                 return null;

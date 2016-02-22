@@ -37,13 +37,13 @@ public class Music extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_music), "http://ninja-root.site40.net/anaadyanta_pics/cultural/battle_of_bands_w.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_music), "http://anaadyanta.org/Cultural/battle_of_bands_w.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_music), "http://ninja-root.site40.net/anaadyanta_pics/cultural/battle_of_bands.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_music), "http://anaadyanta.org/Cultural/battle_of_bands.jpg");
                     case 2:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_music), "http://ninja-root.site40.net/anaadyanta_pics/cultural/acoustics.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_music), "http://anaadyanta.org/Cultural/acoustics.jpg");
                     case 3:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_music), "http://ninja-root.site40.net/anaadyanta_pics/cultural/beatbox.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_music), "http://anaadyanta.org/Cultural/beatbox.jpg");
                 }
 
                 return null;

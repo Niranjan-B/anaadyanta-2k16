@@ -38,9 +38,9 @@ public class Sports extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_sports), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mini_soccer.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_sports), "http://anaadyanta.org/Cultural/mini_soccer.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_sports), "http://ninja-root.site40.net/anaadyanta_pics/cultural/3x3_basketbal.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_sports), "http://anaadyanta.org/Cultural/3x3_basketbal.jpg");
                     // removed volley ball
                 }
 

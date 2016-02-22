@@ -35,7 +35,7 @@ public class FashionShow extends AppCompatActivity {
             public HeaderDesign getHeaderDesign(int page) {
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorResAndUrl(R.color.color_fashion, "http://ninja-root.site40.net/anaadyanta_pics/cultural/fashion_show.jpg");
+                        return HeaderDesign.fromColorResAndUrl(R.color.color_fashion, "http://anaadyanta.org/Cultural/fashion_show.jpg");
                 }
                 return null;
             }
