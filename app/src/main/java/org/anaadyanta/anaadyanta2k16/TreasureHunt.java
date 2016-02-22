@@ -1,9 +1,11 @@
 package org.anaadyanta.anaadyanta2k16;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.github.florent37.materialviewpager.MaterialViewPager;
@@ -19,6 +21,10 @@ public class TreasureHunt extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treasure_hunt);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().setStatusBarColor(getResources().getColor(R.color.color_treasurehunt));
+        }
         mViewPagerTreasureHunt = (MaterialViewPager) findViewById(R.id.materialViewPagerTreasureHunt);
         treasureHuntAdapter= new TreasureHuntAdapter(getSupportFragmentManager());
         mViewPagerTreasureHunt.getViewPager().setAdapter(treasureHuntAdapter);
@@ -27,7 +33,7 @@ public class TreasureHunt extends AppCompatActivity {
             public HeaderDesign getHeaderDesign(int page) {
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorResAndUrl(R.color.color_treasurehunt, "http://ninja-root.site40.net/anaadyanta_pics/cultural/treasure_hunt.jpg");
+                        return HeaderDesign.fromColorResAndUrl(R.color.color_treasurehunt, "http://anaadyanta.org/Cultural/treasure_hunt.jpg");
                 }
                 return null;
             }

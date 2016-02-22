@@ -36,9 +36,13 @@ public class MadAdsFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_mad_ads, container, false);
         TextView rules_madAds= (TextView) view.findViewById(R.id.rules_madAds);
         rules_madAds.setText("1. Team can contain a maximum of 10 members.\n" +
+                "\n"+
                 "2. Time on stage: 6+1 mins. After 6 mins, a buzzer/bell will be rung.\n" +
+                "\n"+
                 "3. Teams must bring their own costumes/props (if any).\n" +
+                "\n"+
                 "4. Participants must be students of a college and must carry a valid ID card.\n" +
+                "\n"+
                 "5. The pieces can be in any language.");
         return view;
     }

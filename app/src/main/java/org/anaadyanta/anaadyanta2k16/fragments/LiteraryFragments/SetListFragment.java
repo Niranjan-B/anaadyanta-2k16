@@ -36,8 +36,11 @@ public class SetListFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_set_list, container, false);
         TextView rules_set_list= (TextView) view.findViewById(R.id.rules_set_list);
         rules_set_list.setText("1. Solo event.\n" +
+                "\n"+
                 "2. Participants are given 4 sets of topics one after another to speak about. 3 sets and one Big Finish. Topics are generally meant to be comical.\n" +
+                "\n"+
                 "3. A 20 second preparation time and a maximum of 90 seconds speaking time per set will be allotted. The speaker is allowed to pass on the set if it's too difficult for him/her to pull off.\n" +
+                "\n"+
                 "4. Participants will judged on their improv skills, humor and fluidity of their speech and transition from one topic to the next.\n");
 
 

@@ -36,7 +36,9 @@ public class GeneralQuizFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_general_quiz, container, false);
         TextView rules_general_Quiz= (TextView) view.findViewById(R.id.rules_general_Quiz);
         rules_general_Quiz.setText("1. Teams of 3 or less.\n" +
+                "\n"+
                 "2. Consists of a written prelims round. And the finals which would contain multiple rounds.\n" +
+                "\n"+
                 "3. Quiz master's decision is final.\n");
 
         return view;

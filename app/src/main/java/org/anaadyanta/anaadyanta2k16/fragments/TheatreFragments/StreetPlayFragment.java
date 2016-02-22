@@ -36,10 +36,15 @@ public class StreetPlayFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_street_play, container, false);
         TextView rules_streetPlay= (TextView) view.findViewById(R.id.rules_streetPlay);
         rules_streetPlay.setText("1. Time Limit – 15 minutes\n" +
+                "\n"+
                 "2. Team members- 15 maximum.\n" +
+                "\n"+
                 "3. Only acoustic and percussion instruments will be allowed.\n" +
+                "\n"+
                 "4. Plays in English, Kannada and Hindi are allowed. Please avoid other languages except for a few dialogues.\n" +
+                "\n"+
                 "5. No props/costume will be provided.\n" +
+                "\n"+
                 "6. Please stick to the area allotted to the event.\n");
 
 

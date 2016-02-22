@@ -67,8 +67,7 @@ public class MainActivity extends AppCompatActivity {
         if(navigationDrawerLayout.isShownMenu()){
             navigationDrawerLayout.closeDrawer();
         }else {
-            // TODO : have to implement a dialog which asks for exit confirmation
-            super.onBackPressed();
+            Utility.buildAlerDialog(MainActivity.this);
         }
     }
 }

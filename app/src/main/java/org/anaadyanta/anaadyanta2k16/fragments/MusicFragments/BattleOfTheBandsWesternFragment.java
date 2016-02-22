@@ -36,19 +36,29 @@ public class BattleOfTheBandsWesternFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_battle_of_the_bands_western, container, false);
         TextView rules_wbattle= (TextView) view.findViewById(R.id.rules_wbattle);
-        rules_wbattle.setText("1. This is a WESTERN rock band competition open to any college or semi\u00ADpro band with three or more members. \n" +
+        rules_wbattle.setText("1. This is a WESTERN rock band competition open to any college or semi-pro band with three or more members. \n" +
+                "\n"+
                 "2. It’s a 2 round competition, Eliminations and Finals \n" +
+                "\n"+
                 "3. All songs performed by the band must be in ENGLISH only. \n" +
-                "4. The time given per band (10+2) mins (15+5) mins for the Finals. This includes the time taken for sound\u00ADcheck and the performance. Strictly no extra time would be given on stage. \n" +
+                "\n"+
+                "4. The time given per band (10+2) mins (15+5) mins for the Finals. This includes the time taken for sound-check and the performance. Strictly no extra time would be given on stage. \n" +
+                "\n"+
                 "5. Tuning of instruments should be done beforehand. \n" +
+                "\n"+
                 "6. Bands will be disqualified with immediate effect for misconduct, obscenity or intentional use of foul language. \n" +
+                "\n"+
                 "7. Bands have to bring their own equipment (apart from the ones mentioned below) and special effects. However, programmed music isn’t allowed. \n" +
+                "\n"+
                 "8. Equipment provided will be:  \n" +
+                "\n"+
                 "I. One bass amplifier speaker \n" +
                 "II. One lead amplifier speaker \n" +
                 "III. Adequate microphones \n" +
                 "IV.Drum set with double base setup (you can bring your own cymbals and chokes/high hats) \n" +
+                "\n"+
                 "9.The judge’s decision will be final and binding. \n" +
+                "\n"+
                 "10.The event coordinators and the Anaadyanta committee reserves the right to make any last minute changes in the rules. \n");
 
         return view;

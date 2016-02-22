@@ -410,6 +410,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/rules"
+                        android:textColor="#000000"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textSize="15sp"
                         android:paddingLeft="4dp"

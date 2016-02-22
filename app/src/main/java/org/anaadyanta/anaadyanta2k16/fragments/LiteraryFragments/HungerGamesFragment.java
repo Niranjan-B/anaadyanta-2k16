@@ -36,8 +36,11 @@ public class HungerGamesFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_hunger_games, container, false);
         TextView rules_hungerGames= (TextView) view.findViewById(R.id.rules_hungerGames);
         rules_hungerGames.setText("1. This is a team based event with 2 members per team.\n" +
+                "\n"+
                 "2. This will be a 3 obstacle event and at the end of each one there will be a food item which has to be finished in order to move on to the next obstacle.\n" +
+                "\n"+
                 "3. At the end of each obstacle,the team which finishes last will be eliminated.\n" +
+                "\n"+
                 "4. A big prize awaits you at the end of the three obstacles.\n");
         return view;
     }

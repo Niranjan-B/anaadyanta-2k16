@@ -36,11 +36,17 @@ public class StreetDanceFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_street_dance, container, false);
         TextView rules_streetdance= (TextView) view.findViewById(R.id.rules_streetdance);
         rules_streetdance.setText("1. A team of 6-15 members can participate..\n" +
+                "\n"+
                 "2. The open round of 4+2 min is to be performed by each crew...\n" +
+                "\n"+
                 "3. The top 4 crews qualified will be advanced to the face off round. \n" +
+                "\n"+
                 "4.The crews battling are top.1st vs top.3rd and top.2nd vs top.4th 5. The crews will be battling each other for 10min\n" +
+                "\n"+
                 "6. The winner of the battle will be going to the finals..\n" +
+                "\n"+
                 "7. The crews will be battling for 12-15min\n" +
+                "\n"+
                 "8. Judging System:\n" +
                 "\n" +
                 "The crew is judged based on \n" +

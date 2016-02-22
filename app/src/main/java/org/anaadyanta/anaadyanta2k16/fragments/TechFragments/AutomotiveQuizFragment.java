@@ -35,13 +35,16 @@ public class AutomotiveQuizFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_automotive_quiz, container, false);
         TextView rules_automotive= (TextView) view.findViewById(R.id.rules_automotive);
-        rules_automotive.setText("● 4 rounds of various challenges .\n" +
-                "● Two participants per team .\n" +
-                "● Interaction and communication based tasks .\n" +
+        rules_automotive.setText("1. 4 rounds of various challenges .\n" +
+                "\n"+
+                "2. Two participants per team .\n" +
+                "\n"+
+                "3. Interaction and communication based tasks .\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● Number of correct answers .\n" +
-                "● The performance .\n" +
-                "● Judges’ final decision . ");
+                "➢ Number of correct answers .\n" +
+                "➢ The performance .\n" +
+                "➢ Judges’ final decision . ");
 
         return view;
     }
