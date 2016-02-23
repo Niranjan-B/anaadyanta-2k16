@@ -35,13 +35,15 @@ public class MachineItFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_machine_it, container, false);
         TextView rules_machine= (TextView) view.findViewById(R.id.rules_machine);
-        rules_machine.setText("● The duration of the event is 2 hours.\n" +
-                "● One participant per team.\n" +
+        rules_machine.setText("1. The duration of the event is 2 hours.\n" +
+                "\n"+
+                "2. One participant per team.\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● The right dimensions of the part.\n" +
-                "● Shape Detailing.\n" +
-                "● Time taken to finish.\n" +
-                "● The steps used sequentially . ");
+                "➢ The right dimensions of the part.\n" +
+                "➢ Shape Detailing.\n" +
+                "➢ Time taken to finish.\n" +
+                "➢ The steps used sequentially . ");
         return view;
     }
 

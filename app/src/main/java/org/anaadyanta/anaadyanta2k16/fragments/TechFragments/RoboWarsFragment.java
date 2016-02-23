@@ -35,13 +35,17 @@ public class RoboWarsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_robo_wars, container, false);
         TextView rules_robowars= (TextView) view.findViewById(R.id.rules_robowars);
-        rules_robowars.setText("● Five rounds per bout .\n" +
-                "● Max of five participants per team .\n" +
-                "● Bout might end with a knockout\n" +
-                "● Final decision based on the damage.\n" +
+        rules_robowars.setText("1. Five rounds per bout .\n" +
+                "\n"+
+                "2. Max of five participants per team .\n" +
+                "\n"+
+                "3. Bout might end with a knockout\n" +
+                "\n"+
+                "4. Final decision based on the damage.\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● Degree of damage .\n" +
-                "● Time taken .");
+                "➢ Degree of damage .\n" +
+                "➢ Time taken .");
         return view;
     }
 

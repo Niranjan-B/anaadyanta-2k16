@@ -35,13 +35,14 @@ public class TechquilaFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_techquila, container, false);
         TextView rules_techquilla= (TextView) view.findViewById(R.id.rules_techquilla);
-        rules_techquilla.setText("● It is a team event with 2 members in a team.\n" +
-                "● The members of the team can be from different institutions\n" +
-                "or colleges.\n" +
-                "● The decision of the quiz master is final.\n" +
-                "● The quiz contains:\n" +
-                "> Preliminary round which is a qualifier.\n" +
-                "> Final round. ");
+        rules_techquilla.setText("1. It is a team event with 2 members in a team.\n" +
+                "\n"+
+                "2. The members of the team can be from different institutions or colleges.\n" +
+                "\n"+
+                "3. The decision of the quiz master is final.\n" +
+                "\n"+
+                "4. The quiz contains:\n" +
+                "> Preliminary round which is a qualifier > Final round.");
         return view;
     }
 

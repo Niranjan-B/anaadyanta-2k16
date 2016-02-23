@@ -36,9 +36,13 @@ public class MiniSoccerFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_mini_soccer, container, false);
         TextView rules_minisoccer= (TextView) view.findViewById(R.id.rules_minisoccer);
         rules_minisoccer.setText("1. Team of 6+2 members.\n" +
+                "\n"+
                 "2. Knockout Rounds.\n" +
+                "\n"+
                 "3. 7 mins a half.\n" +
+                "\n"+
                 "4. Tie will be settled by a penalty shootout.\n" +
+                "\n"+
                 "5. Kick in if the ball is out of play.\n");
 
         return view;

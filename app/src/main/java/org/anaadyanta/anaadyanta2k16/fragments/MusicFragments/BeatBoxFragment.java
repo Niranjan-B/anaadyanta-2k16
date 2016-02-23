@@ -35,14 +35,18 @@ public class BeatBoxFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_beat_box, container, false);
         TextView rules_accustics= (TextView) view.findViewById(R.id.rules_beatbox);
-        rules_accustics.setText("● Individual participation. It's a one man show.\n" +
-                "● The event will be split into three rounds: Prelims, Semis and the Finals.\n" +
-                "● In the prelims, each beat boxer will be given 1 minute showcase and the judges will choose\n" +
+        rules_accustics.setText("1. Individual participation. It's a one man show.\n" +
+                "\n"+
+                "2. The event will be split into three rounds: Prelims, Semis and the Finals.\n" +
+                "\n"+
+                "3. In the prelims, each beat boxer will be given 1 minute showcase and the judges will choose\n" +
                 "who wins the showcase based on THEIR judging criteria. The top 4 then move to the semis. In\n" +
                 "case of a tie, the judges will deliberate to break the tie.\n" +
-                "● Failure to arrive on stage when called up on the stage will lead to disqualification.\n" +
-                "● Competitors shouldn’t perform routines performed in public by other beatboxers.\n" +
-                "● No instruments are allowed in the competition.");
+                "4. Failure to arrive on stage when called up on the stage will lead to disqualification.\n" +
+                "\n"+
+                "5. Competitors shouldn’t perform routines performed in public by other beatboxers.\n" +
+                "\n"+
+                "6. No instruments are allowed in the competition.\n");
 
         return view;
     }

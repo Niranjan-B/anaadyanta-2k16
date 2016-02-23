@@ -35,9 +35,9 @@ public class RAMFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_ram, container, false);
         TextView rules_figure= (TextView) view.findViewById(R.id.ram);
-        rules_figure.setText(" ● Any sort of malpractice during any of the rounds will lead\n" +
-                "to disqualification.\n" +
-                "● The decision of the judges is final.");
+        rules_figure.setText(" 1. Any sort of malpractice during any of the rounds will lead to disqualification.\n" +
+                "\n"+
+                "2. The decision of the judges is final.");
         return view;
     }
 

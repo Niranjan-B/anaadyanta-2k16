@@ -35,13 +35,16 @@ public class PayThePiperFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_pay_the_piper, container, false);
         TextView rules_pay= (TextView) view.findViewById(R.id.rules_pay);
-        rules_pay.setText("● The maximum duration of the event is 2.5 hours.\n" +
-                "● Max of three participants per team .\n" +
-                "● Judges’ decision final .\n" +
+        rules_pay.setText("1. The maximum duration of the event is 2.5 hours.\n" +
+                "\n"+
+                "2. Max of three participants per team .\n" +
+                "\n"+
+                "3. Judges’ decision final .\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● Business analytics and approach\n" +
-                "● Technical backing .\n" +
-                "● Creative ideas . ");
+                "➢ Business analytics and approach\n" +
+                "➢ Technical backing .\n" +
+                "➢ Creative ideas . ");
         return view;
     }
 

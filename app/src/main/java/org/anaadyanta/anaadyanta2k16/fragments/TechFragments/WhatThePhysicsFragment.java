@@ -36,10 +36,12 @@ public class WhatThePhysicsFragment extends Fragment {
         inflater.inflate(R.layout.fragment_what_the_physics, container, false);
         View view=inflater.inflate(R.layout.fragment_what_the_physics, container, false);
         TextView rules_physics= (TextView) view.findViewById(R.id.rules_what_the_physics);
-        rules_physics.setText("● 4 rounds of mixture of tasks .\n" +
-                "● Two participants per team .\n" +
+        rules_physics.setText("1. 4 rounds of mixture of tasks .\n" +
+                "\n"+
+                "2. Two participants per team .\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "● All that is needed is high school physics and common sense . ");
+                "➢ All that is needed is high school physics and common sense . ");
         return view;
     }
 

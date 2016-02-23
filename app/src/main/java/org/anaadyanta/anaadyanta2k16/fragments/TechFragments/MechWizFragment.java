@@ -35,8 +35,9 @@ public class MechWizFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_mech_wiz, container, false);
         TextView rules_mechwiz= (TextView) view.findViewById(R.id.rules_mechwiz);
-        rules_mechwiz.setText("● 4 rounds of mixture of tasks .\n" +
-                "● Two participants per team . ");
+        rules_mechwiz.setText("1. 4 rounds of mixture of tasks .\n" +
+                "\n"+
+                "2. Two participants per team . ");
         return view;
     }
 

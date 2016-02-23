@@ -35,14 +35,13 @@ public class TechCharadesFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_tech_charades, container, false);
         TextView rules_figure= (TextView) view.findViewById(R.id.techcarades);
-        rules_figure.setText("● Any sort of malpractice during any of the rounds will lead\n" +
-                "to negative points to the team.\n" +
-                "● The decision of the judges is final.\n" +
-                "● During the second round, the person describing the word is\n" +
-                "not supposed to give direct hints and also should use only\n" +
-                "English to describe.\n" +
-                "● During the third round, the person drawing is not supposed\n" +
-                "to speak anything. ");
+        rules_figure.setText("1. Any sort of malpractice during any of the rounds will lead to negative points to the team.\n" +
+                "\n"+
+                "2. The decision of the judges is final.\n" +
+                "\n"+
+                "3. During the second round, the person describing the word is not supposed to give direct hints and also should use only English to describe.\n" +
+                "\n"+
+                "4. During the third round, the person drawing is not supposed to speak anything.");
         return view;
     }
 

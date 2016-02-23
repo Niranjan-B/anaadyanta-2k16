@@ -36,15 +36,18 @@ public class DebuggingFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_debugging, container, false);
         TextView rules_debugging= (TextView) view.findViewById(R.id.rules_debugging);
 
-        rules_debugging.setText("● Number of participants per team = 2\n" +
-                "● No online help is allowed.\n" +
-                "● 10 teams will be qualified from round 1 to participate in round 2\n" +
-                "● The output expected will be informed beforehand.\n" +
-                "● Errors in the program can be any of the following :\n" +
-                "logical errors, syntactic errors, semantic errors, runtime\n" +
-                "errors\n" +
-                "etc.\n"+"● The winner declaration will be solely based on performance in\n" +
-                "the second round.");
+        rules_debugging.setText("1. Number of participants per team = 2\n" +
+                "\n"+
+                "2. No online help is allowed.\n" +
+                "\n"+
+                "3. 10 teams will be qualified from round 1 to participate in round 2\n" +
+                "\n"+
+                "4. The output expected will be informed beforehand.\n" +
+                "\n"+
+                "5. Errors in the program can be any of the following :\n" +
+                "logical errors, syntactic errors, semantic errors, runtime errors\n" +
+                "\n"+
+                "6. The winner declaration will be solely based on performance in the second round.");
         return view;
     }
 

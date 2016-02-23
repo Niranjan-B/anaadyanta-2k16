@@ -36,10 +36,15 @@ public class SkimeFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_skime, container, false);
         TextView rules_skime= (TextView) view.findViewById(R.id.rules_skime);
         rules_skime.setText("1. This is a theme based event. Theme :THROWBACK TO CHILDHOOD. \n"+
+                "\n"+
                 "2. Team Limit: 8+2 members. \n"+
+                "\n"+
                 "3. Time Limit: 10+2 minutes(Including set up) \n"+
+                "\n"+
                 "4. No dialogues. Audio visual aids can be used (Background Music and Presentation/Video relevant to the message that the team is conveying)\n"+
+                "\n"+
                 "5. The music/video/presentation must be submitted to the event coordinator at least 30 minutes prior to the performance.\n"+
+                "\n"+
                 "6. Vulgarity in any form will lead to immediate disqualification");
         return view;
     }
