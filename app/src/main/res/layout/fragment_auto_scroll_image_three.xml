@@ -3,11 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="org.anaadyanta.anaadyanta2k16.fragments.AutoScrollImageThree"
-    android:background="@color/common_action_bar_splitter">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@android:drawable/stat_sys_headset"/>
+    android:background="@drawable/c3">
 
 </LinearLayout>
