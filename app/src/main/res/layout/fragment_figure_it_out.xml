@@ -44,8 +44,7 @@
                         android:layout_marginTop="6dp"
                         android:textColor="#ffffff"
                         android:id="@+id/textView2"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true" />
+                        android:layout_centerInParent="true"/>
 
 
 
@@ -56,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
                     android:textColor="#000000"
-                    android:padding="2sp"
+                    android:padding="5sp"
                     android:gravity="center"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="Each individual will be given a real object of which the contestant has to measure it and create a model in CATIA V5 and obtain the final drawing with all the intricate details of the part ( for example radius fillet ) ."
@@ -80,7 +79,7 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="38dp"
                     android:id="@+id/imageView"
                     android:src="@drawable/regis"
                     android:layout_alignParentTop="true"
@@ -92,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Registration fee     :"
+                    android:text="Registration fee  :"
                     android:textStyle="normal"
                     android:layout_marginTop="6dp"
                     android:textColor="#000000"
@@ -136,7 +135,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="First Prize                :"
+                    android:text="First Prize  :"
                     android:textStyle="normal"
                     android:id="@+id/textView6"
                     android:textColor="#000000"
@@ -148,7 +147,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Second Prize           :"
+                    android:text="Second Prize  :"
                     android:textStyle="normal"
                     android:id="@+id/textView7"
                     android:textColor="#000000"
@@ -206,8 +205,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Coordinators"
                         android:textColor="#ffffff"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
                         android:id="@+id/textView16" />
 
                 </RelativeLayout>
@@ -216,6 +214,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView4"
+                    android:layout_marginLeft="5dp"
                     android:src="@drawable/contact"
                     android:layout_marginTop="20dp"
                     android:layout_below="@+id/relativeLayout4"
@@ -250,6 +249,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView5"
                     android:src="@drawable/contact"
+                    android:layout_marginLeft="5dp"
                     android:layout_alignTop="@+id/textView13"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -310,10 +310,9 @@
                         android:textStyle="bold"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Rules :"
+                        android:text="Rules "
                         android:textColor="#ffffff"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
                         />
 
                 </RelativeLayout>

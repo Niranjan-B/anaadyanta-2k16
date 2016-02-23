@@ -47,7 +47,6 @@ public class RegistrationFragment extends Fragment {
 
     public RegistrationFragment() {
         // Required empty public constructor
-        // TODO : add 2 clicks to return or pop up a dialog
     }
 
     @Override

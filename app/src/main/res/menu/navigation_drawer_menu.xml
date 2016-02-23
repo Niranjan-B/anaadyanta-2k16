@@ -36,7 +36,7 @@
                 android:id="@+id/rules"
                 android:checked="false"
                 android:icon="@mipmap/ic_rules_navigation_drawer"
-                android:title="Follow These" />
+                android:title="Schedule" />
 
             <item
                 android:id="@+id/sponsors"

@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#039BE5</color>
     <color name="color_fashion">#4527A0</color>
     <color name="color_treasurehunt">#BF360C</color>
     <color name="color_dance">#BF1C1C</color>
@@ -14,6 +14,7 @@
     <color name="color_theater">#00695C</color>
     <color name="color_literary">#3e2723</color>
     <color name="color_sports">#283593</color>
-
+    <color name="submit_button_default_state">#039BE5</color>
+    <color name="submit_button_clicked_state">#0277BD</color>
 
 </resources>
