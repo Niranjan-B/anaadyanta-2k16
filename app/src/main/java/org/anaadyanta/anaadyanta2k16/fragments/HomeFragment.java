@@ -23,6 +23,7 @@ import org.anaadyanta.anaadyanta2k16.Photography;
 import org.anaadyanta.anaadyanta2k16.R;
 import org.anaadyanta.anaadyanta2k16.Sports;
 import org.anaadyanta.anaadyanta2k16.Tech;
+import org.anaadyanta.anaadyanta2k16.Tech2;
 import org.anaadyanta.anaadyanta2k16.Theatre;
 import org.anaadyanta.anaadyanta2k16.Utils.Utility;
 import org.anaadyanta.anaadyanta2k16.adapters.AutoScrollAdapter;
@@ -40,7 +41,8 @@ public class HomeFragment extends Fragment {
     CircleIndicator circleIndicator;
     CoordinatorLayout coordinatorLayout;
     CardView fashionShowCardView, mDanceCardView, mMusicCardView, mSportsCardView,
-            mTheatreCardView, mGamingCardView, mPhotographyCardView, mArtCardView, mLiteraryCardView, mTechCardView;
+            mTheatreCardView, mGamingCardView, mPhotographyCardView, mArtCardView, mLiteraryCardView, mTechCardView,
+            mTechCardView2;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -72,7 +74,8 @@ public class HomeFragment extends Fragment {
         mPhotographyCardView = (CardView) view.findViewById(R.id.photographyCardView);
         mArtCardView = (CardView) view.findViewById(R.id.artCardView);
         mLiteraryCardView = (CardView) view.findViewById(R.id.literaryCardView);
-        mTechCardView = (CardView) view.findViewById(R.id.techCardView);
+        mTechCardView = (CardView) view.findViewById(R.id.techCardView1);
+        mTechCardView2 = (CardView) view.findViewById(R.id.techCardView2);
 
         autoScrollViewPager.setClipToPadding(false);
         autoScrollViewPager.setAdapter(autoScrollAdapter);
@@ -83,8 +86,7 @@ public class HomeFragment extends Fragment {
         circleIndicator.setViewPager(autoScrollViewPager);
 
         if(!Utility.isInternetAvailable(getActivity())) {
-            Snackbar.make(coordinatorLayout, "Intenet Down!, Bad UX in progress!", Snackbar.LENGTH_SHORT).show();
-            // TODO make the text something more humorous i.e. flintstones era :-)
+            Snackbar.make(coordinatorLayout, "Oops ! Connect to Internet to experience best of the app", Snackbar.LENGTH_SHORT).show();
         }
 
         fashionShowCardView.setOnClickListener(new View.OnClickListener() {
@@ -154,6 +156,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent techIntent = new Intent(getActivity(), Tech.class);
+                startActivity(techIntent);
+            }
+        });
+        mTechCardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent techIntent = new Intent(getActivity(), Tech2.class);
                 startActivity(techIntent);
             }
         });

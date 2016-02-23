@@ -39,7 +39,7 @@ import org.anaadyanta.anaadyanta2k16.fragments.TechFragments.WhatThePhysicsFragm
  */
 public class TechAdapter extends FragmentPagerAdapter{
 
-    private static final int NUM_OF_SUB_EVENTS = 29;
+    private static final int NUM_OF_SUB_EVENTS = 13;
 
     public TechAdapter(FragmentManager fm) {
         super(fm);
@@ -62,22 +62,6 @@ public class TechAdapter extends FragmentPagerAdapter{
             case 10 : return EKhojFragment.getInstance();
             case 11 : return OnSpotProgrammingFragment.getInstance();
             case 12 : return DebuggingFragment.getInstance();
-            case 13 : return JahaazFragment.getInstance();
-            case 14 : return LogicalBoxFragment.getInstance();
-            case 15 : return WatchMeJunkFragment.getInstance();
-            case 16 : return FoxHuntFragment.getInstance();
-            case 17 : return MechWizFragment.getInstance();
-            case 18 : return AutomotiveQuizFragment.getInstance();
-            case 19 : return PaperPresentationFragment.getInstance();
-            case 20 : return WhatThePhysicsFragment.getInstance();
-            case 21 : return PayThePiperFragment.getInstance();
-            case 22 : return FigureItOutFragment.getInstance();
-            case 23 : return MachineItFragment.getInstance();
-            case 24 : return LetItRipFragment.getInstance();
-            case 25 : return SETUFragment.getInstance();
-            case 26 : return OneBHKFragment.getInstance();
-            case 27 : return PosterPresentationFragment.getInstance();
-            case 28 : return DraftItOutFragment.getInstance();
         }
         return null;
     }
@@ -104,22 +88,6 @@ public class TechAdapter extends FragmentPagerAdapter{
             case 10 : return "E-Khoj";
             case 11 : return "On Spot Programming";
             case 12 : return "Debugging";
-            case 13 : return "Jahaaz";
-            case 14 : return "Logical Box";
-            case 15 : return "Watch Me Junk";
-            case 16 : return "What Does The Technical Fox Say?";
-            case 17 : return "MechWiz";
-            case 18 : return "Automotive Quiz";
-            case 19 : return "Paper Presentation";
-            case 20 : return "What The Physics";
-            case 21 : return "Pay The Piper";
-            case 22 : return "Figure It Out";
-            case 23 : return "Machine It";
-            case 24 : return "Let It Rip";
-            case 25 : return "SETU";
-            case 26 : return "1 BHK House";
-            case 27 : return "Poster Presentation";
-            case 28 : return "Draft It Out";
         }
         return "";
     }
