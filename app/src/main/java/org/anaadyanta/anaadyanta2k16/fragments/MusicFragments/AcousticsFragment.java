@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.MusicFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,6 +38,26 @@ public class AcousticsFragment extends Fragment {
         // Inflate the layout for this fragment
       View view =  inflater.inflate(R.layout.fragment_acoustics, container, false);
         TextView rules_accustics= (TextView) view.findViewById(R.id.rules_accustics);
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        ImageView phone1=(ImageView)view.findViewById(R.id.imageView5);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+918147995391";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        phone1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919538109745";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
         rules_accustics.setText("1. 2-8 Members are allowed to perform at this event. \n" +
                 "\n"+
                 "2. This is a single round competition. \n" +

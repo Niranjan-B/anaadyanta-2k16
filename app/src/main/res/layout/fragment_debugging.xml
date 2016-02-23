@@ -219,6 +219,7 @@ ROUND 2: We put you on computers with preloaded erroneous programs. 4 levels and
                     android:id="@+id/imageView4"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/contact"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_alignParentLeft="true"

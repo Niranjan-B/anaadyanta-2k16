@@ -174,7 +174,11 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView4"
                     android:src="@drawable/contact"
+<<<<<<< Updated upstream
                     android:layout_marginLeft="5dp"
+=======
+                    android:layout_marginLeft="10dp"
+>>>>>>> Stashed changes
                     android:layout_marginTop="20dp"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_alignParentLeft="true"

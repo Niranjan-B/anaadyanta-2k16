@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.TechFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,14 +38,20 @@ public class QuadSpeedFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_quad_speed, container, false);
         TextView rules_quadspeed= (TextView) view.findViewById(R.id.rules_quadspeed);
-        rules_quadspeed.setText("1. The bought copters is limited with specifications\n" +
-                "\n"+
-                "2. Two participants per team.\n" +
-                "\n"+
-                "3. No modifications to a default bought copter .\n" +
-                "\n"+
-                "4. Five rounds of increasing difficulty with filtering in each round .\n" +
-                "\n"+
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919036285404";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        rules_quadspeed.setText("● The bought copters is limited with specifications\n" +
+                "● Two participants per team.\n" +
+                "● No modifications to a default bought copter .\n" +
+                "● Five rounds of increasing difficulty with filtering in each round .\n" +
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Completion of each round .\n" +
                 "➢ Time taken .\n" +

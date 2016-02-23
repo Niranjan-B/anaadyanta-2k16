@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.GamingFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,6 +38,17 @@ public class CounterStrikeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_counter_strike, container, false);
         TextView rules_counterstrike= (TextView) view.findViewById(R.id.rules_counterstrike);
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919844073010";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+
         rules_counterstrike.setText("1. A team must comprise of 5 members.\n" +
                 "\n"+
                 "2. It’s a knockout event.\n" +

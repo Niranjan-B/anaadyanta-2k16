@@ -1,12 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.PhotographyFragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -34,6 +36,16 @@ public class MobilePhotographyFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_mobile_photography, container, false);
         TextView rules_photography= (TextView) view.findViewById(R.id.rules_photography);
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+918799420710";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
         rules_photography.setText("1. All participants should register offline at the Registration desk.\n" +
                 "\n"+
                 "2. The photograph must be shot on the days of the event based on the given theme.\n" +

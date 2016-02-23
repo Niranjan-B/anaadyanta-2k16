@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.TechFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,13 +38,23 @@ public class ICUFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_icu, container, false);
         TextView rules_1bhk= (TextView) view.findViewById(R.id.icu);
-        rules_1bhk.setText("1. Any sort of malpractice during any of the rounds will lead to disqualification.\n" +
-                "\n"+
-                "2. First round will be judged based on the correctness of simplification.\n" +
-                "\n"+
-                "3. Second round will be judged by taking into consideration both the correctness of implementation and the time taken to do it.\n" +
-                "\n"+
-                "4. The decision of the judges is final. ");
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+918553446432";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        rules_1bhk.setText("● Any sort of malpractice during any of the rounds will lead to\n" +
+                "disqualification.\n" +
+                "● First round will be judged based on the correctness of\n" +
+                "simplification.\n" +
+                "● Second round will be judged by taking into consideration both\n" +
+                "the correctness of implementation and the time taken to do it.\n" +
+                "● The decision of the judges is final. ");
         return view;
     }
 

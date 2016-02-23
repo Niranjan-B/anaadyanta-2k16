@@ -215,6 +215,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView4"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/contact"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="20dp"
@@ -229,8 +230,9 @@
                     android:text="Allen Sunny "
                     android:textColor="#000000"
                     android:id="@+id/textView10"
-                    android:layout_alignTop="@+id/imageView4"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignLeft="@+id/textView11"
+                    android:layout_alignStart="@+id/textView11" />
 
                 <TextView
                     android:layout_width="wrap_content"
