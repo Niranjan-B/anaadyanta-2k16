@@ -92,44 +92,6 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/treasureHuntCardView"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    cardView:cardCornerRadius="6dp"
-                    cardView:cardUseCompatPadding="true">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:id="@+id/treasureHuntImage"
-                            android:layout_width="match_parent"
-                            android:layout_height="180dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_margin="1dp"
-                            android:scaleType="centerCrop"
-                            android:src="@mipmap/treasure" />
-
-                        <TextView
-                            android:id="@+id/treasureHuntTextView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_centerHorizontal="true"
-                            android:maxLines="3"
-                            android:padding="8dp"
-                            android:text="Treasure Hunt"
-                            android:textColor="#ffffff"
-                            android:textSize="30sp" />
-
-                    </RelativeLayout>
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
                     android:id="@+id/danceCardView"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
