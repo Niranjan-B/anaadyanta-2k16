@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.MusicFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -36,8 +39,27 @@ public class BattleOfTheBandsWesternFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_battle_of_the_bands_western, container, false);
         TextView rules_wbattle= (TextView) view.findViewById(R.id.rules_wbattle);
-        rules_wbattle.setText("1. This is a WESTERN rock band competition open to any college or semi-pro band with three or more members. \n" +
-                "\n"+
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        ImageView phone1=(ImageView)view.findViewById(R.id.imageView5);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+918095870862";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        phone1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919901584186";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        rules_wbattle.setText("1. This is a WESTERN rock band competition open to any college or semi\u00ADpro band with three or more members. \n" +
                 "2. It’s a 2 round competition, Eliminations and Finals \n" +
                 "\n"+
                 "3. All songs performed by the band must be in ENGLISH only. \n" +

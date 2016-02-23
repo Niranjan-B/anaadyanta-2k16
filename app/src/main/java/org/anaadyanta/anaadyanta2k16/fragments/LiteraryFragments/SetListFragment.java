@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.LiteraryFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,6 +38,16 @@ public class SetListFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_set_list, container, false);
         TextView rules_set_list= (TextView) view.findViewById(R.id.rules_set_list);
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919901279266";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
         rules_set_list.setText("1. Solo event.\n" +
                 "\n"+
                 "2. Participants are given 4 sets of topics one after another to speak about. 3 sets and one Big Finish. Topics are generally meant to be comical.\n" +

@@ -147,58 +147,14 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/back_literary"
-                android:layout_below="@+id/relativeLayout3"
-                android:layout_alignRight="@+id/relativeLayout3"
-                android:layout_alignEnd="@+id/relativeLayout3"
-                android:layout_alignLeft="@+id/relativeLayout3"
-                android:layout_alignStart="@+id/relativeLayout3"
-                android:id="@+id/relativeLayout6">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="#3e2723"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:id="@+id/relativeLayout4">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Coordinators "
-                        android:textStyle="bold"
-                        android:textColor="#ffffff"
-                        android:layout_centerInParent="true"
-                        android:id="@+id/textView16" />
-
-                </RelativeLayout>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView4"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/contact"
-                    android:layout_marginTop="20dp"
-                    android:layout_below="@+id/relativeLayout4"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/relativeLayout6"
                 android:background="@drawable/back_literary"
                 android:layout_marginTop="18dp"
-                android:layout_alignLeft="@+id/relativeLayout6"
-                android:layout_alignStart="@+id/relativeLayout6"
-                android:layout_alignRight="@+id/relativeLayout6"
-                android:layout_alignEnd="@+id/relativeLayout6">
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_alignLeft="@+id/relativeLayout3"
+                android:layout_alignStart="@+id/relativeLayout3"
+                android:layout_alignRight="@+id/relativeLayout3"
+                android:layout_alignEnd="@+id/relativeLayout3">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
