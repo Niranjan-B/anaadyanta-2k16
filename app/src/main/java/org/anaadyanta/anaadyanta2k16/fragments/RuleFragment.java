@@ -26,7 +26,7 @@ public class RuleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         try {
-            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Rulez");
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Schedule");
         } catch (NullPointerException exception) {
             Log.d("anaadyanta", "" + exception.getMessage());
         }
