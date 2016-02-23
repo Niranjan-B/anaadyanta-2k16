@@ -73,7 +73,7 @@ public class NewsFeedFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        if(!Utility.isInternetAvailable(getActivity())) {
+        /*if(!Utility.isInternetAvailable(getActivity())) {
             Snackbar.make(coordinatorLayout, "Intenet Down!, Bad UX in progress!", Snackbar.LENGTH_SHORT).show();
             if (progressBar.getVisibility() == View.VISIBLE) {
                 progressBar.setVisibility(View.GONE);
@@ -81,7 +81,7 @@ public class NewsFeedFragment extends Fragment {
             // TODO make the text something more humorous i.e. flintstones era :-)
         } else {
             new newsFeedNetworkCall().execute();
-        }
+        }*/
 
     }
 

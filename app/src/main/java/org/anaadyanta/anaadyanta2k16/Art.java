@@ -37,13 +37,13 @@ public class Art extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_art), "http://ninja-root.site40.net/anaadyanta_pics/cultural/collage.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_art), "http://anaadyanta.org/Cultural/collage.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_art), "http://ninja-root.site40.net/anaadyanta_pics/cultural/doodle.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_art), "http://anaadyanta.org/Cultural/doodle.jpg");
                     case 2:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_art), "http://ninja-root.site40.net/anaadyanta_pics/cultural/what_next.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_art), "http://anaadyanta.org/Cultural/what_next.jpg");
                     case 3:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_art), "http://ninja-root.site40.net/anaadyanta_pics/cultural/blind_art.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_art), "http://anaadyanta.org/Cultural/blind_art.jpg");
                 }
 
                 return null;

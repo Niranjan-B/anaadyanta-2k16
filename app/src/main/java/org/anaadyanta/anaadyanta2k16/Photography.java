@@ -37,9 +37,9 @@ public class Photography extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_gaming), "http://ninja-root.site40.net/anaadyanta_pics/cultural/dslr.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_gaming), "http://anaadyanta.org/Cultural/dslr.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_gaming), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mobile_photography.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_gaming), "http://anaadyanta.org/Cultural/mobile_photography.jpg");
                 }
 
                 return null;

@@ -38,11 +38,11 @@ public class Theatre extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://ninja-root.site40.net/anaadyanta_pics/cultural/street_play.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://anaadyanta.org/Cultural/street_play.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mad_ads.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://anaadyanta.org/Cultural/mad_ads.jpg");
                     case 2:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://ninja-root.site40.net/anaadyanta_pics/cultural/skime.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_theater), "http://ninja-root.site40.net/anaadyanta_pics/cultural/mime.jpg");
                 }
 
                 return null;

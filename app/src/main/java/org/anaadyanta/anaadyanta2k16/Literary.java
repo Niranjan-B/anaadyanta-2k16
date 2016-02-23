@@ -37,19 +37,19 @@ public class Literary extends AppCompatActivity {
 
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/pot_pourri.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/pot_pourri.jpg");
                     case 1:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/general_quiz.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/general_quiz.jpg");
                     case 2:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/vices_quiz.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/vices_quiz.jpg");
                     case 3:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/set_list.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/set_list.jpg");
                     case 4:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/fictionary.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/fictionary.jpg");
                     case 5:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/debate.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/debate.jpg");
                     case 6:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://ninja-root.site40.net/anaadyanta_pics/cultural/hunger_games_modified.jpg");
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/hunger_games_modified.jpg");
                 }
 
                 return null;

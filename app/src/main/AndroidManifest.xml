@@ -32,9 +32,6 @@
             android:name=".FashionShow"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TreasureHunt"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".Dance"
             android:screenOrientation="portrait" />
         <activity

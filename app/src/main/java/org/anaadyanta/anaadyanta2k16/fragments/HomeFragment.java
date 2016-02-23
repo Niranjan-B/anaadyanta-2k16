@@ -24,7 +24,6 @@ import org.anaadyanta.anaadyanta2k16.R;
 import org.anaadyanta.anaadyanta2k16.Sports;
 import org.anaadyanta.anaadyanta2k16.Tech;
 import org.anaadyanta.anaadyanta2k16.Theatre;
-import org.anaadyanta.anaadyanta2k16.TreasureHunt;
 import org.anaadyanta.anaadyanta2k16.Utils.Utility;
 import org.anaadyanta.anaadyanta2k16.adapters.AutoScrollAdapter;
 
@@ -40,7 +39,7 @@ public class HomeFragment extends Fragment {
     AutoScrollAdapter autoScrollAdapter;
     CircleIndicator circleIndicator;
     CoordinatorLayout coordinatorLayout;
-    CardView fashionShowCardView, treasureHuntCardView, mDanceCardView, mMusicCardView, mSportsCardView,
+    CardView fashionShowCardView, mDanceCardView, mMusicCardView, mSportsCardView,
             mTheatreCardView, mGamingCardView, mPhotographyCardView, mArtCardView, mLiteraryCardView, mTechCardView;
 
     public HomeFragment() {
@@ -60,14 +59,11 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        // TODO : add the remaining pics to the home fragment
-
         autoScrollAdapter = new AutoScrollAdapter(getChildFragmentManager());
         autoScrollViewPager = (AutoScrollViewPager) view.findViewById(R.id.autoScrollViewPager);
         circleIndicator = (CircleIndicator) view.findViewById(R.id.circleIndicator);
         coordinatorLayout = (CoordinatorLayout) view.findViewById(R.id.coreContainer);
         fashionShowCardView = (CardView) view.findViewById(R.id.fashionShowCardView);
-        treasureHuntCardView = (CardView) view.findViewById(R.id.treasureHuntCardView);
         mDanceCardView = (CardView) view.findViewById(R.id.danceCardView);
         mMusicCardView = (CardView) view.findViewById(R.id.musicCardView);
         mSportsCardView = (CardView) view.findViewById(R.id.sportsCardView);
@@ -96,13 +92,6 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent fashionShowIntent  = new Intent(getActivity(), FashionShow.class);
                 startActivity(fashionShowIntent);
-            }
-        });
-        treasureHuntCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent treasureHuntIntent = new Intent(getActivity(), TreasureHunt.class);
-                startActivity(treasureHuntIntent);
             }
         });
         mDanceCardView.setOnClickListener(new View.OnClickListener() {
