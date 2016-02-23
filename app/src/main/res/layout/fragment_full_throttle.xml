@@ -38,13 +38,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Eligibility Criteria :"
+                        android:text="Eligibility Criteria"
                         android:layout_marginTop="6dp"
                         android:textColor="#ffffff"
                         android:textStyle="bold"
                         android:id="@+id/textView2"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true" />
+                        android:layout_centerInParent="true" />
 
 
                 </RelativeLayout>
@@ -105,13 +104,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="The RC Car Specifications: "
+                        android:text="The RC Car Specifications "
                         android:layout_marginTop="6dp"
                         android:textColor="#ffffff"
                         android:textStyle="bold"
                         android:id="@+id/textView2222"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true" />
+                        android:layout_centerInParent="true" />
 
                 </RelativeLayout>
 
@@ -159,6 +157,7 @@
                 android:layout_margin="12dp"
                 android:background="@drawable/back"
                 android:layout_centerHorizontal="true"
+                android:padding="4dp"
                 android:layout_below="@+id/relativeLayoutv"
                 android:id="@+id/relativeLayoutf">
                 <RelativeLayout
@@ -175,12 +174,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Gameplay:"
+                        android:text="Gameplay"
                         android:textStyle="bold"
                         android:textColor="#ffffff"
                         android:id="@+id/textView8"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true" />
+                        android:layout_centerInParent="true" />
 
                 </RelativeLayout>
 
@@ -491,6 +489,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView5"
                     android:src="@drawable/contact"
+                    android:layout_marginLeft="5dp"
                     android:layout_alignTop="@+id/textView13"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
