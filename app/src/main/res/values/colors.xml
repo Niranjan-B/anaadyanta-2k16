@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#039BE5</color>
     <color name="color_fashion">#4527A0</color>
     <color name="color_treasurehunt">#BF360C</color>
     <color name="color_dance">#BF1C1C</color>
