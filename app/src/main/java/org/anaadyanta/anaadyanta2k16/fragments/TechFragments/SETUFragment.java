@@ -23,29 +23,27 @@ public class SETUFragment extends Fragment {
 
     ObservableScrollView setuScrollView;
 
-    public static SETUFragment getInstance() {
-        return new SETUFragment();
-    }
-
     public SETUFragment() {
         // Required empty public constructor
     }
 
+    public static SETUFragment getInstance() {
+        return new SETUFragment();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_setu, container, false);
-        TextView rules_poster= (TextView) view.findViewById(R.id.setu);
-b
-ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
-        ImageView phone1=(ImageView)view.findViewById(R.id.imageView5);
+        View view = inflater.inflate(R.layout.fragment_setu, container, false);
+        TextView rules_poster = (TextView) view.findViewById(R.id.setu);
+        ImageView phone = (ImageView) view.findViewById(R.id.imageView4);
+        ImageView phone1 = (ImageView) view.findViewById(R.id.imageView5);
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+918951551435";
-                Intent in=new Intent(Intent.ACTION_CALL);
+                String num = "+918951551435";
+                Intent in = new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);
             }
@@ -53,8 +51,8 @@ ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
         phone1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+918197964555";
-                Intent in=new Intent(Intent.ACTION_CALL);
+                String num = "+918197964555";
+                Intent in = new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);
             }

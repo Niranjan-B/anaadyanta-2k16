@@ -215,11 +215,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView4"
-<<<<<<< Updated upstream
                     android:layout_marginLeft="5dp"
-=======
-                    android:layout_marginLeft="10dp"
->>>>>>> Stashed changes
                     android:src="@drawable/contact"
                     android:layout_marginTop="20dp"
                     android:layout_below="@+id/relativeLayout4"
@@ -252,11 +248,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView5"
-<<<<<<< Updated upstream
                     android:layout_marginLeft="5dp"
-=======
-                    android:layout_marginLeft="10dp"
->>>>>>> Stashed changes
                     android:src="@drawable/contact"
                     android:layout_alignTop="@+id/textView13"
                     android:layout_alignParentLeft="true"
@@ -271,7 +263,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="24dp"
-                    android:layout_below="@+id/textView11"></RelativeLayout>
+                    android:layout_below="@+id/textView11"/>
 
                 <TextView
                     android:layout_width="wrap_content"

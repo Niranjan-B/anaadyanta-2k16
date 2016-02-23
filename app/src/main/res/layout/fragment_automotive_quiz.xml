@@ -216,7 +216,6 @@
                     android:id="@+id/imageView4"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/contact"
-                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_alignParentLeft="true"
@@ -250,7 +249,6 @@
                     android:id="@+id/imageView5"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/contact"
-                    android:layout_marginLeft="10dp"
                     android:layout_alignTop="@+id/textView13"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />

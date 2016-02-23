@@ -217,7 +217,6 @@
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/contact"
                     android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
@@ -253,7 +252,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
                     android:id="@+id/imageView5"
                     android:src="@drawable/contact"
                     android:layout_marginLeft="5dp"
@@ -269,7 +267,7 @@
                     android:id="@+id/relativeLayout5"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView12"></RelativeLayout>
+                    android:layout_below="@+id/textView12"/>
 
                 <TextView
                     android:layout_width="wrap_content"

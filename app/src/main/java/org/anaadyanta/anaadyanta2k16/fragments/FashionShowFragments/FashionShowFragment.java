@@ -37,7 +37,7 @@ public class FashionShowFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fashion_show, container, false);
         TextView rules_fashionshow= (TextView) view.findViewById(R.id.rules_fashionshow);
-        ImageView phone=(ImageView)view.findViewById(R.id.phone);
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
 
         phone.setOnClickListener(new View.OnClickListener() {
             @Override

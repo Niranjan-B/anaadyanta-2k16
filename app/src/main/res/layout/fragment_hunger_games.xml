@@ -201,7 +201,6 @@
                 android:layout_below="@+id/relativeLayout3"
                 android:layout_alignLeft="@+id/relativeLayout3"
                 android:layout_alignStart="@+id/relativeLayout3"
-<<<<<<< Updated upstream
                 android:id="@+id/relativeLayout6">
 
 
@@ -286,7 +285,7 @@
                     android:layout_below="@+id/textView12"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginTop="24dp"></RelativeLayout>
+                    android:layout_marginTop="24dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -326,10 +325,7 @@
                 android:layout_alignStart="@+id/relativeLayout6"
                 android:layout_alignRight="@+id/relativeLayout6"
                 android:layout_alignEnd="@+id/relativeLayout6">
-=======
-                android:layout_alignRight="@+id/relativeLayout3"
-                android:layout_alignEnd="@+id/relativeLayout3">
->>>>>>> Stashed changes
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
