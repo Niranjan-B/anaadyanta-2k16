@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.TechFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,11 +38,20 @@ public class PaperPresentationFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_paper_presentation, container, false);
         TextView rules_paper_presentation= (TextView) view.findViewById(R.id.rules_paper_presentation);
-        rules_paper_presentation.setText("1. The maximum duration of the presentation is 20 minutes.\n" +
-                "\n"+
-                "2. Max of two participants per team .\n" +
-                "\n"+
-                "3. The questionnaire will follow presentation for 10 minutes by assigned judges .\n" +
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+917795574812";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        rules_paper_presentation.setText("● The maximum duration of the presentation is 20 minutes.\n" +
+                "● Max of two participants per team .\n" +
+                "● The questionnaire will follow presentation for 10 minutes by\n" +
+                "assigned judges .\n" +
                 "JUDGEMENT CRITERIA :\n" +
                 "\n"+
                 "➢ Authenticity and originality.\n" +

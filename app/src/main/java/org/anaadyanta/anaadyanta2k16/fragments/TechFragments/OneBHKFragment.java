@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.TechFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,16 +38,33 @@ public class OneBHKFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_one_bhk, container, false);
         TextView rules_1bhk= (TextView) view.findViewById(R.id.bhk);
-        rules_1bhk.setText("1. Rules & Regulation\n" +
-                "\n"+
-                "2. No of participants:2\n" +
-                "\n"+
-                "3. Area of plot:20*40 (ft)\n" +
-                "\n"+
-                "4. Time limits: 120min\n" +
-                "\n"+
-                "5. Scale factor: 1:2" +
-                "\n"+
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        ImageView phone1=(ImageView)view.findViewById(R.id.imageView5);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919738817938";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        phone1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919595595389";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        rules_1bhk.setText("● Rules & Regulation\n" +
+                "● No of participants:2\n" +
+                "● Area of plot:20*\n" +
+                "40 (ft)\n" +
+                "● Time limits: 120\n" +
+                "min\n" +
+                "Scale factor: 1:2" +
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Aesthetic view:50%\n" +
                 "➢ Dimensioning:30%\n" +

@@ -195,13 +195,13 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="match_parent"
                 android:background="@drawable/back_literary"
+                android:layout_marginTop="18dp"
                 android:layout_below="@+id/relativeLayout3"
-                android:layout_alignRight="@+id/relativeLayout3"
-                android:layout_alignEnd="@+id/relativeLayout3"
                 android:layout_alignLeft="@+id/relativeLayout3"
                 android:layout_alignStart="@+id/relativeLayout3"
+<<<<<<< Updated upstream
                 android:id="@+id/relativeLayout6">
 
 
@@ -326,6 +326,10 @@
                 android:layout_alignStart="@+id/relativeLayout6"
                 android:layout_alignRight="@+id/relativeLayout6"
                 android:layout_alignEnd="@+id/relativeLayout6">
+=======
+                android:layout_alignRight="@+id/relativeLayout3"
+                android:layout_alignEnd="@+id/relativeLayout3">
+>>>>>>> Stashed changes
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"

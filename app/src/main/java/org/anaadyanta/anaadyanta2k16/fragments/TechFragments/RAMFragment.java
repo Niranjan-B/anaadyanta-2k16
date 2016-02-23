@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.TechFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,9 +38,19 @@ public class RAMFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_ram, container, false);
         TextView rules_figure= (TextView) view.findViewById(R.id.ram);
-        rules_figure.setText(" 1. Any sort of malpractice during any of the rounds will lead to disqualification.\n" +
-                "\n"+
-                "2. The decision of the judges is final.");
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919986281443";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        rules_figure.setText(" ● Any sort of malpractice during any of the rounds will lead\n" +
+                "to disqualification.\n" +
+                "● The decision of the judges is final.");
         return view;
     }
 

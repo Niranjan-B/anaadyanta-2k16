@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.ArtFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,6 +38,26 @@ public class CollageFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_collage, container, false);
         TextView rules_collage= (TextView) view.findViewById(R.id.rules_collage);
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        ImageView phone1=(ImageView)view.findViewById(R.id.imageView5);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+918971521052";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        phone1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+918147266304";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
         rules_collage.setText("1. Individual participation. It's a one man show.\n" +
                 "\n"+
                 "2. All required materials will be provided.\n" +

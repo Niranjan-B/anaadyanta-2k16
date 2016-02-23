@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@mipmap/pictwo">
+        android:background="@mipmap/background">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -322,6 +322,7 @@
                 android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:id="@+id/imageView8"
+                android:background="@mipmap/ninja"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
@@ -360,7 +361,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Designer"
+                android:text="UI Designer"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:textStyle="italic"
@@ -381,8 +382,8 @@
                 android:textStyle="italic"
                 android:id="@+id/textView77"
                 android:layout_alignParentBottom="true"
-                android:layout_alignRight="@+id/textView76"
-                android:layout_alignEnd="@+id/textView76" />
+                android:layout_alignLeft="@+id/textView76"
+                android:layout_alignStart="@+id/textView76" />
 
             <ImageView
                 android:layout_width="100dp"

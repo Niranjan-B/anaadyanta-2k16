@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.TechFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,14 +38,20 @@ public class WatchMeJunkFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_watch_me_junk, container, false);
         TextView rules_treasurehunt= (TextView) view.findViewById(R.id.rules_junk);
-        rules_treasurehunt.setText("1. The maximum duration of the event is 3 hours.\n" +
-                "\n"+
-                "2. Two participants per team .\n" +
-                "\n"+
-                "3. Each and every part must be present .\n" +
-                "\n"+
-                "4. Negative points for missing parts\n" +
-                "\n"+
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+918123422253";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        rules_treasurehunt.setText("● The maximum duration of the event is 3 hours.\n" +
+                "● Two participants per team .\n" +
+                "● Each and every part must be present .\n" +
+                "● Negative points for missing parts\n" +
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Time taken to complete .\n" +
                 "➢ The efficiency . ");

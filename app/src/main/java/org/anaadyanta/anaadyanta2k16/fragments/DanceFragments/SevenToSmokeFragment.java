@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.DanceFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -35,6 +38,26 @@ public class SevenToSmokeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_seven_to_smoke, container, false);
         TextView rules_7tosmoke= (TextView) view.findViewById(R.id.rules_7tosmoke);
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        ImageView phone1=(ImageView)view.findViewById(R.id.imageView5);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919535146579";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+        phone1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919611389433";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
         rules_7tosmoke.setText("\n" +
                 "1. It is a two round event: Prelims and Finals.\n" +
                 "\n"+

@@ -1,11 +1,14 @@
 package org.anaadyanta.anaadyanta2k16.fragments.LiteraryFragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
@@ -36,6 +39,18 @@ public class DebateFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_debate, container, false);
         TextView rules_debate= (TextView) view.findViewById(R.id.rules_debate);
+        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
+        ImageView phone1=(ImageView)view.findViewById(R.id.imageView5);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num="+919481736934";
+                Intent in=new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + num));
+                startActivity(in);
+            }
+        });
+
         rules_debate.setText("1. Teams of two, each round the team will be pit against three other teams, the winner of each block advances to the finals.\n" +
                 "\n"+
                 "2. Before the debate starts, teams will pick chits determining whether they are for or against and in which order they will speak in. The order will be for(1), against(1), for(2), against(2).Teams will get 5 minutes after picking the chits to prepare.\n" +
