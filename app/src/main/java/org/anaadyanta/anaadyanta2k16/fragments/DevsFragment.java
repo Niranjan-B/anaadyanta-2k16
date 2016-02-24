@@ -1,6 +1,8 @@
 package org.anaadyanta.anaadyanta2k16.fragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +22,8 @@ import org.anaadyanta.anaadyanta2k16.R;
  */
 public class DevsFragment extends Fragment {
 
+    TextView githubTextLink;
+
 
     public DevsFragment() {
         // Required empty public constructor
@@ -36,6 +40,8 @@ public class DevsFragment extends Fragment {
         }
         View view=inflater.inflate(R.layout.fragment_devs, container, false);
         Shimmer shimmer;
+
+        githubTextLink = (TextView) view.findViewById(R.id.githubTextHolder);
 
         ShimmerTextView text=(ShimmerTextView)view.findViewById(R.id.prav);
         ShimmerTextView text1=(ShimmerTextView)view.findViewById(R.id.mallu);
@@ -77,6 +83,14 @@ public class DevsFragment extends Fragment {
         TiltEffectAttacher.attach(view.findViewById(R.id.ninja));
         TiltEffectAttacher.attach(view.findViewById(R.id.textView78));
         TiltEffectAttacher.attach(view.findViewById(R.id.textView79));
+
+        githubTextLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent githubIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Niranjan-B/anaadyanta-2k16/"));
+                startActivity(githubIntent);
+            }
+        });
 
         return view;
     }
