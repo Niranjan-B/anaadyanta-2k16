@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/material_view_pager_placeholder"/>
+        <include layout="@layout/material_view_pager_placeholder" />
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
@@ -19,585 +19,600 @@
 
 
             <RelativeLayout
+                android:id="@+id/relativeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:background="@drawable/back"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/relativeLayout">
+                android:layout_margin="12dp"
+                android:background="@drawable/back">
+
                 <RelativeLayout
+                    android:id="@+id/relativeLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="#0d47a1"
-                    android:id="@+id/relativeLayout2"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#0d47a1">
 
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Eligibility Criteria "
+                        android:layout_centerInParent="true"
                         android:layout_marginTop="6dp"
+                        android:text="Eligibility Criteria "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:id="@+id/textView2"
-                       android:layout_centerInParent="true"/>
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:padding="1dp"
-                    android:layout_marginLeft="4dp"
-                    android:textColor="#000000"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="● The team can have maximum of four members."
-                    android:id="@+id/textView"
-                    android:layout_below="@+id/relativeLayout2"
-                    android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_marginLeft="4dp"
+                    android:padding="1dp"
+                    android:text="● The team can have maximum of four members."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
                 <TextView
+                    android:id="@+id/tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView"
-                    android:textSize="15sp"
-                    android:id="@+id/tv"
-                    android:textColor="#000000"
                     android:padding="6dp"
-                    android:text="● All team members must be currently enrolled as students in colleges."/>
+                    android:text="● All team members must be currently enrolled as students in colleges."
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
                     android:padding="6dp"
-                    android:text="● There can only be one robot rover per team."/>
+                    android:text="● There can only be one robot rover per team."
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/relativeLayoutv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
                 android:layout_below="@+id/relativeLayout"
-                android:background="@drawable/back"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/relativeLayoutv">
+                android:layout_margin="12dp"
+                android:background="@drawable/back">
+
                 <RelativeLayout
+                    android:id="@+id/relativeLayout2d"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="#0d47a1"
-                    android:id="@+id/relativeLayout2d"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#0d47a1">
 
                     <TextView
+                        android:id="@+id/textView2222"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="The Rover Specifications "
+                        android:layout_centerInParent="true"
                         android:layout_marginTop="6dp"
+                        android:text="The Rover Specifications "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:id="@+id/textView2222"
-                        android:layout_centerInParent="true" />
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/textView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout2d"
+                    android:layout_marginLeft="4dp"
                     android:padding="4dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="● The line followers are to be fabricated by the team. Those
 bought from the market or built from a DIY kit available
 for purchase will be disqualified."
-                    android:id="@+id/textView19"
-                    android:layout_marginLeft="4dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
-                    android:layout_below="@+id/relativeLayout2d"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
+                    android:textSize="15sp" />
+
                 <TextView
+                    android:id="@+id/tv0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv0"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
+                    android:layout_below="@+id/textView19"
                     android:layout_marginLeft="4dp"
                     android:padding="1dp"
                     android:text="● The teams are allowed to use a single battery of maximum 15 volts on the car."
-                    android:layout_below="@+id/textView19"/>
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
                 <TextView
+                    android:id="@+id/tv01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv01"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
+                    android:layout_below="@+id/tv0"
                     android:layout_marginLeft="4dp"
                     android:padding="1dp"
                     android:text="● The car must fit into a box of 30cm x 25cm x 25cm at any point in the race."
-                    android:layout_below="@+id/tv0"/>
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
                 <TextView
+                    android:id="@+id/tv011"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv011"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
+                    android:layout_below="@+id/tv01"
                     android:layout_marginLeft="4dp"
                     android:padding="1dp"
                     android:text="● Readymade wheels are allowed."
-                    android:layout_below="@+id/tv01"/>
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
                 <TextView
+                    android:id="@+id/tv0111"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv0111"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
+                    android:layout_below="@+id/tv011"
                     android:layout_marginLeft="4dp"
                     android:padding="1dp"
                     android:text="● Any number of sensors can be used."
-                    android:layout_below="@+id/tv011"/>
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/relativeLayoutf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:background="@drawable/back"
-                android:layout_centerHorizontal="true"
                 android:layout_below="@+id/relativeLayoutv"
-                android:id="@+id/relativeLayoutf">
+                android:layout_centerHorizontal="true"
+                android:layout_margin="12dp"
+                android:background="@drawable/back">
+
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="#0d47a1"
                     android:id="@+id/relativeLayout223"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Gameplay"
-                        android:textStyle="bold"
-                        android:textColor="#ffffff"
-                        android:id="@+id/textView8"
-                        android:layout_centerInParent="true"/>
-
-                </RelativeLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="● There will be one round."
-                    android:id="@+id/textView17"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_below="@+id/relativeLayout223"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="● The objective of this contest is to complete the course in the shortest period of time while accurately tracking the black course line from start to finish over the white base overcoming the hurdles on the track"
-                    android:id="@+id/textView173"
-                    android:layout_marginLeft="6dp"
-                    android:layout_below="@id/textView17"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/back"
-                android:layout_marginTop="18dp"
-                android:id="@+id/rela123"
-                android:layout_below="@+id/relativeLayoutf"
-                android:layout_alignLeft="@+id/relativeLayoutf"
-                android:layout_alignStart="@+id/relativeLayoutf"
-                android:layout_alignRight="@+id/relativeLayoutf"
-                android:layout_alignEnd="@+id/relativeLayoutf">
-                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="#0d47a1"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:id="@+id/relativeLayout7">
+                    android:layout_alignParentTop="true"
+                    android:background="#0d47a1">
+
+
                     <TextView
+                        android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Track Rules and Details "
-                        android:textStyle="bold"
-                        android:textColor="#ffffff"
                         android:layout_centerInParent="true"
-                        />
+                        android:text="Gameplay"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/relativeLayout7"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout223"
+                    android:layout_marginLeft="6dp"
+                    android:text="● There will be one round."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:id="@+id/tvq"
-                        android:textSize="16sp"
-                        android:text="● Teams will hit the track one rover at a time."
-                        android:layout_marginLeft="4dp"
-                        android:padding="1dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:id="@+id/tvq1"
-                        android:layout_below="@+id/tvq"
-                        android:textSize="16sp"
-                        android:text="● The team members are not allowed to touch their car or the car of their opponents once the timer is running."
-                        android:layout_marginLeft="4dp"
-                        android:padding="1dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:id="@+id/tvq12"
-                        android:layout_below="@+id/tvq1"
-                        android:textSize="16sp"
-                        android:text="● There shall be a countdown preceding the start of the race. No participant is allowed to touch the machine during the countdown period."
-                        android:layout_marginLeft="4dp"
-                        android:padding="1dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:id="@+id/tvq123"
-                        android:layout_below="@+id/tvq12"
-                        android:textSize="16sp"
-                        android:text="● A time period of Five minutes is given to the team to calibrate the sensors (only Hardware Calibration is allowed) before the start of their run."
-                        android:layout_marginLeft="4dp"
-                        android:padding="1dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:id="@+id/tvq1234"
-                        android:layout_below="@+id/tvq123"
-                        android:textSize="16sp"
-                        android:text="NOTE : Track details will be mailed to the leader of the team two weeks prior to the event day."
-                        android:layout_marginLeft="4dp"
-                        android:padding="1dp"/>
-
-                </RelativeLayout>
-
+                <TextView
+                    android:id="@+id/textView173"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/textView17"
+                    android:layout_marginLeft="6dp"
+                    android:text="● The objective of this contest is to complete the course in the shortest period of time while accurately tracking the black course line from start to finish over the white base overcoming the hurdles on the track"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/rela123"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:background="@drawable/back"
-                android:id="@+id/relativeLayout3"
-                android:layout_marginTop="14dp"
-                android:layout_below="@+id/rela123"
-                android:layout_alignRight="@+id/relativeLayoutf"
+                android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/relativeLayoutf"
                 android:layout_alignLeft="@+id/relativeLayoutf"
-                android:layout_alignStart="@+id/relativeLayoutf">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:id="@+id/imageView"
-                    android:src="@drawable/regis"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_above="@+id/imageView2" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Registration fee  :"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
-                    android:layout_marginTop="6dp"
-                    android:id="@+id/textView4"
-                    android:layout_alignParentTop="true"
-                    android:layout_toEndOf="@+id/imageView"
-                    android:layout_toRightOf="@+id/imageView" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Rs.300"
-                    android:id="@+id/textView5"
-                    android:textColor="#000000"
-                    android:layout_marginRight="51dp"
-                    android:layout_marginEnd="51dp"
-                    android:layout_alignTop="@+id/textView4"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="38dp"
-                    android:id="@+id/imageView2"
-                    android:src="@drawable/second"
-                    android:layout_above="@+id/imageView3"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="38dp"
-                    android:id="@+id/imageView3"
-                    android:src="@drawable/second"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="First Prize  :"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
-                    android:id="@+id/textView6"
-                    android:layout_below="@+id/imageView"
-                    android:layout_alignLeft="@+id/textView4"
-                    android:layout_alignStart="@+id/textView4" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Second Prize  :"
-                    android:textStyle="normal"
-                    android:id="@+id/textView7"
-                    android:layout_below="@+id/imageView2"
-                    android:layout_alignLeft="@+id/textView6"
-                    android:layout_alignStart="@+id/textView6" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/textView9"
-                    android:text="Rs.6000"
-                    android:textColor="#000000"
-                    android:layout_alignTop="@+id/textView7"
-                    android:layout_alignLeft="@+id/textView18"
-                    android:layout_alignStart="@+id/textView18" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Rs.10000"
-                    android:textColor="#000000"
-                    android:id="@+id/textView18"
-                    android:layout_alignTop="@+id/textView6"
-                    android:layout_alignLeft="@+id/textView5"
-                    android:layout_alignStart="@+id/textView5" />
-
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/back"
-                android:id="@+id/relativeLayout6"
-                android:layout_below="@+id/relativeLayout3"
-                android:layout_alignLeft="@+id/relativeLayout3"
-                android:layout_alignStart="@+id/relativeLayout3"
-                android:layout_marginTop="24dp"
-                android:layout_alignRight="@+id/relativeLayout3"
-                android:layout_alignEnd="@+id/relativeLayout3">
-
+                android:layout_alignRight="@+id/relativeLayoutf"
+                android:layout_alignStart="@+id/relativeLayoutf"
+                android:layout_below="@+id/relativeLayoutf"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/back">
 
                 <RelativeLayout
+                    android:id="@+id/relativeLayout7"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="#0d47a1"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:id="@+id/relativeLayout4">
+                    android:layout_alignParentTop="true"
+                    android:background="#0d47a1">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Coordinators "
-                        android:textColor="#ffffff"
-                        android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:id="@+id/textView16" />
+                        android:text="Track Rules and Details "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout7">
+
+                    <TextView
+                        android:id="@+id/tvq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:padding="1dp"
+                        android:text="● Teams will hit the track one rover at a time."
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvq1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvq"
+                        android:layout_marginLeft="4dp"
+                        android:padding="1dp"
+                        android:text="● The team members are not allowed to touch their car or the car of their opponents once the timer is running."
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvq12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvq1"
+                        android:layout_marginLeft="4dp"
+                        android:padding="1dp"
+                        android:text="● There shall be a countdown preceding the start of the race. No participant is allowed to touch the machine during the countdown period."
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvq123"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvq12"
+                        android:layout_marginLeft="4dp"
+                        android:padding="1dp"
+                        android:text="● A time period of Five minutes is given to the team to calibrate the sensors (only Hardware Calibration is allowed) before the start of their run."
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvq1234"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvq123"
+                        android:layout_marginLeft="4dp"
+                        android:padding="1dp"
+                        android:text="NOTE : Track details will be mailed to the leader of the team two weeks prior to the event day."
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignEnd="@+id/relativeLayoutf"
+                android:layout_alignLeft="@+id/relativeLayoutf"
+                android:layout_alignRight="@+id/relativeLayoutf"
+                android:layout_alignStart="@+id/relativeLayoutf"
+                android:layout_below="@+id/rela123"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/back">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_above="@+id/imageView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/regis" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:text="Registration fee  :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/textView4"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginRight="51dp"
+                    android:text="Rs.300"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_above="@+id/imageView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/second" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/second" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4"
+                    android:layout_below="@+id/imageView"
+                    android:text="First Prize  :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView6"
+                    android:layout_alignStart="@+id/textView6"
+                    android:layout_below="@+id/imageView2"
+                    android:text="Second Prize  :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView18"
+                    android:layout_alignStart="@+id/textView18"
+                    android:layout_alignTop="@+id/textView7"
+                    android:text="Rs.6000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_alignStart="@+id/textView5"
+                    android:layout_alignTop="@+id/textView6"
+                    android:text="Rs.10000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/relativeLayout3"
+                android:layout_alignLeft="@+id/relativeLayout3"
+                android:layout_alignRight="@+id/relativeLayout3"
+                android:layout_alignStart="@+id/relativeLayout3"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/back">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#0d47a1">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Coordinators"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/imageView4"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/contact"
-                    android:layout_marginTop="20dp"
-                    android:layout_below="@+id/relativeLayout4"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_marginTop="4dp"
-                    android:id="@+id/textView10"
-                    android:layout_below="@+id/relativeLayout4"
-                    android:layout_centerHorizontal="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/textView11"
-                    android:layout_below="@+id/textView10"
-                    android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:gravity="center_horizontal"
-                    android:id="@+id/textView12"
-                    android:layout_below="@+id/textView11"
-                    android:layout_centerHorizontal="true" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:id="@+id/imageView5"
-                    android:src="@drawable/contact"
-                    android:layout_alignTop="@+id/textView13"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:background="#000000"
-
-                    android:id="@+id/relativeLayout5"
-                    android:layout_below="@+id/textView12"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginTop="24dp"/>
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/contact" />
 
                 <TextView
+                    android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="3dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/textView13"
-                    android:layout_below="@+id/relativeLayout5"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
+                    android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/textView14"
-                    android:layout_below="@+id/textView13"
                     android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13" />
+                    android:layout_alignStart="@+id/textView13"
+                    android:layout_below="@+id/textView10"
+                    android:padding="4dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
+                    android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_below="@+id/textView11"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/textView13"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/contact" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView12"
+                    android:layout_marginTop="24dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="3dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView13"
+                    android:layout_alignStart="@+id/textView13"
+                    android:layout_below="@+id/textView13"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
                     android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/imageView5"
+                    android:layout_toEndOf="@+id/imageView5"
                     android:layout_toRightOf="@+id/imageView5"
-                    android:layout_toEndOf="@+id/imageView5" />
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Santhosh Kumar P "
-                    android:textColor="#000000"
-                    android:textSize="16sp"
                     android:id="@+id/textView62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/imageView4"
-                    android:layout_centerHorizontal="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Santhosh Kumar P "
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="9611314832 "
-                    android:textColor="#008000"
-                    android:textSize="16sp"
-                    android:id="@+id/textView63"
-                    android:layout_alignBottom="@+id/imageView4"
-                    android:layout_alignLeft="@+id/textView62"
-                    android:layout_alignStart="@+id/textView62" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Karthik c "
-                    android:id="@+id/textView64"
                     android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:layout_alignBottom="@+id/textView13"
-                    android:layout_centerHorizontal="true" />
+                    android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/textView63"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView4"
+                    android:text="9611314832 "
+                    android:layout_centerHorizontal="true"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="8970034489 "
                     android:textColor="#008000"
-                    android:layout_margin="2dp"
-                    android:textSize="16sp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView13"
+                    android:layout_centerHorizontal="true"
+                    android:text="Karthik c "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
                     android:id="@+id/textView65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/imageView5"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="2dp"
+                    android:text="8970034489 "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#008000"
+                    android:textSize="16sp" />
             </RelativeLayout>
 
 

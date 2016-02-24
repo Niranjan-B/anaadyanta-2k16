@@ -49,9 +49,13 @@ public class LetItRipFragment extends Fragment {
             }
         });
         rules_let_it_rip.setText("● Three rounds per bout .\n" +
+                "\n"+
                 "● One participant per team .\n" +
+                "\n"+
                 "● Winner decided on who stays within the playing arena .\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
+                "\n"+
                 "➢ Damage .\n" +
                 "➢ Best of 3. ");
         return view;

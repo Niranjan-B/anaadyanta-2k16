@@ -50,6 +50,7 @@ public class JahaazFragment extends Fragment {
         });
 
         rules_jahaaz.setText("● Specifications\n" +
+                "\n"+
                 "➢ Battery – 6V Battery\n" +
                 "➢ Motor – 6V DC motor (max 3 nos.)\n" +
                 "➢ Solar panel – 6V 300mAh 1.5W (max 2 nos.)\n" +

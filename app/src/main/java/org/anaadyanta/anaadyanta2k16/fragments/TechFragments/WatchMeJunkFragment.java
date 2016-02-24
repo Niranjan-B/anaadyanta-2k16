@@ -49,9 +49,13 @@ public class WatchMeJunkFragment extends Fragment {
             }
         });
         rules_treasurehunt.setText("● The maximum duration of the event is 3 hours.\n" +
+                "\n"+
                 "● Two participants per team .\n" +
+                "\n"+
                 "● Each and every part must be present .\n" +
+                "\n"+
                 "● Negative points for missing parts\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Time taken to complete .\n" +
                 "➢ The efficiency . ");

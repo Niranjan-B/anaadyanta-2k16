@@ -59,12 +59,18 @@ public class OneBHKFragment extends Fragment {
             }
         });
         rules_1bhk.setText("● Rules & Regulation\n" +
+                "\n"+
                 "● No of participants:2\n" +
-                "● Area of plot:20*\n" +
+                "\n"+
+                "● Area of plot: 20 x " +
                 "40 (ft)\n" +
-                "● Time limits: 120\n" +
+                "\n"+
+                "● Time limits: 120 " +
                 "min\n" +
+                "\n"+
                 "Scale factor: 1:2" +
+                "\n"+
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Aesthetic view:50%\n" +
                 "➢ Dimensioning:30%\n" +

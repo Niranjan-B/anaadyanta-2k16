@@ -48,12 +48,15 @@ public class ICUFragment extends Fragment {
                 startActivity(in);
             }
         });
-        rules_1bhk.setText("● Any sort of malpractice during any of the rounds will lead to\n" +
+        rules_1bhk.setText("● Any sort of malpractice during any of the rounds will lead to" +
                 "disqualification.\n" +
-                "● First round will be judged based on the correctness of\n" +
+                "\n"+
+                "● First round will be judged based on the correctness of" +
                 "simplification.\n" +
-                "● Second round will be judged by taking into consideration both\n" +
+                "\n"+
+                "● Second round will be judged by taking into consideration both" +
                 "the correctness of implementation and the time taken to do it.\n" +
+                "\n"+
                 "● The decision of the judges is final. ");
         return view;
     }

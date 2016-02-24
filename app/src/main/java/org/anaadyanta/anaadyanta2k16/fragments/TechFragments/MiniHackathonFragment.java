@@ -59,9 +59,13 @@ public class MiniHackathonFragment extends Fragment {
             }
         });
         rules_hackathon.setText("● The duration of the event is 3 hours.\n" +
+                "\n"+
                 "● The team should consist of not more than 3 members.\n" +
+                "\n"+
                 "● The application can be developed on any platform.\n" +
+                "\n"+
                 "● Laptops are allowed.\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
                 "\n"+
                 "➢ Creativity involved in the application developed.\n" +

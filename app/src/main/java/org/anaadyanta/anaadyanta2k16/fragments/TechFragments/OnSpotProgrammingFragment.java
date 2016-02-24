@@ -59,11 +59,14 @@ public class OnSpotProgrammingFragment extends Fragment {
             }
         });
         rules_programming.setText("● Number of participants in a team = 2\n" +
-                "● The first round will be paperpen\n" +
-                "oriented. The second puts\n" +
+                "\n"+
+                "● The first round will be paperpen" +
+                "oriented. The second puts" +
                 "you on the computer.\n" +
+                "\n"+
                 "● Contestants cannot open multiple tabs on their browser.\n" +
-                "● Winners will be announced based on the time taken to code a\n" +
+                "\n"+
+                "● Winners will be announced based on the time taken to code a" +
                 "particular assignment. THE PERFORMANCE IN FIRST\n" +
                 "ROUND WILL NOT BE CONSIDERED. ");
         return view;

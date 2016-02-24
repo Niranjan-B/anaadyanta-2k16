@@ -59,9 +59,12 @@ public class TechquilaFragment extends Fragment {
             }
         });
         rules_techquilla.setText("● It is a team event with 2 members in a team.\n" +
-                "● The members of the team can be from different institutions\n" +
+                "\n" +
+                "● The members of the team can be from different institutions" +
                 "or colleges.\n" +
+                "\n" +
                 "● The decision of the quiz master is final.\n" +
+                "\n" +
                 "● The quiz contains:\n" +
                 "> Preliminary round which is a qualifier.\n" +
                 "> Final round. ");

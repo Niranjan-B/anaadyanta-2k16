@@ -49,8 +49,11 @@ public class MachineItFragment extends Fragment {
             }
         });
         rules_machine.setText("● The duration of the event is 2 hours.\n" +
+                "\n"+
                 "● One participant per team.\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
+                "\n"+
                 "➢ The right dimensions of the part.\n" +
                 "➢ Shape Detailing.\n" +
                 "➢ Time taken to finish.\n" +

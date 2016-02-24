@@ -58,15 +58,20 @@ public class SETUFragment extends Fragment {
             }
         });
         rules_poster.setText("● No. of participants in a team can be maximum 2.\n" +
-                "● The model built by each team will be tested till failure (yielding)\n" +
+                "\n"+
+                "● The model built by each team will be tested till failure (yielding)" +
                 "by applying an incremental static load.\n" +
+                "\n"+
                 "● Use popsicle sticks for modelling.\n" +
-                "● Sticks can be altered physically by cutting or notching at any\n" +
+                "\n"+
+                "● Sticks can be altered physically by cutting or notching at any" +
                 "angle.\n" +
-                "● Only Fevicol can be used as adhesive, use of other adhesives will\n" +
+                "\n"+
+                "● Only Fevicol can be used as adhesive, use of other adhesives will" +
                 "lead to disqualifications.\n" +
-                "● Threads can be used during construction, however should not be\n" +
-                "present in the final structure.");
+                "\n"+
+                "● Threads can be used during construction, however should not be" +
+                "present in the final structure.\n");
         return view;
     }
 

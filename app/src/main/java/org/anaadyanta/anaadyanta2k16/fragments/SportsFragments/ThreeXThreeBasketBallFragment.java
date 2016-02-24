@@ -63,8 +63,9 @@ public class ThreeXThreeBasketBallFragment extends Fragment {
                 "\n"+
                 "2. A coin flip shall determine which team gets the first possession.\n" +
                 "\n"+
-                "3. The regular playing time shall be a period of 6 minutes (i.e., 3+1+3) playing time.\n" +
-                "    However the first team which scores 21 points or more wins the game if it happens before the end of regular playing time. \n" +
+                "3. The regular playing time shall be a period of 6 minutes (i.e., 3+1+3) playing time." +
+                " However the first team which scores 21 points or more wins the game if it happens before the end of regular playing time. \n" +
+                "\n"+
                 "4. Substitutions can be done by any team when the ball becomes dead.\n" +
                 "\n"+
                 "5. Each team is granted one team time-out. Any player can call the time-out in a dead ball situation.\n");

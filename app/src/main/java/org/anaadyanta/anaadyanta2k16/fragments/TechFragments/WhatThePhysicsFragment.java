@@ -60,7 +60,9 @@ public class WhatThePhysicsFragment extends Fragment {
             }
         });
         rules_physics.setText("● 4 rounds of mixture of tasks .\n" +
+                "\n" +
                 "● Two participants per team .\n" +
+                "\n" +
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ All that is needed is high school physics and common sense . ");
         return view;

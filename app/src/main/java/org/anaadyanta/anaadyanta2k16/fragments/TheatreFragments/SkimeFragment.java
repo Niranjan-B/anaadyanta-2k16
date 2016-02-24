@@ -58,7 +58,8 @@ public class SkimeFragment extends Fragment {
                 startActivity(in);
             }
         });
-        rules_skime.setText("1. This is a theme based event. Theme :THROWBACK TO CHILDHOOD. \n"+
+        rules_skime.setText("1. This is a theme based event. Theme : THROWBACK TO CHILDHOOD."+
+                "\n"+
                 "\n"+
                 "2. Team Limit: 8+2 members. \n"+
                 "\n"+

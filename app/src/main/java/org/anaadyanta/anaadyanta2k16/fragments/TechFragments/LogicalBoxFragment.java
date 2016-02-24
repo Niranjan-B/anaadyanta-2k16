@@ -50,10 +50,14 @@ public class LogicalBoxFragment extends Fragment {
         });
 
         rules_logical_box.setText("● The maximum duration of the discussion is 2 hours.\n" +
-                "● Each participant will be given equal amount of time to talk and\n" +
+                "\n"+
+                "● Each participant will be given equal amount of time to talk and" +
                 "even counter state opponents.\n" +
+                "\n"+
                 "● Judges’ decision final .\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
+                "\n"+
                 "➢ The points or the content of the speaker .\n" +
                 "➢ Oratory skills .\n" +
                 "➢ Logical talk . ");
