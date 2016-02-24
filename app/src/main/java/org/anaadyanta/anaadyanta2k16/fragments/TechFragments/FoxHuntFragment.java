@@ -59,14 +59,18 @@ public class FoxHuntFragment extends Fragment {
             }
         });
         rules_automotive.setText("● Members Per Team24\n" +
-                "● Time Limit3045\n" +
+                "\n"+
+                "● Time Limit = 30 - 45" +
                 "mins per round\n" +
-                "● At the end of finding each clue, the participants has to take a pic of clue\n" +
+                "\n"+
+                "● At the end of finding each clue, the participants has to take a pic of clue" +
                 "with the transmitter.\n" +
-                "● Those participants who’ll find the exact location of final transmitter and\n" +
-                "hand over all the clues to the event coordinator will be the winners of the\n" +
+                "\n"+
+                "● Those participants who’ll find the exact location of final transmitter and" +
+                "hand over all the clues to the event coordinator will be the winners of the" +
                 "event.\n" +
-                "● The team which is finding two or more clues at a time may lead to penalty\n" +
+                "\n"+
+                "● The team which is finding two or more clues at a time may lead to penalty" +
                 "or chances to disqualify the team.");
 
         return view;
