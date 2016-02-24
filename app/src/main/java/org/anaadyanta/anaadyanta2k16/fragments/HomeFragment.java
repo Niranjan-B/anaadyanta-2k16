@@ -86,7 +86,7 @@ public class HomeFragment extends Fragment {
         circleIndicator.setViewPager(autoScrollViewPager);
 
         if(!Utility.isInternetAvailable(getActivity())) {
-            Snackbar.make(coordinatorLayout, "Oops ! Connect to Internet to experience best of the app", Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(coordinatorLayout, "Oops ! Connect to Internet to experience best of the app.", Snackbar.LENGTH_LONG).show();
         }
 
         fashionShowCardView.setOnClickListener(new View.OnClickListener() {
