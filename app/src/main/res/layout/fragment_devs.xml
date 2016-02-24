@@ -1,403 +1,423 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:fillViewport="false">
 
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="org.anaadyanta.anaadyanta2k16.fragments.DevsFragment">
-    <RelativeLayout
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@mipmap/background">
+        android:layout_height="match_parent"
+        tools:context="org.anaadyanta.anaadyanta2k16.fragments.DevsFragment">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="136dp"
-            android:background="#30FFFFFF"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/relativeLayout9">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:id="@+id/imageView6ab"
-                android:src="@mipmap/chor"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true" />
+            android:layout_height="wrap_content"
+            android:background="@mipmap/background">
 
-            <com.romainpiel.shimmer.ShimmerTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Kishore Singh"
-                android:textStyle="italic"
-                android:textColor="#000000"
-                android:id="@+id/chor"
-                android:textSize="28sp"
+            <RelativeLayout
+                android:id="@+id/relativeLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
                 android:layout_alignParentTop="true"
-                android:layout_alignLeft="@+id/textView74"
-                android:layout_alignStart="@+id/textView74" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:background="#30FFFFFF">
+
+                <ImageView
+                    android:id="@+id/imageView6ab"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@mipmap/chor" />
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/chor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/imageView6ab"
+                    android:layout_toEndOf="@+id/imageView6ab"
+                    android:text="Kishore Singh"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Android Developer"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/chor"
+                    android:layout_alignLeft="@+id/chor"
+                    android:layout_alignStart="@+id/chor" />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ECE, NMIT"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/textView73"
+                    android:layout_alignLeft="@+id/textView73"
+                    android:layout_alignStart="@+id/textView73" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_below="@+id/relativeLayout9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="40dp"
+                android:background="#30FFFFFF">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@mipmap/mallu" />
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/mallu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:layout_alignParentTop="true"
+                    android:text="Malavika Anand"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textViewc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UI Designer"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/mallu"
+                    android:layout_alignLeft="@+id/mallu"
+                    android:layout_alignStart="@+id/mallu" />
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ECE, NMIT"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/textViewc"
+                    android:layout_alignLeft="@+id/textViewc"
+                    android:layout_alignStart="@+id/textViewc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_below="@+id/relativeLayout10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="40dp"
+                android:background="#30FFFFFF">
+
+                <ImageView
+                    android:id="@+id/imageViewg"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@mipmap/nikhil" />
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/nikhil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/imageViewg"
+                    android:layout_toEndOf="@+id/imageViewg"
+                    android:layout_alignParentTop="true"
+                    android:text="Nikhil Srinivas"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UI Designer"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/nikhil"
+                    android:layout_alignLeft="@+id/nikhil"
+                    android:layout_alignStart="@+id/nikhil" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ECE, NMIT"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/textView69"
+                    android:layout_alignLeft="@+id/textView69"
+                    android:layout_alignStart="@+id/textView69" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_below="@+id/relativeLayout11"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="40dp"
+                android:background="#30FFFFFF">
+
+                <ImageView
+                    android:id="@+id/imageView6g"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@mipmap/prav" />
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/prav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/imageView6g"
+                    android:layout_toEndOf="@+id/imageView6g"
+                    android:layout_alignParentTop="true"
+                    android:text="N Praveen"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textViewb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Android Developer"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/prav"
+                    android:layout_alignLeft="@+id/prav"
+                    android:layout_alignStart="@+id/prav" />
+
+                <TextView
+                    android:id="@+id/textViewa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ECE, NMIT"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/textViewb"
+                    android:layout_alignLeft="@+id/textViewb"
+                    android:layout_alignStart="@+id/textViewb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_below="@+id/relativeLayout12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="40dp"
+                android:background="#30FFFFFF">
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/ninja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:text="Niranjan B"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Android Developer, Backend."
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/ninja"
+                    android:layout_alignLeft="@+id/ninja"
+                    android:layout_alignStart="@+id/ninja" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ECE, NMIT"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/textView78"
+                    android:layout_alignLeft="@+id/textView78"
+                    android:layout_alignStart="@+id/textView78" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@mipmap/niranjan"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_below="@+id/relativeLayout13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="40dp"
+                android:background="#30FFFFFF">
+
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/nitte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/imageView6"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:text="Nithesh G"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView76"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UI Designer"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/nitte"
+                    android:layout_alignLeft="@+id/nitte"
+                    android:layout_alignStart="@+id/nitte" />
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ECE, NMIT"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/textView76"
+                    android:layout_alignLeft="@+id/textView76"
+                    android:layout_alignStart="@+id/textView76" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@mipmap/nitte" />
+            </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/re"
+            android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Android Developer"
-                android:textSize="20sp"
-                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/github"
+                android:id="@+id/githubTextHolder"
                 android:gravity="center"
                 android:textColor="#ffffff"
-                android:id="@+id/textView73"
-                android:layout_centerVertical="true"
-                android:layout_alignLeft="@+id/chor"
-                android:layout_alignStart="@+id/chor" />
+                android:padding="10dp"
+                android:textSize="20sp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="ECE, NMIT"
-                android:layout_marginBottom="8dp"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                android:textColor="#ffffff"
-                android:id="@+id/textView74"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true" />
-        </RelativeLayout>
+        </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="136dp"
-            android:layout_marginTop="40dp"
-            android:background="#30FFFFFF"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_below="@+id/relativeLayout9"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/relativeLayout10">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:id="@+id/imageView7"
-                android:src="@mipmap/mallu"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true" />
-
-            <com.romainpiel.shimmer.ShimmerTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000000"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Malavika Anand"
-                android:id="@+id/mallu"
-                android:layout_marginLeft="16dp"
-                android:textSize="28sp"
-                android:layout_marginTop="6dp"
-                android:textStyle="italic"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/imageView7"
-                android:layout_toEndOf="@+id/imageView7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#ffffff"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Designer"
-                android:textStyle="italic"
-                android:textSize="20sp"
-                android:id="@+id/textViewc"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="ECE, NMIT"
-                android:layout_marginTop="8dp"
-                android:textColor="#ffffff"
-                android:textStyle="italic"
-                android:layout_marginBottom="6dp"
-                android:id="@+id/textView70"
-                android:textSize="20sp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignLeft="@+id/textViewc"
-                android:layout_alignStart="@+id/textViewc" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="136dp"
-            android:background="#30FFFFFF"
-            android:layout_below="@+id/relativeLayout10"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:id="@+id/relativeLayout11">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:id="@+id/imageViewg"
-                android:src="@mipmap/nikhil"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true" />
-            <com.romainpiel.shimmer.ShimmerTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000000"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Nikhil Srinivas"
-                android:id="@+id/nikhil"
-                android:textSize="28sp"
-                android:textStyle="italic"
-                android:layout_marginLeft="25dp"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/imageViewg"
-                android:layout_toEndOf="@+id/imageViewg"
-                android:layout_marginStart="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#ffffff"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Designer"
-                android:textStyle="italic"
-                android:textSize="20sp"
-                android:id="@+id/textView69"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="ECE, NMIT"
-                android:layout_marginTop="8dp"
-                android:textColor="#ffffff"
-                android:textStyle="italic"
-                android:layout_marginBottom="6dp"
-                android:id="@+id/textView71"
-                android:textSize="20sp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignLeft="@+id/textView69"
-                android:layout_alignStart="@+id/textView69" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="136dp"
-            android:background="#30FFFFFF"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_below="@+id/relativeLayout11"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/relativeLayout12">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:id="@+id/imageView6g"
-                android:src="@mipmap/prav"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true" />
-
-            <com.romainpiel.shimmer.ShimmerTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="N Praveen"
-                android:textStyle="italic"
-                android:textColor="#000000"
-                android:id="@+id/prav"
-                android:textSize="30sp"
-                android:layout_alignParentTop="true"
-                android:layout_alignLeft="@+id/textViewa"
-                android:layout_alignStart="@+id/textViewa" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Android Developer"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                  android:gravity="center"
-                android:textColor="#ffffff"
-                android:id="@+id/textViewb"
-                android:layout_centerVertical="true"
-                android:layout_alignLeft="@+id/prav"
-                android:layout_alignStart="@+id/prav" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="ECE, NMIT"
-                android:layout_marginBottom="8dp"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                android:textColor="#ffffff"
-                android:id="@+id/textViewa"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="136dp"
-            android:background="#30FFFFFF"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_below="@+id/relativeLayout12"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/relativeLayout13">
-
-            <com.romainpiel.shimmer.ShimmerTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Niranjan B"
-                android:textStyle="italic"
-                android:textColor="#000000"
-                android:textSize="30sp"
-                android:id="@+id/ninja"
-                android:layout_alignParentTop="true"
-                android:layout_alignLeft="@+id/textView79"
-                android:layout_alignStart="@+id/textView79" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Android Developer,\nBackend"
-                android:id="@+id/textView78"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                android:gravity="center"
-                android:textColor="#ffffff"
-                android:layout_centerVertical="true"
-                android:layout_alignRight="@+id/ninja"
-                android:layout_alignEnd="@+id/ninja" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="ECE, NMIT"
-                android:id="@+id/textView79"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                android:gravity="center"
-                android:textColor="#ffffff"
-                android:layout_alignParentBottom="true"
-                android:layout_toRightOf="@+id/imageView8"
-                android:layout_toEndOf="@+id/imageView8"
-                android:layout_marginLeft="75dp"
-                android:layout_marginStart="75dp" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:id="@+id/imageView8"
-                android:background="@mipmap/ninja"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignBottom="@+id/textView79" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="136dp"
-            android:background="#30FFFFFF"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="18dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_below="@+id/relativeLayout13"
-            android:id="@+id/re"
-            android:layout_centerHorizontal="true">
-
-
-            <com.romainpiel.shimmer.ShimmerTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Nithesh Gaikwad"
-                android:textSize="30sp"
-                android:id="@+id/nitte"
-                android:layout_marginTop="8dp"
-                android:textStyle="italic"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/imageView6"
-                android:layout_toEndOf="@+id/imageView6"
-                android:layout_marginLeft="21dp"
-                android:layout_marginStart="21dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="UI Designer"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                android:id="@+id/textView76"
-                android:layout_centerVertical="true"
-                android:layout_alignLeft="@+id/nitte"
-                android:layout_alignStart="@+id/nitte"
-                android:layout_marginLeft="55dp"
-                android:layout_marginStart="55dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="ECE, NMIT"
-                android:textSize="20sp"
-                android:textColor="#ffffff"
-                android:textStyle="italic"
-                android:id="@+id/textView77"
-                android:layout_alignParentBottom="true"
-                android:layout_alignLeft="@+id/textView76"
-                android:layout_alignStart="@+id/textView76" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:id="@+id/imageView6"
-                android:src="@mipmap/nitte"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentTop="true" />
         </RelativeLayout>
 
 
-
-    </RelativeLayout>
-
-
-</FrameLayout>
+    </FrameLayout>
 </ScrollView>
