@@ -78,11 +78,6 @@ public class DevsFragment extends Fragment {
         TiltEffectAttacher.attach(view.findViewById(R.id.textView78));
         TiltEffectAttacher.attach(view.findViewById(R.id.textView79));
 
-
-
-        // Inflate the layout for this fragment
-
-
         return view;
     }
 
