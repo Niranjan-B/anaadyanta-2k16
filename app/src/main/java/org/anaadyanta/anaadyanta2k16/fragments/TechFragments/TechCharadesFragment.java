@@ -58,13 +58,16 @@ public class TechCharadesFragment extends Fragment {
                 startActivity(in);
             }
         });
-        rules_figure.setText("● Any sort of malpractice during any of the rounds will lead\n" +
+        rules_figure.setText("● Any sort of malpractice during any of the rounds will lead" +
                 "to negative points to the team.\n" +
+                "\n" +
                 "● The decision of the judges is final.\n" +
-                "● During the second round, the person describing the word is\n" +
-                "not supposed to give direct hints and also should use only\n" +
+                "\n" +
+                "● During the second round, the person describing the word is" +
+                "not supposed to give direct hints and also should use only" +
                 "English to describe.\n" +
-                "● During the third round, the person drawing is not supposed\n" +
+                "\n" +
+                "● During the third round, the person drawing is not supposed" +
                 "to speak anything. ");
         return view;
     }

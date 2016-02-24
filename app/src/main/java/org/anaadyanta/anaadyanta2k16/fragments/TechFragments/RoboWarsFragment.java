@@ -59,9 +59,13 @@ public class RoboWarsFragment extends Fragment {
             }
         });
         rules_robowars.setText("● Five rounds per bout .\n" +
+                "\n"+
                 "● Max of five participants per team .\n" +
+                "\n"+
                 "● Bout might end with a knockout\n" +
+                "\n"+
                 "● Final decision based on the damage.\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Degree of damage .\n" +
                 "➢ Time taken .");

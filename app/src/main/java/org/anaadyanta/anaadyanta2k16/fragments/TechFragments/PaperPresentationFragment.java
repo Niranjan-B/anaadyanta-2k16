@@ -49,11 +49,13 @@ public class PaperPresentationFragment extends Fragment {
             }
         });
         rules_paper_presentation.setText("● The maximum duration of the presentation is 20 minutes.\n" +
-                "● Max of two participants per team .\n" +
-                "● The questionnaire will follow presentation for 10 minutes by\n" +
-                "assigned judges .\n" +
-                "JUDGEMENT CRITERIA :\n" +
                 "\n"+
+                "● Max of two participants per team .\n" +
+                "\n"+
+                "● The questionnaire will follow presentation for 10 minutes by" +
+                "assigned judges .\n" +
+                "\n"+
+                "JUDGEMENT CRITERIA :\n" +
                 "➢ Authenticity and originality.\n" +
                 "➢ Technical data interpretation\n" +
                 "➢ Real world application");

@@ -59,8 +59,11 @@ public class PayThePiperFragment extends Fragment {
             }
         });
         rules_pay.setText("● The maximum duration of the event is 2.5 hours.\n" +
+                "\n"+
                 "● Max of three participants per team .\n" +
+                "\n"+
                 "● Judges’ decision final .\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Business analytics and approach\n" +
                 "➢ Technical backing .\n" +

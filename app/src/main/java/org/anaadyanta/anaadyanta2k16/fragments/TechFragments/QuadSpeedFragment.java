@@ -49,9 +49,13 @@ public class QuadSpeedFragment extends Fragment {
             }
         });
         rules_quadspeed.setText("● The bought copters is limited with specifications\n" +
+                "\n"+
                 "● Two participants per team.\n" +
+                "\n"+
                 "● No modifications to a default bought copter .\n" +
+                "\n"+
                 "● Five rounds of increasing difficulty with filtering in each round .\n" +
+                "\n"+
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Completion of each round .\n" +
                 "➢ Time taken .\n" +

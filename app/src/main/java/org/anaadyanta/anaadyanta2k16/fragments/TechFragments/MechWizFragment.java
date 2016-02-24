@@ -59,6 +59,7 @@ public class MechWizFragment extends Fragment {
             }
         });
         rules_mechwiz.setText("● 4 rounds of mixture of tasks .\n" +
+                "\n"+
                 "● Two participants per team . ");
         return view;
     }

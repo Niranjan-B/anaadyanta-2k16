@@ -59,9 +59,13 @@ public class PosterPresentationFragment extends Fragment {
             }
         });
         rules_poster.setText("● The bought poster is limited with specifications\n" +
+                        "\n" +
                 "● Two participants per team.\n" +
+                        "\n" +
                 "● No modifications to a default bought poster.\n" +
+                        "\n" +
                 "● Two rounds of increasing difficulty with filtering in each round.\n" +
+                        "\n" +
                 "JUDGEMENT CRITERIA :\n" +
                 "➢ Completion of each round.\n" +
                 "➢ Description of the poster for the given specifications and the topic"
