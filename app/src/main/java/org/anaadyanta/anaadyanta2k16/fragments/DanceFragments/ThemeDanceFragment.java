@@ -78,7 +78,7 @@ public class ThemeDanceFragment extends Fragment {
                 "\n"+
                 "10. No water, powder, fire,gas or any other inflammable and hazardous things are allowed to be used\n" +
                 "\n"+
-                "11. Marks will be distributed based on choreography, innovation/creativity, coordination, stage/space usage, costumes, music and audience response\n");
+                "11. Marks will be distributed based on choreography, innovation/creativity, coordination, stage/space usage, costumes, music and audience response");
 
 
         return view;

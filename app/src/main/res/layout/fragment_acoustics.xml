@@ -67,7 +67,7 @@
             <RelativeLayout
                 android:id="@+id/relativeLayout3"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/relativeLayout"
                 android:layout_alignLeft="@+id/relativeLayout"
                 android:layout_alignRight="@+id/relativeLayout"
@@ -80,7 +80,6 @@
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="38dp"
-                    android:layout_above="@+id/imageView2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
@@ -108,7 +107,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginEnd="18dp"
-
                     android:layout_marginRight="18dp"
                     android:layout_marginTop="6dp"
                     android:text="Rs.300"
@@ -119,57 +117,36 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="38dp"
-                    android:layout_above="@+id/imageView3"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:src="@drawable/second" />
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="38dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView"
                     android:src="@drawable/second" />
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView4"
-                    android:layout_alignStart="@+id/textView4"
-                    android:layout_below="@+id/imageView"
                     android:text="First Prize  :"
-
+                    android:layout_marginTop="5dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4" />
 
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView6"
-                    android:layout_alignStart="@+id/textView6"
-                    android:layout_below="@+id/imageView2"
-                    android:text="Second Prize  :"
-
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="#000000"
-                    android:textStyle="normal" />
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView5"
-                    android:layout_alignStart="@+id/textView5"
-                    android:layout_centerVertical="true"
 
                     android:text="Rs.5000"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:layout_alignTop="@+id/textView6"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_alignStart="@+id/textView5" />
 
                 <TextView
                     android:id="@+id/textView9"
@@ -177,7 +154,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@+id/textView8"
                     android:layout_alignStart="@+id/textView8"
-
                     android:layout_alignTop="@+id/textView7"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -186,13 +162,15 @@
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/textView8"
-                    android:layout_alignRight="@+id/textView8"
-
-                    android:layout_below="@+id/textView5"
                     android:text="(Per Member)"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_below="@+id/textView9"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -236,7 +214,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
                 <TextView
@@ -245,7 +223,6 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
-
                     android:layout_marginTop="4dp"
                     android:text="Lohit A.M."
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -255,10 +232,8 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13"
                     android:layout_below="@+id/textView10"
-
+                    android:layout_centerHorizontal="true"
                     android:padding="4dp"
                     android:text="8147995391"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -270,7 +245,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView11"
                     android:layout_centerHorizontal="true"
-
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
                     android:gravity="center_horizontal"
                     android:text="lohitamcool@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -282,8 +258,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
                 <RelativeLayout
@@ -293,7 +270,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/textView12"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="6dp"
                     android:background="#000000" />
 
                 <TextView
@@ -302,7 +280,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:layout_margin="3dp"
+                    android:layout_marginTop="4dp"
                     android:text="Akshaj Balaji"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -311,23 +289,14 @@
                     android:id="@+id/textView14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13"
-
                     android:layout_below="@+id/textView13"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
                     android:text="9538109745"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView5"
-                    android:layout_toEndOf="@+id/imageView5"
-                    android:layout_toRightOf="@+id/imageView5"
-                    android:gravity="center"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -338,9 +307,9 @@
                 android:layout_alignRight="@+id/relativeLayout6"
                 android:layout_alignStart="@+id/relativeLayout6"
                 android:layout_below="@+id/relativeLayout6"
+                android:layout_marginBottom="5dp"
                 android:layout_marginTop="18dp"
-                android:background="@drawable/back_music"
-                android:layout_marginBottom="5dp">
+                android:background="@drawable/back_music">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout7"

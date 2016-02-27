@@ -43,7 +43,7 @@ public class StreetDanceFragment extends Fragment {
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+919739652563";
+                String num="+918792483727";
                 Intent in=new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);
@@ -52,33 +52,23 @@ public class StreetDanceFragment extends Fragment {
         phone1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+919632395882";
+                String num="+917353680963";
                 Intent in=new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);
             }
         });
-        rules_streetdance.setText("1. A team of 6-15 members can participate..\n" +
+        rules_streetdance.setText("1. This an all styles crew on crew event.\n" +
                 "\n"+
-                "2. The open round of 4+2 min is to be performed by each crew...\n" +
+                "2. A team of 6-15 members can participate.\n" +
                 "\n"+
-                "3. The top 4 crews qualified will be advanced to the face off round. \n" +
+                "3. The open round of 4+2 min is to be performed by each crew.\n" +
                 "\n"+
-                "4.The crews battling are top.1st vs top.3rd and top.2nd vs top.4th 5. The crews will be battling each other for 10min\n" +
+                "4.The top 4 crews qualify for the face offs.\n" +
                 "\n"+
-                "6. The winner of the battle will be going to the finals..\n" +
+                "5. The crews battling are picked at random.\n" +
                 "\n"+
-                "7. The crews will be battling for 12-15min\n" +
-                "\n"+
-                "8. Judging System:\n" +
-                "\n" +
-                "The crew is judged based on \n" +
-                "\n" +
-                "1)Foundation\n" +
-                "2)Creativity\n" +
-                "3)Difficulty\n" +
-                "4)Execution\n" +
-                "5)Show / Performance");
+                "6. The winners of the battle will be going to the finals.");
         return view;
     }
 

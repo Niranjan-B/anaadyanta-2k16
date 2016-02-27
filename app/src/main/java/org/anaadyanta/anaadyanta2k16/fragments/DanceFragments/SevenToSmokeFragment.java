@@ -68,7 +68,7 @@ public class SevenToSmokeFragment extends Fragment {
                 "4. There are two ways of taking the championship:\n" +
                 "\n"+
                 "I. To beat beat 7 Bboys in a row.\n" +
-                "II. One with the most wins at the end of the 20 minutes. Most of the time when Bboys have the same amount of wins at the end of the battle they end up battling each other in a TIEBREAK.\n");
+                "II. One with the most wins at the end of the 20 minutes. Most of the time when Bboys have the same amount of wins at the end of the battle they end up battling each other in a TIEBREAK.");
 
 
         return view;

@@ -76,7 +76,7 @@ public class BattleOfTheBandsEasternFragment extends Fragment {
                 "\n"+
                 "9. The judge’s decision will be final and binding. \n" +
                 "\n"+
-                "10. The event coordinators and the Anaadyanta committee reserves the right to make any last minute changes in the rules. \n");
+                "10. The event coordinators and the Anaadyanta committee reserves the right to make any last minute changes in the rules.");
         return view;
     }
 
