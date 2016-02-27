@@ -38,37 +38,39 @@ public class Tech2 extends AppCompatActivity {
             public HeaderDesign getHeaderDesign(int page) {
 
                 switch (page) {
-                    case 0:
+                    case 0 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/jahaaz.jpg");
-                    case 1:
+                    case 1 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/logical_box.jpg");
-                    case 2:
+                    case 2 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/watch_me_junk.jpg");
-                    case 3:
+                    case 3 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/what_does_the_technical_fox_say.jpg");
-                    case 4:
+                    case 4 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/mechwiz.jpg");
-                    case 5:
+                    case 5 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/automotive_quiz.jpg");
-                    case 6:
+                    case 6 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/paper_presentation.jpg");
-                    case 7:
+                    case 7 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/what_the_physics.jpg");
-                    case 8:
+                    case 8 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/pay_the_piper.jpg");
-                    case 9:
+                    case 9 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/figure_it_out.jpg");
-                    case 10:
+                    case 10 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/machine_it.jpg");
-                    case 11:
+                    case 11 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/let_it_rip.jpg");
-                    case 12:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/setu.jpg");
-                    case 13:
+                    case 12 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/one_BHK_house.jpg");
-                    case 14:
+                    case 13 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/posterpresenatation.jpg");
-                    case 15:
+                    case 14 :
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://ninja-root.site40.net/anaadyanta_pics/tech/model_making.jpg");
+                    case 15 :
+                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://ninja-root.site40.net/anaadyanta_pics/tech/quiz.jpg");
+                    case 16 :
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_tech), "http://anaadyanta.org/Tech/draft_it_out.jpg");
                 }
 
