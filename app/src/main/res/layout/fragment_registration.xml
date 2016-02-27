@@ -16,6 +16,7 @@
             android:layout_height="match_parent"
             android:fillViewport="true"
             android:paddingRight="10dp"
+            android:paddingLeft="10dp"
             android:scrollbarStyle="outsideOverlay">
 
             <LinearLayout
@@ -27,8 +28,7 @@
                 <RelativeLayout
                     android:id="@+id/registrationContainer"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="0dp">
+                    android:layout_height="match_parent">
 
                     <com.rengwuxian.materialedittext.MaterialEditText
                         android:id="@+id/registrationName"
