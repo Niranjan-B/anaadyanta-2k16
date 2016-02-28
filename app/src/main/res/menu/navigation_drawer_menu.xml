@@ -33,7 +33,7 @@
         <group android:id="@+id/miscellaneousGroup">
 
             <item
-                android:id="@+id/rules"
+                android:id="@+id/schedules"
                 android:checked="false"
                 android:icon="@mipmap/ic_rules_navigation_drawer"
                 android:title="Schedule" />

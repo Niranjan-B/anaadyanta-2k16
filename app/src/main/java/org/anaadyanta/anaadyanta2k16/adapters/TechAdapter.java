@@ -39,7 +39,7 @@ import org.anaadyanta.anaadyanta2k16.fragments.TechFragments.WhatThePhysicsFragm
  */
 public class TechAdapter extends FragmentPagerAdapter{
 
-    private static final int NUM_OF_SUB_EVENTS = 13;
+    private static final int NUM_OF_SUB_EVENTS = 14;
 
     public TechAdapter(FragmentManager fm) {
         super(fm);
@@ -54,14 +54,15 @@ public class TechAdapter extends FragmentPagerAdapter{
             case 2 : return RoboWarsFragment.getInstance();
             case 3 : return QuadSpeedFragment.getInstance();
             case 4 : return TechCharadesFragment.getInstance();
-            case 5 : return CircuitrixFragment.getInstance();
-            case 6 : return RAMFragment.getInstance();
-            case 7 : return ICUFragment.getInstance();
-            case 8 : return MiniHackathonFragment.getInstance();
-            case 9 : return TechquilaFragment.getInstance();
-            case 10 : return EKhojFragment.getInstance();
-            case 11 : return OnSpotProgrammingFragment.getInstance();
-            case 12 : return DebuggingFragment.getInstance();
+            case 5 : return SETUFragment.getInstance();
+            case 6 : return CircuitrixFragment.getInstance();
+            case 7 : return RAMFragment.getInstance();
+            case 8 : return ICUFragment.getInstance();
+            case 9 : return MiniHackathonFragment.getInstance();
+            case 10 : return TechquilaFragment.getInstance();
+            case 11 : return EKhojFragment.getInstance();
+            case 12 : return OnSpotProgrammingFragment.getInstance();
+            case 13 : return DebuggingFragment.getInstance();
         }
         return null;
     }
@@ -80,14 +81,15 @@ public class TechAdapter extends FragmentPagerAdapter{
             case 2 : return "Robo Wars";
             case 3 : return "Quad Speed";
             case 4 : return "Tech Charades";
-            case 5 : return "Circuitrix";
-            case 6 : return "RAM (Resistors and Memory)";
-            case 7 : return "LCU (Logic Designing)";
-            case 8 : return "Mini-Hackathon";
-            case 9 : return "TechQuilla";
-            case 10 : return "E-Khoj";
-            case 11 : return "On Spot Programming";
-            case 12 : return "Debugging";
+            case 5 : return "SETU";
+            case 6 : return "Circuitrix";
+            case 7 : return "RAM (Resistors and Memory)";
+            case 8 : return "I.C.U (Logic Designing)";
+            case 9 : return "Mini-Hackathon";
+            case 10 : return "TechQuilla";
+            case 11 : return "E-Khoj";
+            case 12 : return "On Spot Programming";
+            case 13 : return "Debugging";
         }
         return "";
     }
