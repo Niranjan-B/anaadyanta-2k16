@@ -1,16 +1,145 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.anaadyanta.anaadyanta2k16.fragments.SponsorsFragment">
+    android:background="@color/common_plus_signin_btn_text_dark_disabled"
+    android:layout_margin="5dp">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Stay Tuned...Will be out shortly !"
-        android:textSize="23sp"
-        android:layout_marginTop="40dp"
-        android:textColor="@color/color_theater"/>
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/aircel"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/anchor_by_panasonic"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/axis_bank"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/booksbeka"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/cito_infotech_pvt"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/hello_buddy"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/intex"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/my_faktory"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/red_fm"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/resonance_studios"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/shiamak_davar"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
