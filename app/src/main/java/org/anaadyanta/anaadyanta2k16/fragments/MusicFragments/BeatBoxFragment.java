@@ -58,11 +58,11 @@ public class BeatBoxFragment extends Fragment {
                 startActivity(in);
             }
         });
-        rules_accustics.setText("1) Individual participation. It's a one man show.\n" +
+        rules_accustics.setText("1. Individual participation. It's a one man show.\n" +
                 "\n"+
-                "2) The event will be split into three rounds: Prelims, Semis and the Finals.\n" +
+                "2. The event will be split into three rounds: Prelims, Semis and the Finals.\n" +
                 "\n"+
-                "3) In the prelims, each beat boxer will be given 1 minute showcase and the judges will choose" +
+                "3. In the prelims, each beat boxer will be given 1 minute showcase and the judges will choose" +
                 "who wins the showcase based on THEIR judging criteria. The top 4 then move to the semis. In" +
                 "case of a tie, the judges will deliberate to break the tie.\n" +
                 "\n"+
