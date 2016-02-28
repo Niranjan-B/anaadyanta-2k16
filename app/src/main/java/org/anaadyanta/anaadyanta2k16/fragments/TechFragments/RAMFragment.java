@@ -51,7 +51,7 @@ public class RAMFragment extends Fragment {
         rules_figure.setText(" ● Any sort of malpractice during any of the rounds will lead\n" +
                 "to disqualification.\n" +
                 "\n"+
-                "● The decision of the judges is final.\n");
+                "● The decision of the judges is final.");
         return view;
     }
 
