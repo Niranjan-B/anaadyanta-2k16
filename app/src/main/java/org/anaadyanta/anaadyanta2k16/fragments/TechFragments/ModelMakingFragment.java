@@ -63,13 +63,9 @@ public class ModelMakingFragment extends Fragment {
                 "● 4 participant per team.\n" +
                 "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "\n"+
                 "● The right dimensions of the part.\n" +
-                "\n"+
                 "● Shape Detailing.\n" +
-                "\n"+
                 "● Demonstration of the model.\n" +
-                "\n"+
                 "● The steps used sequentially.");
 
         return view;

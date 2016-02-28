@@ -59,20 +59,19 @@ public class QuizFragment extends Fragment {
                 startActivity(in);
             }
         });
-        rules_quiz.setText("● Maximum allowed participants: 2 in a team.\n" +
+        rules_quiz.setText("● Maximum allowed participants : 2 in a team.\n" +
                 "\n"+
                 "● 40 Questions to be asked.\n" +
                 "\n"+
-                "● The several questions related to almost all the areas of Civil\n" +
+                "● The several questions related to almost all the areas of Civil" +
                 "Engineering.\n" +
                 "\n"+
                 "● CRITERIA :\n" +
-                "\n"+
-                "● The answers to be considered correct should lies between +5\n" +
-                "or 5" +
-                "of the true answers.\n" +
-                "\n"+
-                "● Completion of each round.\n● The maximum no. of correct answers from the team will be\n" +
+                "● The answers to be considered correct should lie between +5" +
+                " or -5" +
+                " of the true answers.\n" +
+                "● Completion of each round.\n" +
+                "● The maximum no. of correct answers from the team will be " +
                 "considered winner.");
 
         return view;
