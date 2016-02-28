@@ -64,7 +64,7 @@ public class CODMWFragment extends Fragment {
                 "\n"+
                 "3. Maps-Killhouse, Showdown and Bag Backlot.\n" +
                 "\n"+
-                "4. K/D ratio will be considered.\n" );
+                "4. K/D ratio will be considered." );
 
         return view;
     }

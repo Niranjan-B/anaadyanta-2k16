@@ -54,7 +54,7 @@ public class SetListFragment extends Fragment {
                 "\n"+
                 "3. A 20 second preparation time and a maximum of 90 seconds speaking time per set will be allotted. The speaker is allowed to pass on the set if it's too difficult for him/her to pull off.\n" +
                 "\n"+
-                "4. Participants will judged on their improv skills, humor and fluidity of their speech and transition from one topic to the next.\n");
+                "4. Participants will judged on their improv skills, humor and fluidity of their speech and transition from one topic to the next.");
 
 
         return view;

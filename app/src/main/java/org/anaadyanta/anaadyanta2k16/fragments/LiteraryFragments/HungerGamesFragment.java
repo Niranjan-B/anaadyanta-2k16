@@ -46,7 +46,7 @@ public class HungerGamesFragment extends Fragment {
                 "\n"+
                 "3. At the end of each obstacle,the team which finishes last will be eliminated.\n" +
                 "\n"+
-                "4. A big prize awaits you at the end of the three obstacles.\n");
+                "4. A big prize awaits you at the end of the three obstacles.");
 
         imgView.setOnClickListener(new View.OnClickListener() {
             @Override

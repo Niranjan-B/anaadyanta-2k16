@@ -57,7 +57,7 @@ public class FictionaryFragment extends Fragment {
                 "\n"+
                 "4. No obscene content permitted.\n" +
                 "\n"+
-                "5. Theme will be given on spot.\n");
+                "5. Theme will be given on spot.");
         return view;
     }
 

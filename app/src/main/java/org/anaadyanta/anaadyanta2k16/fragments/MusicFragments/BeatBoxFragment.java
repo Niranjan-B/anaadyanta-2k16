@@ -70,7 +70,7 @@ public class BeatBoxFragment extends Fragment {
                 "\n"+
                 "5. Competitors shouldn’t perform routines performed in public by other beatboxers.\n" +
                 "\n"+
-                "6. No instruments are allowed in the competition.\n");
+                "6. No instruments are allowed in the competition.");
 
         return view;
     }

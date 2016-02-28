@@ -60,7 +60,7 @@ public class WhatNextFragment extends Fragment {
         });
         rules_whatsnext.setText("1. You will be provided with an incomplete comic strip. All you need to do is to complete it.\n" +
                 "\n"+
-                "2. The participants aren’t allowed to refer the internet or any pictures from their phones. This would lead to immediate disqualification.\n");
+                "2. The participants aren’t allowed to refer the internet or any pictures from their phones. This would lead to immediate disqualification.");
 
         return view;
     }

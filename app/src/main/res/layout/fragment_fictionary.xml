@@ -68,7 +68,7 @@
             <RelativeLayout
                 android:id="@+id/relativeLayout3"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/relativeLayout"
                 android:layout_alignLeft="@+id/relativeLayout"
                 android:layout_alignRight="@+id/relativeLayout"
@@ -81,7 +81,6 @@
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:layout_above="@+id/imageView2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
@@ -118,16 +117,7 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="38dp"
-                    android:layout_above="@+id/imageView3"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:src="@drawable/second" />
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="38dp"
-                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/imageView"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:src="@drawable/second" />
@@ -140,18 +130,7 @@
                     android:layout_alignStart="@+id/textView4"
                     android:layout_below="@+id/imageView"
                     android:text="First Prize  :"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="#000000"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView6"
-                    android:layout_alignStart="@+id/textView6"
-                    android:layout_below="@+id/imageView2"
-                    android:text="Second Prize  :"
+                    android:layout_marginTop="5dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
                     android:textStyle="normal" />
@@ -183,7 +162,7 @@
             <RelativeLayout
                 android:id="@+id/relativeLayout6"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/relativeLayout3"
                 android:layout_alignLeft="@+id/relativeLayout3"
                 android:layout_alignRight="@+id/relativeLayout3"
@@ -221,7 +200,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
                 <TextView
@@ -252,6 +231,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView11"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
                     android:text="rishithashetty2302@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
