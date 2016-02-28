@@ -25,7 +25,7 @@ public class HungerGames extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            getWindow().setStatusBarColor(getResources().getColor(R.color.color_gaming));
+            getWindow().setStatusBarColor(getResources().getColor(R.color.color_hunger));
         }
 
         mViewPagerHogathon = (MaterialViewPager) findViewById(R.id.materialViewPagerHogathon);
