@@ -49,7 +49,7 @@ public class MiniSoccerFragment extends Fragment {
             }
         });
 
-        rules_minisoccer.setText("1. Team of 6+2 members.\n" +
+        rules_minisoccer.setText("1. Team of 5+3 members.\n" +
                 "\n"+
                 "2. Knockout Rounds.\n" +
                 "\n"+

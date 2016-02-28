@@ -79,10 +79,10 @@ public class DevsFragment extends Fragment {
         TiltEffectAttacher.attach(view.findViewById(R.id.textViewa));
         TiltEffectAttacher.attach(view.findViewById(R.id.textView76));
         TiltEffectAttacher.attach(view.findViewById(R.id.textView77));
-        TiltEffectAttacher.attach(view.findViewById(R.id.imageView8));
+        TiltEffectAttacher.attach(view.findViewById(R.id.imageView6abc));
         TiltEffectAttacher.attach(view.findViewById(R.id.ninja));
-        TiltEffectAttacher.attach(view.findViewById(R.id.textView78));
-        TiltEffectAttacher.attach(view.findViewById(R.id.textView79));
+        TiltEffectAttacher.attach(view.findViewById(R.id.textView731));
+        TiltEffectAttacher.attach(view.findViewById(R.id.textView741));
 
         githubTextLink.setOnClickListener(new View.OnClickListener() {
             @Override
