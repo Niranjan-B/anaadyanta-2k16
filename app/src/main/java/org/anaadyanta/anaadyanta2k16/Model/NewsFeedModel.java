@@ -5,15 +5,7 @@ package org.anaadyanta.anaadyanta2k16.Model;
  */
 public class NewsFeedModel {
 
-    String title, message, img_url;
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    String message, img_url;
 
     public String getMessage() {
         return message;

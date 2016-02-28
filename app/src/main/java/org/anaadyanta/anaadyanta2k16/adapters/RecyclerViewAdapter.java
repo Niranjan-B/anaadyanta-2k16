@@ -46,9 +46,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(CardViewHolder holder, int position) {
-        holder.titleHolder.setText(newsItems.get(position).getTitle());
         holder.messageHolder.setText(newsItems.get(position).getMessage());
-        Picasso.with(context).load(newsItems.get(position).getImg_url()).resize(90,90).centerCrop().into(holder.imageViewHolder);
+        Picasso.with(context).load(newsItems.get(position).getImg_url()).fit().into(holder.imageViewHolder);
     }
 
     @Override
@@ -59,13 +58,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class CardViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imageViewHolder;
-        TextView titleHolder,messageHolder;
+        TextView messageHolder;
 
         public CardViewHolder(View itemView) {
             super(itemView);
 
             imageViewHolder = (ImageView) itemView.findViewById(R.id.imageView);
-            titleHolder = (TextView) itemView.findViewById(R.id.textView);
             messageHolder = (TextView) itemView.findViewById(R.id.textView2);
 
         }

@@ -4,27 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Stay Tuned...Will be out shortly !"
-        android:textSize="23sp"
-        android:layout_marginTop="40dp"
-        android:textColor="@color/color_theater"/>
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="org.anaadyanta.anaadyanta2k16.fragments.NewsFeedFragment"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ProgressBar
             android:id="@+id/news_feed_progress_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/news_feed_container"
