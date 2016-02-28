@@ -71,7 +71,7 @@ public class SETUFragment extends Fragment {
                 "lead to disqualifications.\n" +
                 "\n"+
                 "● Threads can be used during construction, however should not be" +
-                "present in the final structure.\n");
+                "present in the final structure.");
         return view;
     }
 

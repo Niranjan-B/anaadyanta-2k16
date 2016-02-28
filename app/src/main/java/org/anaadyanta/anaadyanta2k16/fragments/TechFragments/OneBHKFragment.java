@@ -58,23 +58,21 @@ public class OneBHKFragment extends Fragment {
                 startActivity(in);
             }
         });
-        rules_1bhk.setText("● Rules & Regulation\n" +
+        rules_1bhk.setText("● No of participants : 2\n" +
                 "\n"+
-                "● No of participants:2\n" +
-                "\n"+
-                "● Area of plot: 20 x " +
+                "● Area of plot : 20 x " +
                 "40 (ft)\n" +
                 "\n"+
-                "● Time limits: 120 " +
+                "● Time limit : 120 " +
                 "min\n" +
                 "\n"+
-                "Scale factor: 1:2" +
+                "Scale factor : 1:2" +
                 "\n"+
                 "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "➢ Aesthetic view:50%\n" +
-                "➢ Dimensioning:30%\n" +
-                "➢ Proper planning: 20% ");
+                "➢ Aesthetic view : 50%\n" +
+                "➢ Dimensioning : 30%\n" +
+                "➢ Proper planning : 20% ");
 
         return view;
     }

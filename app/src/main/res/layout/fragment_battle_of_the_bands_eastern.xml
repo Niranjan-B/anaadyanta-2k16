@@ -188,7 +188,7 @@
             <RelativeLayout
                 android:id="@+id/relativeLayout6"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/relativeLayout3"
                 android:layout_alignLeft="@+id/relativeLayout3"
                 android:layout_alignRight="@+id/relativeLayout3"
@@ -222,9 +222,9 @@
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView12"
-                    android:layout_alignLeft="@+id/imageView5"
-                    android:layout_alignStart="@+id/imageView5"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
                     android:src="@drawable/contact" />
 
                 <TextView
@@ -246,7 +246,6 @@
                     android:layout_centerHorizontal="true"
                     android:padding="4dp"
                     android:text="8147073825"
-
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -257,6 +256,8 @@
                     android:layout_below="@+id/textView11"
                     android:layout_centerHorizontal="true"
                     android:gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="arshadfaisal786@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -267,8 +268,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
                 <RelativeLayout
@@ -278,7 +280,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/textView12"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"
                     android:background="#000000" />
 
                 <TextView
@@ -298,6 +301,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView13"
                     android:layout_centerHorizontal="true"
+                    android:padding="4dp"
                     android:text="9535829316"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
@@ -306,11 +310,11 @@
                     android:id="@+id/textView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView12"
-                    android:layout_alignStart="@+id/textView12"
-                    android:layout_below="@+id/imageView5"
+                    android:layout_below="@+id/textView14"
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
                     android:text="anianaadyanta@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />

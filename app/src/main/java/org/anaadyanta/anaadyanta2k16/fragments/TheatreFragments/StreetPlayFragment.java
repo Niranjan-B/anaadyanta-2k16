@@ -68,7 +68,7 @@ public class StreetPlayFragment extends Fragment {
                 "\n"+
                 "5. No props/costume will be provided.\n" +
                 "\n"+
-                "6. Please stick to the area allotted to the event.\n");
+                "6. Please stick to the area allotted to the event.");
 
 
         return view;

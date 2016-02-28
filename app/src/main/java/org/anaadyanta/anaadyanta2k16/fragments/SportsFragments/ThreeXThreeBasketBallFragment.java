@@ -68,7 +68,7 @@ public class ThreeXThreeBasketBallFragment extends Fragment {
                 "\n"+
                 "4. Substitutions can be done by any team when the ball becomes dead.\n" +
                 "\n"+
-                "5. Each team is granted one team time-out. Any player can call the time-out in a dead ball situation.\n");
+                "5. Each team is granted one team time-out. Any player can call the time-out in a dead ball situation.");
 
         return view;
     }

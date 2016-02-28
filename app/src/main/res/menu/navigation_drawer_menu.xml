@@ -37,7 +37,6 @@
                 android:checked="false"
                 android:icon="@mipmap/ic_rules_navigation_drawer"
                 android:title="Schedule" />
-
             <item
                 android:id="@+id/sponsors"
                 android:checked="false"

@@ -42,7 +42,7 @@ public class ICUFragment extends Fragment {
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+918553446432";
+                String num="+918792420710";
                 Intent in=new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);
@@ -57,7 +57,7 @@ public class ICUFragment extends Fragment {
                 "● Second round will be judged by taking into consideration both" +
                 "the correctness of implementation and the time taken to do it.\n" +
                 "\n"+
-                "● The decision of the judges is final. ");
+                "● The decision of the judges is final.");
         return view;
     }
 

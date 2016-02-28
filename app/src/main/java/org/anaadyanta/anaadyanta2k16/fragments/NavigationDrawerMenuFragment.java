@@ -80,7 +80,6 @@ public class NavigationDrawerMenuFragment extends MenuFragment{
                         SponsorsFragment sponsorsFragment = new SponsorsFragment();
                         FragmentManager sponsorsFragmentManager = getFragmentManager();
                         sponsorsFragmentManager.beginTransaction().replace(R.id.fragment_container, sponsorsFragment).commit();
-
                         return true;
                     case R.id.devs:
                         DevsFragment devsFragment = new DevsFragment();

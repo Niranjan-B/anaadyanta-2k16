@@ -42,7 +42,7 @@ public class FashionShowFragment extends Fragment {
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+918147301088";
+                String num="+919945762741";
                 Intent in=new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:"+num));
                 startActivity(in);

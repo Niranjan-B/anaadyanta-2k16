@@ -17,7 +17,7 @@ import org.anaadyanta.anaadyanta2k16.fragments.LiteraryFragments.VicesQuizFragme
  */
 public class LiteraryAdapter extends FragmentPagerAdapter {
 
-    private static final int NUM_OF_SUB_EVENTS = 7;
+    private static final int NUM_OF_SUB_EVENTS = 6;
 
     public LiteraryAdapter(FragmentManager fm) {
         super(fm);
@@ -33,7 +33,6 @@ public class LiteraryAdapter extends FragmentPagerAdapter {
             case 3 : return SetListFragment.getInstance();
             case 4 : return FictionaryFragment.getInstance();
             case 5 : return DebateFragment.getInstance();
-            case 6 : return HungerGamesFragment.getInstance();
         }
         return null;
     }
@@ -52,7 +51,6 @@ public class LiteraryAdapter extends FragmentPagerAdapter {
             case 3 : return "Set List";
             case 4 : return "Fictionary (Creative Writing)";
             case 5 : return "Debate";
-            case 6 : return "Hunger Games";
         }
         return "";
     }

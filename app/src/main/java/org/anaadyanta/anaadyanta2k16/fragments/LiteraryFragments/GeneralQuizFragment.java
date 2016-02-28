@@ -53,7 +53,7 @@ public class GeneralQuizFragment extends Fragment {
                 "\n"+
                 "2. Consists of a written prelims round. And the finals which would contain multiple rounds.\n" +
                 "\n"+
-                "3. Quiz master's decision is final.\n");
+                "3. Quiz master's decision is final.");
 
         return view;
     }

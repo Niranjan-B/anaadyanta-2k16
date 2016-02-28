@@ -187,7 +187,7 @@
             <RelativeLayout
                 android:id="@+id/relativeLayout6"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/relativeLayout3"
                 android:layout_alignLeft="@+id/relativeLayout3"
                 android:layout_alignRight="@+id/relativeLayout3"
@@ -224,7 +224,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
                 <TextView
@@ -242,8 +242,7 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13"
+                    android:layout_centerHorizontal="true"
                     android:layout_below="@+id/textView10"
                     android:padding="4dp"
                     android:text="9739652563"
@@ -258,6 +257,8 @@
                     android:layout_centerHorizontal="true"
                     android:gravity="center_horizontal"
                     android:text="srijithmagal@gmail.com"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -267,19 +268,20 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout5"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/textView12"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
                     android:background="#000000" />
 
                 <TextView
@@ -288,7 +290,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:layout_margin="3dp"
+                    android:layout_marginTop="4dp"
                     android:text="Yash Chauhan"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -300,6 +302,7 @@
                     android:layout_below="@+id/textView13"
                     android:layout_centerHorizontal="true"
                     android:text="9632395882"
+                    android:padding="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -307,9 +310,11 @@
                     android:id="@+id/textView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView5"
+                    android:layout_below="@+id/textView14"
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
                     android:text="yashchauhanmail247@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -323,8 +328,8 @@
                 android:layout_alignRight="@+id/relativeLayout6"
                 android:layout_alignStart="@+id/relativeLayout6"
                 android:layout_below="@+id/relativeLayout6"
-                android:layout_marginTop="18dp"
                 android:layout_marginBottom="5dp"
+                android:layout_marginTop="18dp"
                 android:background="@drawable/back_music">
 
                 <RelativeLayout

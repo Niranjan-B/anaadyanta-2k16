@@ -60,7 +60,7 @@ public class DoodleMarathonFragment extends Fragment {
         });
         rules_doodle_Marathan.setText("1. Doodle away your thoughts as creatively as possible.\n" +
                 "\n"+
-                "2. The participants aren’t allowed to refer the internet or any pictures from their phones. This would lead to immediate disqualification.\n");
+                "2. The participants aren’t allowed to refer the internet or any pictures from their phones. This would lead to immediate disqualification.");
         return view;
     }
 

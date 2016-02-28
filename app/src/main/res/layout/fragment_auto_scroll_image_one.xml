@@ -4,6 +4,6 @@
     android:layout_height="match_parent"
     tools:context="org.anaadyanta.anaadyanta2k16.fragments.AutoScrollImageOne"
     android:orientation="vertical"
-    android:background="@drawable/c1">
+    android:background="@drawable/s1">
 
 </LinearLayout>

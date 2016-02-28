@@ -220,16 +220,17 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView11"
-                    android:text="Allen Sunny "
+                    android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:text="Allen Sunny "
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -237,7 +238,7 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView12"
+                    android:layout_below="@+id/textView10"
                     android:layout_centerHorizontal="true"
                     android:padding="4dp"
                     android:text="9481736934 "
@@ -248,11 +249,12 @@
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView4"
+                    android:layout_below="@+id/textView11"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
                     android:gravity="center_horizontal"
                     android:text="allensunny1242@gmail.com "
-                    android:layout_marginBottom="5dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -266,8 +268,8 @@
                 android:layout_alignRight="@+id/relativeLayout6"
                 android:layout_alignStart="@+id/relativeLayout6"
                 android:layout_below="@+id/relativeLayout6"
-                android:layout_marginTop="18dp"
                 android:layout_marginBottom="5dp"
+                android:layout_marginTop="18dp"
                 android:background="@drawable/back_literary">
 
                 <RelativeLayout

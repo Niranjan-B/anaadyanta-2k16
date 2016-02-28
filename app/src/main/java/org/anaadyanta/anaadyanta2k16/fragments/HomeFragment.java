@@ -17,6 +17,7 @@ import org.anaadyanta.anaadyanta2k16.Art;
 import org.anaadyanta.anaadyanta2k16.Dance;
 import org.anaadyanta.anaadyanta2k16.FashionShow;
 import org.anaadyanta.anaadyanta2k16.Gaming;
+import org.anaadyanta.anaadyanta2k16.HungerGames;
 import org.anaadyanta.anaadyanta2k16.Literary;
 import org.anaadyanta.anaadyanta2k16.Music;
 import org.anaadyanta.anaadyanta2k16.Photography;
@@ -27,7 +28,6 @@ import org.anaadyanta.anaadyanta2k16.Tech2;
 import org.anaadyanta.anaadyanta2k16.Theatre;
 import org.anaadyanta.anaadyanta2k16.Utils.Utility;
 import org.anaadyanta.anaadyanta2k16.adapters.AutoScrollAdapter;
-
 import cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager;
 import me.relex.circleindicator.CircleIndicator;
 
@@ -42,7 +42,7 @@ public class HomeFragment extends Fragment {
     CoordinatorLayout coordinatorLayout;
     CardView fashionShowCardView, mDanceCardView, mMusicCardView, mSportsCardView,
             mTheatreCardView, mGamingCardView, mPhotographyCardView, mArtCardView, mLiteraryCardView, mTechCardView,
-            mTechCardView2;
+            mTechCardView2, mHungerGamesCardView;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -76,6 +76,7 @@ public class HomeFragment extends Fragment {
         mLiteraryCardView = (CardView) view.findViewById(R.id.literaryCardView);
         mTechCardView = (CardView) view.findViewById(R.id.techCardView1);
         mTechCardView2 = (CardView) view.findViewById(R.id.techCardView2);
+        mHungerGamesCardView = (CardView) view.findViewById(R.id.hogathonCardView);
 
         autoScrollViewPager.setClipToPadding(false);
         autoScrollViewPager.setAdapter(autoScrollAdapter);
@@ -164,6 +165,13 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent techIntent = new Intent(getActivity(), Tech2.class);
                 startActivity(techIntent);
+            }
+        });
+        mHungerGamesCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent hungerGamezIntent = new Intent(getActivity(), HungerGames.class);
+                startActivity(hungerGamezIntent);
             }
         });
 

@@ -57,7 +57,7 @@ public class CounterStrikeFragment extends Fragment {
                 "\n"+
                 "4. MAPS\u00ADDe Dust, De\u00ADDust 2, Inferno, Nuke.\n" +
                 "\n"+
-                "5. D3/AVI or KRIEG 550 COMMANDO IS NOT ALLOWED\n");
+                "5. D3/AVI or KRIEG 550 COMMANDO IS NOT ALLOWED.");
         return view;
     }
 

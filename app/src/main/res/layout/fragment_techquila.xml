@@ -203,7 +203,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:text="Coordinators "
+                        android:text="Coordinators"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="#ffffff"
                         android:textStyle="bold" />
@@ -218,36 +218,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/relativeLayout4"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="4dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13"
-                    android:layout_below="@+id/textView10"
-                    android:padding="4dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView11"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -255,8 +227,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
 
                 <RelativeLayout
@@ -265,45 +238,19 @@
                     android:layout_height="2dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView12"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/textView21"
                     android:background="#000000" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/relativeLayout5"
-                    android:layout_centerHorizontal="true"
-                    android:layout_margin="3dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13"
-                    android:layout_below="@+id/textView13"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView5"
-                    android:layout_toEndOf="@+id/imageView5"
-                    android:layout_toRightOf="@+id/imageView5"
-                    android:gravity="center"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView21"
+                    android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="3dp"
-                    android:text="Likith "
+                    android:text="Likith"
+                    android:layout_marginTop="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
                     android:textSize="16sp" />
@@ -312,20 +259,22 @@
                     android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_below="@+id/textView20"
                     android:layout_centerHorizontal="true"
-                    android:text="9686499197 "
+                    android:text="9686499197"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"/>
 
                 <TextView
                     android:id="@+id/textView22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView14"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:text="Charan "
+                    android:text="Charan"
+                    android:layout_marginTop="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
                     android:textSize="16sp" />
@@ -334,9 +283,11 @@
                     android:id="@+id/textView23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView15"
+                    android:layout_below="@+id/textView22"
                     android:layout_centerHorizontal="true"
-                    android:text="8892800098 "
+                    android:text="8892800098"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000"
                     android:textSize="16sp" />
@@ -350,8 +301,8 @@
                 android:layout_alignRight="@+id/relativeLayout6"
                 android:layout_alignStart="@+id/relativeLayout6"
                 android:layout_below="@+id/relativeLayout6"
-                android:layout_marginTop="18dp"
                 android:layout_marginBottom="5dp"
+                android:layout_marginTop="18dp"
                 android:background="@drawable/back">
 
                 <RelativeLayout
@@ -397,7 +348,7 @@
                     android:layout_margin="2dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
 
 
             </RelativeLayout>

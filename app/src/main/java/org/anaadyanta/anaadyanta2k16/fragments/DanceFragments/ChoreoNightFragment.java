@@ -77,7 +77,7 @@ public class ChoreoNightFragment extends Fragment {
                         "\n"+
                         "9. No water, powder, fire, gas or any other inflammable and hazardous things are allowed to be used\n" +
                         "\n"+
-                        "10. Marks will be distributed based on choreography, innovation/creativity, coordination, stage/space usage, costumes, music and audience response\n");
+                        "10. Marks will be distributed based on choreography, innovation/creativity, coordination, stage/space usage, costumes, music and audience response");
         return view;
     }
 

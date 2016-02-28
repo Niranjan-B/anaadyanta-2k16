@@ -220,43 +220,17 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/relativeLayout4"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="4dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView10"
-                    android:layout_centerHorizontal="true"
-                    android:padding="4dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView11"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
                     android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
-                    android:text="SHARLY  SEVANTHI  PAUL"
+                    android:text="Sharly  Sevanthi  Paul"
+                    android:layout_marginTop="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -264,8 +238,10 @@
                     android:id="@+id/textView30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_below="@+id/textView29"
                     android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp"
                     android:text="8123641639"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
@@ -281,6 +257,7 @@
                 android:layout_alignStart="@+id/relativeLayout6"
                 android:layout_below="@+id/relativeLayout6"
                 android:layout_marginTop="18dp"
+
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/back">
 
@@ -311,8 +288,6 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout7"
                     android:id="@+id/relativeLayout14">
-
-
                 </RelativeLayout>
 
                 <TextView
@@ -322,7 +297,8 @@
                     android:textSize="15sp"
                     android:layout_margin="2dp"
                     android:paddingTop="5dp"
-                    android:text="● Maximum allowed participants: 1 in a team."
+                    android:paddingLeft="5dp"
+                    android:text="● Maximum allowed participants : 1 in a team."
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
                     android:layout_alignTop="@+id/relativeLayout14"
@@ -340,7 +316,8 @@
                     android:layout_below="@+id/textView31"
                     android:textSize="15sp"
                     android:layout_margin="2dp"
-                    android:padding="2dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
                     android:text="● 1 Questions to be asked."
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -353,7 +330,8 @@
                     android:layout_centerHorizontal="true"
                     android:textSize="15sp"
                     android:layout_margin="2dp"
-                    android:padding="2dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
                     android:text="● The several questions related to almost all the areas of Civil Engineering."
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -366,7 +344,9 @@
                     android:layout_centerHorizontal="true"
                     android:textSize="15sp"
                     android:layout_margin="2dp"
-                    android:padding="2dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="3dp"
                     android:text="● CRITERIA :  Based on the quality of drawing drafted using the cad software the winner will be selected ."
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />

@@ -70,7 +70,7 @@ public class AcousticsFragment extends Fragment {
                 "\n"+
                 "6. No electrical instruments would be allowed. However, one synthesizer is allowed per entry \n" +
                 "\n"+
-                "7. The decision of the judges will be final and binding.  \n");
+                "7. The decision of the judges will be final and binding.");
 
 
         return view;

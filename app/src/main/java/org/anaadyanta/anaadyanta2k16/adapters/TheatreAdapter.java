@@ -40,7 +40,7 @@ public class TheatreAdapter extends FragmentPagerAdapter{
         switch (position) {
             case 0 : return "Street Play";
             case 1 : return "Mad Ad's";
-            case 2 : return "Skime";
+            case 2 : return "Mime";
         }
         return "";
     }

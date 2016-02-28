@@ -112,7 +112,7 @@
                     android:layout_marginEnd="18dp"
                     android:layout_marginRight="18dp"
                     android:layout_marginTop="6dp"
-                    android:text="Rs.300"
+                    android:text="Rs.1500"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -165,7 +165,7 @@
                     android:layout_alignLeft="@+id/textView5"
                     android:layout_alignStart="@+id/textView5"
                     android:layout_alignTop="@+id/textView6"
-                    android:text="Rs.6000"
+                    android:text="Rs.30000"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -176,7 +176,7 @@
                     android:layout_alignLeft="@+id/textView8"
                     android:layout_alignStart="@+id/textView8"
                     android:layout_alignTop="@+id/textView7"
-                    android:text="Rs.3000"
+                    android:text="Rs.10000"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
             </RelativeLayout>
@@ -233,7 +233,7 @@
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
-                    android:text="Srijith R"
+                    android:text="Pratul Parmar"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -244,7 +244,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/textView10"
                     android:padding="4dp"
-                    android:text="9739652563"
+                    android:text="8792483727"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -254,8 +254,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView11"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
                     android:gravity="center_horizontal"
-                    android:text="srijithmagal@gmail.com"
+                    android:text="pratulprmr@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -265,7 +267,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/contact" />
 
@@ -276,7 +279,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/textView12"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
                     android:background="#000000" />
 
                 <TextView
@@ -285,8 +289,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:layout_margin="4dp"
-                    android:text="Yash Chauhan"
+                    android:layout_marginTop="4dp"
+                    android:text="Dheeraj V Poojari"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -296,7 +300,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/textView13"
-                    android:text="9632395882"
+                    android:text="7353680963"
+                    android:padding="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -304,11 +309,12 @@
                     android:id="@+id/textView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView5"
+                    android:layout_below="@+id/textView14"
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
-                    android:layout_marginBottom="5dp"
-                    android:text="yashchauhanmail247@gmail.com"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="156dheeraj156@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
             </RelativeLayout>
@@ -361,11 +367,8 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-
                         android:textColor="#000000"
-                        android:textSize="15sp"
-
-                        />
+                        android:textSize="15sp" />
 
                 </RelativeLayout>
 
