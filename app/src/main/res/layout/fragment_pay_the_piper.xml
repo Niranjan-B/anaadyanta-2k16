@@ -221,16 +221,17 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_marginTop="4dp"
                     android:layout_centerHorizontal="true"
-                    android:text="Keerthi Prakash "
+                    android:text="Keerthi Prakash"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -238,10 +239,10 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_below="@+id/textView10"
                     android:layout_centerHorizontal="true"
                     android:padding="4dp"
-                    android:text="9482708205 "
+                    android:text="9482708205"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -251,18 +252,20 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout5"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/imageView4"
+                    android:layout_below="@+id/textView11"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
                     android:background="#000000" />
 
                 <TextView
@@ -271,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="4dp"
                     android:text="Kalyan C "
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -282,8 +285,9 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView13"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="10dp"
-                    android:text="8050792685 "
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="8050792685"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 

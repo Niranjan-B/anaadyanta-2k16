@@ -64,7 +64,7 @@ public class DotaFragment extends Fragment {
                 "\n"+
                 "3. Stable 6.86C MAP.\n" +
                 "\n"+
-                "4. WCG rules apply.\n");
+                "4. WCG rules apply.");
         return view;
     }
 

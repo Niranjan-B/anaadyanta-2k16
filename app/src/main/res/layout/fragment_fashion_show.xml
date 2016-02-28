@@ -15,8 +15,8 @@
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffffff"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="5dp"
+            android:background="#ffffff">
 
             <!-- height made to wrap content-->
             <RelativeLayout
@@ -53,7 +53,7 @@
                         android:textStyle="bold" />
 
                 </RelativeLayout>
-                  <!-- padding 2 to 5dp-->
+                <!-- padding 2 to 5dp-->
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
@@ -227,13 +227,13 @@
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/contact"
                     android:layout_above="@+id/textView12"
-                    android:layout_marginTop="20dp"
-                    android:layout_below="@+id/relativeLayout4"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/contact" />
 
                 <TextView
                     android:id="@+id/textView10"
@@ -242,7 +242,7 @@
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
-                    android:text="Sangeetha"
+                    android:text="Yeshika"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -254,8 +254,7 @@
                     android:layout_below="@+id/textView10"
                     android:layout_centerHorizontal="true"
                     android:padding="4dp"
-                    android:text="8147301088"
-
+                    android:text="9945762741"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -264,10 +263,11 @@
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
                     android:layout_below="@+id/textView11"
                     android:layout_centerHorizontal="true"
-                    android:text="sangeetha1994@gmail.com"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="yeshikabaktha2@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 

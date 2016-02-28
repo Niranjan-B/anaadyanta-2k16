@@ -57,7 +57,7 @@ public class MiniSoccerFragment extends Fragment {
                 "\n"+
                 "4. Tie will be settled by a penalty shootout.\n" +
                 "\n"+
-                "5. Kick in if the ball is out of play.\n");
+                "5. Kick in if the ball is out of play.");
 
         return view;
     }

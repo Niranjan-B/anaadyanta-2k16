@@ -185,7 +185,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_marginTop="4dp"
                     android:text="Abhinav"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -197,18 +198,10 @@
                     android:layout_below="@+id/textView10"
                     android:layout_centerHorizontal="true"
                     android:padding="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="8951507993"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView11"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -216,9 +209,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
                 <RelativeLayout
@@ -228,7 +221,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/textView11"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
                     android:background="#000000"/>
 
                 <TextView
@@ -237,7 +231,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:layout_margin="5dp"
+                    android:layout_marginTop="4dp"
                     android:text="Darshan"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -249,18 +243,11 @@
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/textView13"
                     android:text="8147876864"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView5"
-                    android:layout_toEndOf="@+id/imageView5"
-                    android:layout_toRightOf="@+id/imageView5"
-                    android:gravity="center"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
             </RelativeLayout>
 
             <RelativeLayout

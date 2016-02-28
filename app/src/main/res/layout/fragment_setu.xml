@@ -221,36 +221,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/relativeLayout4"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="4dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13"
-                    android:layout_below="@+id/textView10"
-                    android:padding="4dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView11"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -258,7 +230,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
@@ -269,44 +241,20 @@
                     android:layout_height="2dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView12"
+                    android:layout_below="@+id/textView54"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
                     android:background="#000000"/>
 
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/relativeLayout5"
-                    android:layout_centerHorizontal="true"
-                    android:layout_margin="3dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView13"
-                    android:layout_alignStart="@+id/textView13"
-                    android:layout_below="@+id/textView13"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView5"
-                    android:layout_toEndOf="@+id/imageView5"
-                    android:layout_toRightOf="@+id/imageView5"
-                    android:gravity="center"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
                     android:id="@+id/textView53"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_below="@+id/relativeLayout4"
                     android:text="Sahil Jain D"
+                    android:layout_marginTop="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
                     android:textSize="18sp" />
@@ -315,9 +263,10 @@
                     android:id="@+id/textView54"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_below="@+id/textView53"
                     android:layout_centerHorizontal="true"
-                    android:text="8951551435 "
+                    android:text="8951551435"
+                    android:padding="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000"
                     android:textSize="18sp" />
@@ -326,9 +275,10 @@
                     android:id="@+id/textView55"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView14"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
                     android:text="Chaitra Patil "
+                    android:layout_marginTop="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
                     android:textSize="18sp" />
@@ -337,9 +287,11 @@
                     android:id="@+id/textView56"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView15"
+                    android:layout_below="@+id/textView55"
                     android:layout_centerHorizontal="true"
-                    android:text="8197964555 "
+                    android:text="8197964555"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000"
                     android:textSize="18sp" />
@@ -398,7 +350,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout7"
                     android:layout_margin="2dp"
-                    android:layout_marginLeft="3dp"
+                    android:padding="5dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000"
                     android:textSize="15sp"/>

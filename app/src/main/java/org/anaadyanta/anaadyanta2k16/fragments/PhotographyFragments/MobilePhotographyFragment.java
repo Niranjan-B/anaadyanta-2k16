@@ -56,7 +56,7 @@ public class MobilePhotographyFragment extends Fragment {
                 "\n"+
                 "5. Photos must be submitted to the respective Coordinator before the given deadline.\n" +
                 "\n"+
-                "6. The decision of the judge will be final and binding.\n");
+                "6. The decision of the judge will be final and binding.");
 
 
         return view;

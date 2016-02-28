@@ -220,7 +220,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
 
                 <TextView
@@ -241,6 +241,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/textView10"
                     android:padding="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="9164841394"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
@@ -251,8 +252,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
 
                 <RelativeLayout
@@ -262,7 +264,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/textView11"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
                     android:background="#000000" />
 
                 <TextView
@@ -271,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="4dp"
                     android:text="Harsh Singh"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -283,7 +286,8 @@
                     android:layout_below="@+id/textView13"
                     android:layout_centerHorizontal="true"
                     android:text="8123358131"
-                    android:layout_marginBottom="10dp"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 

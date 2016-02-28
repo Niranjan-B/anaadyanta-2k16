@@ -68,7 +68,7 @@ public class TechCharadesFragment extends Fragment {
                 "English to describe.\n" +
                 "\n" +
                 "● During the third round, the person drawing is not supposed" +
-                "to speak anything. ");
+                " to speak anything. ");
         return view;
     }
 

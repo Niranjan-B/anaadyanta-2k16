@@ -68,7 +68,7 @@ public class Fifa14Fragment extends Fragment {
                 "\n"+
                 "5. Joysticks are allowed. Participants are allowed to bring their own joysticks/gamepads/headphones but the Anaadyanta committee isn’t responsible for the loss of personal property.\n" +
                 "\n"+
-                "6. Players can pause for substitution if the ball is in their possession.\n");
+                "6. Players can pause for substitution if the ball is in their possession.");
         return view;
     }
 

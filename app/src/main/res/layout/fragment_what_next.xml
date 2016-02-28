@@ -60,7 +60,7 @@
                     android:layout_below="@+id/relativeLayout2"
                     android:gravity="center"
                     android:padding="5sp"
-                    android:text="Replicate the sounds of the drums,create the beats with your mouth and your vocal chords while the listeners clap on. Showcase your creativity through your ability to make music.Beatbox!"
+                    android:text="Do you have what it takes to keep us engrossed in your story? And do you have what it takes to end it well? If you do, then participate in What Next?, and tell us what happens next. Be sure to make an extremely interesting comic strip."
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="#000000"
                     android:textSize="16sp" />
@@ -221,7 +221,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
                     android:src="@drawable/contact" />
 
@@ -253,6 +253,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView11"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:gravity="center_horizontal"
                     android:text="sridharnmit@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -264,7 +266,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
@@ -273,12 +275,11 @@
                     android:id="@+id/relativeLayout5"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/textView12"
-                    android:layout_marginTop="24dp"
-                    android:background="#000000"></RelativeLayout>
+                    android:layout_marginTop="6dp"
+                    android:background="#000000"/>
 
                 <TextView
                     android:id="@+id/textView13"
@@ -286,7 +287,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:layout_margin="3dp"
+                    android:layout_marginTop="4dp"
                     android:text="Ankith"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
@@ -298,6 +299,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/textView13"
                     android:text="9008688443"
+                    android:padding="4dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -308,7 +310,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/textView14"
                     android:gravity="center"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
                     android:text="ankitrzd373@gmail.com"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />

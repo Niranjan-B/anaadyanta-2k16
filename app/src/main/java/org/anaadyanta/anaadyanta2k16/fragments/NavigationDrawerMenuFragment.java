@@ -71,16 +71,15 @@ public class NavigationDrawerMenuFragment extends MenuFragment{
                         intent.setData(Uri.parse(geoUri));
                         startActivity(intent);
                         return true;
-                    case R.id.rules:
-                        RuleFragment ruleFragment = new RuleFragment();
+                    case R.id.schedules:
+                        ScheduleFragment scheduleFragment = new ScheduleFragment();
                         FragmentManager ruleFragmentManager = getFragmentManager();
-                        ruleFragmentManager.beginTransaction().replace(R.id.fragment_container, ruleFragment).commit();
+                        ruleFragmentManager.beginTransaction().replace(R.id.fragment_container, scheduleFragment).commit();
                         return true;
                     case R.id.sponsors:
                         SponsorsFragment sponsorsFragment = new SponsorsFragment();
                         FragmentManager sponsorsFragmentManager = getFragmentManager();
                         sponsorsFragmentManager.beginTransaction().replace(R.id.fragment_container, sponsorsFragment).commit();
-
                         return true;
                     case R.id.devs:
                         DevsFragment devsFragment = new DevsFragment();

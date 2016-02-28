@@ -43,7 +43,7 @@ public class DanceAdapter extends FragmentPagerAdapter{
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0 : return "Choreo Night";
-            case 1 : return "Street Dance";
+            case 1 : return "Street X";
             case 2 : return "7 To Smoke";
             case 3 : return "Theme Dance";
             case 4 : return "Solo Dance";

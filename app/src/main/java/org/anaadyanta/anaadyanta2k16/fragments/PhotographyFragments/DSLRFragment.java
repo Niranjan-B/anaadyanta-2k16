@@ -62,7 +62,7 @@ public class DSLRFragment extends Fragment {
                 "\n"+
                 "6. Photos must be submitted to the respective coordinator before the given deadline.\n" +
                 "\n"+
-                "7. The decision of the judge will be final and binding.\n");
+                "7. The decision of the judge will be final and binding.");
         return view;
     }
 

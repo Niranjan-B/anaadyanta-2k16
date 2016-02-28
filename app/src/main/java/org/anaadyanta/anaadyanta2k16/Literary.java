@@ -48,8 +48,6 @@ public class Literary extends AppCompatActivity {
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/fictionary.jpg");
                     case 5:
                         return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/debate.jpg");
-                    case 6:
-                        return HeaderDesign.fromColorAndUrl(getResources().getColor(R.color.color_literary), "http://anaadyanta.org/Cultural/hunger_games_modified.jpg");
                 }
 
                 return null;

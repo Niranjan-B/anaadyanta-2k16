@@ -229,7 +229,7 @@
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
-                    android:text="Vilas D R "
+                    android:text="Vilas D R"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -240,7 +240,8 @@
                     android:layout_below="@+id/textView10"
                     android:layout_centerHorizontal="true"
                     android:padding="4dp"
-                    android:text="9738337178 "
+                    android:text="9738337178"
+                    android:layout_marginBottom="8dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 

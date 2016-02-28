@@ -52,7 +52,7 @@ public class PotPourriFragment extends Fragment {
                 "\n"+
                 "2. So brush up on your 90’s GK!\n" +
                 "\n"+
-                "3. Teams of 2 or 3 \n");
+                "3. Teams of 2 or 3 ");
 
 
         return view;

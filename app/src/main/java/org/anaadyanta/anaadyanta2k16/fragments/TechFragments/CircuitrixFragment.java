@@ -63,7 +63,7 @@ public class CircuitrixFragment extends Fragment {
                 "\n"+
                 "● The decision of the judges is final.\n" +
                 "\n"+
-                "● Participants should not spoil any components or devices provided to them. \n");
+                "● Participants should not spoil any components or devices provided to them. ");
         return view;
     }
 
