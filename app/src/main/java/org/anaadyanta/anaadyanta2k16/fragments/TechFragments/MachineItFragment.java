@@ -53,7 +53,6 @@ public class MachineItFragment extends Fragment {
                 "● One participant per team.\n" +
                 "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "\n"+
                 "➢ The right dimensions of the part.\n" +
                 "➢ Shape Detailing.\n" +
                 "➢ Time taken to finish.\n" +

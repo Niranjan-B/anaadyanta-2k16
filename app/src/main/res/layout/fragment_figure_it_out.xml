@@ -59,7 +59,7 @@
                     android:layout_below="@+id/relativeLayout2"
                     android:gravity="center"
                     android:padding="5sp"
-                    android:text="Each individual will be given a real object of which the contestant has to measure it and create a model in CATIA V5 and obtain the final drawing with all the intricate details of the part ( for example radius fillet ) ."
+                    android:text="Each individual will be given a real object of which the contestant has to measure it and create a model in CATIA V5 and obtain the final drawing with all the intricate details of the part (for example radius fillet)."
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="#000000"
                     android:textSize="16sp" />
@@ -219,7 +219,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="9dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
 
                 <TextView
@@ -229,7 +229,7 @@
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
-                    android:text="Gaurav Kulkarni "
+                    android:text="Gaurav Kulkarni"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -240,7 +240,7 @@
                     android:layout_below="@+id/textView10"
                     android:layout_centerHorizontal="true"
                     android:padding="4dp"
-                    android:text="8277605437 "
+                    android:text="8277605437"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -250,18 +250,20 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout5"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/contact" />
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout5"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/imageView4"
+                    android:layout_below="@+id/textView11"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
                     android:background="#000000" />
 
                 <TextView
@@ -270,8 +272,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
-                    android:padding="4dp"
-                    android:text="Altaf Jilani "
+                    android:layout_marginTop="4dp"
+                    android:text="Altaf Jilani"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -281,8 +283,9 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView13"
                     android:layout_centerHorizontal="true"
-                    android:padding="0dp"
-                    android:text="9742760875 "
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="9742760875"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -326,13 +329,13 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/relativeLayout7"
-                    android:layout_marginLeft="4dp">
+                    android:padding="5dp">
 
                     <TextView
                         android:id="@+id/rules_figure"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="1. The duration of the event is 3 hours.\n"
+                        android:text="● The duration of the event is 3 hours.\n"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="#000000"
                         android:textSize="15sp" />
@@ -342,7 +345,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/rules_figure"
-                        android:text="2. One participant.\n"
+                        android:text="● One participant.\n"
                         android:textColor="#000000"
                         android:textSize="15sp" />
 
@@ -351,7 +354,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/rule1"
-                        android:text="3. The application can run only on CATIA V5 .\n"
+                        android:text="● The application can run only on CATIA V5 .\n"
                         android:textColor="#000000"
                         android:textSize="15sp" />
 
@@ -360,7 +363,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/rule12"
-                        android:text="4. Laptops are allowed.\n\n JUDGEMENT CRITERIA :"
+                        android:text="● Laptops are allowed.\n\n JUDGEMENT CRITERIA :"
                         android:textColor="#000000"
                         android:textSize="15sp" />
 
@@ -369,7 +372,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/rule123"
-                        android:text="5. The right scaling."
+                        android:text="● The right scaling."
                         android:textColor="#000000"
                         android:textSize="15sp" />
 
@@ -378,7 +381,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/rule1234"
-                        android:text="6. Shape Detailing."
+                        android:text="● Shape Detailing."
                         android:textColor="#000000"
                         android:textSize="15sp" />
 
@@ -387,7 +390,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/rule12345"
-                        android:text="7. Use of simpler methods."
+                        android:text="● Use of simpler methods."
                         android:textColor="#000000"
                         android:textSize="15sp"/>
 

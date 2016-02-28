@@ -55,7 +55,6 @@ public class LetItRipFragment extends Fragment {
                 "● Winner decided on who stays within the playing arena .\n" +
                 "\n"+
                 "JUDGEMENT CRITERIA :\n" +
-                "\n"+
                 "➢ Damage .\n" +
                 "➢ Best of 3. ");
         return view;

@@ -23,28 +23,27 @@ public class MechWizFragment extends Fragment {
 
     ObservableScrollView mechWizScrollView;
 
-    public static MechWizFragment getInstance() {
-        return new MechWizFragment();
-    }
-
     public MechWizFragment() {
         // Required empty public constructor
     }
 
+    public static MechWizFragment getInstance() {
+        return new MechWizFragment();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_mech_wiz, container, false);
-        TextView rules_mechwiz= (TextView) view.findViewById(R.id.rules_mechwiz);
-        ImageView phone=(ImageView)view.findViewById(R.id.imageView4);
-        ImageView phone1=(ImageView)view.findViewById(R.id.imageView5);
+        View view = inflater.inflate(R.layout.fragment_mech_wiz, container, false);
+        TextView rules_mechwiz = (TextView) view.findViewById(R.id.rules_mechwiz);
+        ImageView phone = (ImageView) view.findViewById(R.id.imageView4);
+        ImageView phone1 = (ImageView) view.findViewById(R.id.imageView5);
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+918123422253";
-                Intent in=new Intent(Intent.ACTION_CALL);
+                String num = "+918123422253";
+                Intent in = new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);
             }
@@ -52,14 +51,14 @@ public class MechWizFragment extends Fragment {
         phone1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+918050792685";
-                Intent in=new Intent(Intent.ACTION_CALL);
+                String num = "+918050792685";
+                Intent in = new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);
             }
         });
         rules_mechwiz.setText("● 4 rounds of mixture of tasks .\n" +
-                "\n"+
+                "\n" +
                 "● Two participants per team . ");
         return view;
     }
