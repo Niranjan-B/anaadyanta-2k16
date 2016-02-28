@@ -73,15 +73,14 @@ public class NewsFeedFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        /*if(!Utility.isInternetAvailable(getActivity())) {
-            Snackbar.make(coordinatorLayout, "Intenet Down!, Bad UX in progress!", Snackbar.LENGTH_SHORT).show();
+        if(!Utility.isInternetAvailable(getActivity())) {
+            Snackbar.make(coordinatorLayout, "Internet Down!, Can't reach server !!", Snackbar.LENGTH_SHORT).show();
             if (progressBar.getVisibility() == View.VISIBLE) {
                 progressBar.setVisibility(View.GONE);
             }
-            // TODO make the text something more humorous i.e. flintstones era :-)
         } else {
             new newsFeedNetworkCall().execute();
-        }*/
+        }
 
     }
 
@@ -170,7 +169,6 @@ public class NewsFeedFragment extends Fragment {
                 for (int i = 0 ; i<array.length() ; i++) {
                     NewsFeedModel currentModel = new NewsFeedModel();
                     JSONObject presentObj = array.getJSONObject(i);
-                    currentModel.setTitle(presentObj.getString("title"));
                     currentModel.setMessage(presentObj.getString("msg"));
                     currentModel.setImg_url(presentObj.getString("img_path"));
                     model.add(currentModel);
