@@ -23,7 +23,7 @@ import org.anaadyanta.anaadyanta2k16.StaticClassNavigationInstance;
  * Created by NIRANJAN on 26-01-2016.
  */
 public class NavigationDrawerMenuFragment extends MenuFragment{
-    String geoUri = "http://maps.google.com/maps?q=loc:" + 13.128771 + "," + 77.587276;
+    String geoUri = "http://maps.google.com/maps?q=loc:Nitte Meenakshi Institute Of Technology, Bangalore";
 
     LeftDrawerLayout navigationMenuDrawerLayout;
 
