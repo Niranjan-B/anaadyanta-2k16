@@ -58,7 +58,7 @@ public class CollageFragment extends Fragment {
                 startActivity(in);
             }
         });
-        rules_collage.setText("1. Individual participation. It's a one man show.\n" +
+        rules_collage.setText("1. Maximum of two participants per team.\n" +
                 "\n"+
                 "2. All required materials will be provided.\n" +
                 "\n"+
@@ -66,7 +66,7 @@ public class CollageFragment extends Fragment {
                 "\n"+
                 "4. Time duration is 3 hours.\n" +
                 "\n"+
-                "5. Specific instructions regarding the event and theme/ topic will be given on the spot.");
+                "5. Specific instructions regarding the event and theme / topic will be given on the spot.");
         return view;
     }
 
