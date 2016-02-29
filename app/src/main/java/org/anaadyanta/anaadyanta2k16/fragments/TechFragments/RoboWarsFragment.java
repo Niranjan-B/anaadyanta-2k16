@@ -43,7 +43,7 @@ public class RoboWarsFragment extends Fragment {
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+919738768225";
+                String num="+917411570726";
                 Intent in=new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);
@@ -52,7 +52,7 @@ public class RoboWarsFragment extends Fragment {
         phone1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String num="+919902089089";
+                String num="+919019528731";
                 Intent in=new Intent(Intent.ACTION_CALL);
                 in.setData(Uri.parse("tel:" + num));
                 startActivity(in);

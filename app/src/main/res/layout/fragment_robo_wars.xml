@@ -231,7 +231,7 @@ in hope of more lethal and more entertaining robots ."
                     android:layout_below="@+id/relativeLayout4"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
-                    android:text="Basavaraj Y "
+                    android:text="Mohammed Salman S"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -243,7 +243,7 @@ in hope of more lethal and more entertaining robots ."
                     android:layout_centerHorizontal="true"
                     android:padding="4dp"
                     android:layout_marginBottom="4dp"
-                    android:text="9738768225 "
+                    android:text="7411570726"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
@@ -276,7 +276,7 @@ in hope of more lethal and more entertaining robots ."
                     android:layout_below="@+id/relativeLayout5"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
-                    android:text="Kishan Reddy "
+                    android:text="Shubham Agarwal"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#000000" />
 
@@ -289,7 +289,7 @@ in hope of more lethal and more entertaining robots ."
                     android:layout_marginTop="4dp"
                     android:padding="4dp"
                     android:layout_marginBottom="8dp"
-                    android:text="9902089089"
+                    android:text="9019528731"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#008000" />
 
