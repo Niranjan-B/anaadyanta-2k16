@@ -20,7 +20,7 @@ import org.anaadyanta.anaadyanta2k16.fragments.NavigationDrawerMenuFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    LeftDrawerLayout navigationDrawerLayout;
+    private LeftDrawerLayout navigationDrawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
         // One signal implementation
         OneSignal.startInit(this).init();
         OneSignal.enableNotificationsWhenActive(true);
-        // ------------------------------------------------ends----------------------------
-
-
+        
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
         NavigationDrawerMenuFragment myfragment = (NavigationDrawerMenuFragment) fm.findFragmentById(R.id.id_container_layout_menu);
