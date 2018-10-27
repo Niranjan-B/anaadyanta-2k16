@@ -15,8 +15,8 @@ import org.anaadyanta.anaadyanta2k16.adapters.SportsAdapter;
 
 public class Sports extends AppCompatActivity {
 
-    MaterialViewPager mViewPagerSports;
-    SportsAdapter mSportsAdapter;
+    private MaterialViewPager mViewPagerSports;
+    private SportsAdapter mSportsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
