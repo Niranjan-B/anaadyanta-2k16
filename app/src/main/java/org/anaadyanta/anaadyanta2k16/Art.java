@@ -15,8 +15,8 @@ import org.anaadyanta.anaadyanta2k16.adapters.ArtAdapter;
 
 public class Art extends AppCompatActivity {
 
-    MaterialViewPager mViewPagerArt;
-    ArtAdapter mArtAdapter;
+    private MaterialViewPager mViewPagerArt;
+    private ArtAdapter mArtAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
